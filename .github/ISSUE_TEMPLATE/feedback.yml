@@ -1,0 +1,38 @@
+name: Feedback or bug report
+description: Report a problem or suggest an idea. The game's Feedback button fills in your version and device for you.
+labels: ["feedback"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of feedback is this?
+      options:
+        - Bug or problem
+        - Idea or suggestion
+        - Performance (slow, laggy, long loading)
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened, or what would you like?
+      description: For a bug, say what you expected and what happened instead. Screenshots or screen recordings help a lot (drag them in here).
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we see it ourselves? (bugs only)
+      description: Where in the city, which mission or vehicle, and the steps that lead to it.
+  - type: input
+    id: version
+    attributes:
+      label: Game version
+      description: Filled in by the game. Otherwise it is shown at the top of the title screen and in Settings.
+      placeholder: 0.1.0-preview
+  - type: input
+    id: setup
+    attributes:
+      label: Browser and device
+      description: Filled in by the game, e.g. "Safari · iOS · WebGPU · low · 844x390". Please add your phone or computer model.
