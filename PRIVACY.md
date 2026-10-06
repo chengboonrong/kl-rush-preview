@@ -18,9 +18,9 @@ The game also sends one report if loading takes longer than 20 seconds, at most 
 
 Reports **never** include your name, email, account, location, save game, or anything you type. A session sends at most three reports, and the same error is sent only once.
 
-Reports are stored privately in the developer's Vercel Blob storage (Singapore region). Only the developer can read them, and they are deleted after 90 days.
+Reports are sent to [Sentry](https://sentry.io), an error-monitoring service, and stored in Sentry's EU data region (Germany). Only the developer can read them. Sentry deletes them automatically after 30 days.
 
-KL Rush does not store IP addresses. Like any website, the hosting provider (Vercel) processes connection details such as IP addresses to deliver the site, under its own [privacy policy](https://vercel.com/legal/privacy-policy).
+The KL Rush Sentry project is set **not to store IP addresses**, and the game sends no user identifiers. Sentry and the hosting provider (Vercel) handle connection details such as IP addresses to receive and deliver data, under their own privacy policies ([Sentry](https://sentry.io/privacy/), [Vercel](https://vercel.com/legal/privacy-policy)).
 
 ## Data on your device
 
@@ -35,4 +35,4 @@ Your progress and settings are saved in your browser's local storage on your dev
 
 Open an issue on this repository. Please don't include personal details, because issues are public.
 
-_Last updated: 7 October 2026._
+_Last updated: 7 October 2026 (error reports now go to Sentry)._
