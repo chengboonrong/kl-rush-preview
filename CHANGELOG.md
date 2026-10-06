@@ -2,6 +2,11 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.1.1 Preview (6 October 2026)
+
+- New **Support** button on the title screen and pause menu, linking to [Ko-fi](https://ko-fi.com/chrischeng9297). Donations are optional; the game stays free.
+- The title screen now fits small phones: the top buttons are icon-only, and the menu no longer pushes the logo off the screen.
+
 ## 0.1.0 Preview (6 October 2026)
 
 The first public preview.

@@ -6,7 +6,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.1.0 Preview.** The whole game is playable, but it is still growing toward 1.0 and your progress may be reset before then. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml)
+**Version 0.1.1 Preview.** The whole game is playable, but it is still growing toward 1.0 and your progress may be reset before then. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
 
 🎬 [Watch the 36-second trailer](media/kl-rush-trailer-720p.mp4)
 
@@ -34,6 +34,14 @@
 ## Feedback
 
 Found a bug or have an idea? Use **Feedback** on the game's title screen or pause menu. It opens [the feedback form](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) with your version, browser and device already filled in. You need a free GitHub account to post.
+
+## Support KL Rush
+
+KL Rush is free to play with no ads. If you enjoy it and want to help it reach 1.0, you can buy me a coffee on Ko-fi:
+
+### ☕ [ko-fi.com/chrischeng9297](https://ko-fi.com/chrischeng9297)
+
+Donations are optional and go toward development time and testing on real devices. Playing, reporting bugs and sharing the game help just as much. Terima kasih! 🙏
 
 ## System notes
 
