@@ -4,8 +4,8 @@ KL Rush grows in small public steps. Each version ships when it is ready, not on
 
 | Version | Focus | Highlights |
 | --- | --- | --- |
-| **0.1 Preview** (now: 0.1.1) | Public preview | The whole game playable; feedback and support buttons; release notes |
-| 0.2 Preview | Foundations | Automatic crash reports, a save backup button, the first accessibility options (key remapping, subtitle size, less camera shake, colour-blind friendly markers), faster loading on phones |
+| 0.1 Preview | Public preview | The whole game playable; feedback and support buttons; release notes |
+| **0.2 Preview** (now) | Foundations | Done: crash reports, save backup, key remapping, subtitle size, reduced motion, colour-blind friendly markers, instant graphics settings, an iPhone loading fix. Next: confirm iPhone load times on real devices |
 | 0.3 Preview | Driving feel | Real vehicle physics: suspension, kerb hops, rollovers and proper crashes, with arcade-friendly handling |
 | 0.4 Preview | Living city | Police and traffic that crash for real, pedestrians knocked over by impacts, smarter traffic, busier lunchtimes and night markets |
 | 0.5 Beta | Content complete | About 15 story missions, real motorbike handling, new activities, a driving tutorial, flyovers and places to explore on foot. **Saves always carry over from here on.** |

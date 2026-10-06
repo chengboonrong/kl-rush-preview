@@ -2,6 +2,21 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.2.0 Preview (7 October 2026)
+
+**New options in Settings**
+- **Save backup**: export your progress to a file and import it again, on the same device or a new one.
+- **Camera motion: Reduced**: no camera shake or colour fringing, and calmer speed effects. It switches on automatically if your device asks for less motion.
+- **Subtitle size**: S, M, L or XL.
+- **Marker colours: Colour-blind safe**: map icons, routes and mission markers switch to a palette designed for colour-blind players. Your own waypoint route is now dashed, so it differs by shape too.
+- **Key remapping** (Controls): change any keyboard key, and the on-screen hints follow your keys.
+- **Graphics quality** now changes instantly, without reloading.
+- **Error reports**: anonymous crash reports help fix problems on devices the developer doesn't have. You can turn them off; see [PRIVACY.md](PRIVACY.md).
+
+**Fixes**
+- **iPhone and iPad**: fixed a hang during loading that could stop the game from ever reaching the title screen, and made loading much lighter. If the graphics do stop responding, the game now says so and offers a Reload button instead of loading forever.
+- Saves from every earlier version keep their progress.
+
 ## 0.1.2 Preview (7 October 2026)
 
 - **Phones**: the game asks you to turn your phone sideways when it's upright, and a one-time tip recommends landscape and full screen.
