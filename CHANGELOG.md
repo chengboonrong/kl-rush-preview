@@ -2,6 +2,12 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.1.2 Preview (7 October 2026)
+
+- **Phones**: the game asks you to turn your phone sideways when it's upright, and a one-time tip recommends landscape and full screen.
+- **iPhone full screen**: Safari can't make web pages full screen, so the Fullscreen button now shows how to add KL Rush to your Home Screen. Opened from there, it runs full screen in landscape with its own app icon.
+- **Loading on phones**: the loading screen warns that the first load can take up to a minute. Feedback reports now include how long loading took on your device, which helps make it faster.
+
 ## 0.1.1 Preview (6 October 2026)
 
 - New **Support** button on the title screen and pause menu, linking to [Ko-fi](https://ko-fi.com/chrischeng9297). Donations are optional; the game stays free.

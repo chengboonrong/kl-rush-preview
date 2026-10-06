@@ -6,7 +6,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.1.1 Preview.** The whole game is playable, but it is still growing toward 1.0 and your progress may be reset before then. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
+**Version 0.1.2 Preview.** The whole game is playable, but it is still growing toward 1.0 and your progress may be reset before then. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
 
 🎬 [Watch the 36-second trailer](media/kl-rush-trailer-720p.mp4)
 
@@ -48,6 +48,7 @@ Donations are optional and go toward development time and testing on real device
 - Best in a recent **Chrome, Edge or Safari** (desktop or phone). The game uses WebGPU where available and falls back to WebGL2.
 - Your progress is saved in your browser. Clearing site data deletes it.
 - Phones use lower graphics settings automatically. You can change this in Settings.
+- **On a phone, play in landscape and full screen.** On iPhone, tap Share → **Add to Home Screen** and open KL Rush from there for full screen. The first load on a phone can take up to a minute.
 
 ## About
 
