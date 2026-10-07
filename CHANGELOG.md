@@ -2,6 +2,17 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.2.2 Preview (7 October 2026)
+
+**Gamepads**
+- **Menus work with a gamepad**: the title screen, pause menu, phone, settings and food menus. Move with the D-pad or left stick, select with A, go back with B. Start pauses and resumes. Before, you could pause with a gamepad but not get out again.
+- **Driving**: holding the left stick diagonally now accelerates while you steer.
+- **New buttons**: D-pad left opens the phone; D-pad right starts or stops a taxi, bus or delivery job.
+- The Controls screen now shows the full gamepad layout.
+
+**Touchscreen laptops**
+- Mouse look works again. Touch the screen and the touch controls appear; use the mouse or trackpad and they hide.
+
 ## 0.2.1 Preview (7 October 2026)
 
 - The mission "Hot Wheels" is now called **"Hot Car"** in English. The Malay title, "Kereta Panas", is unchanged.
