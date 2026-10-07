@@ -2,6 +2,10 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.3.2 Preview (7 October 2026)
+
+- **Title screen on big phones in landscape** (like an iPhone 15 Plus in Safari): the Controls button was hidden behind the bar at the bottom. All menu items now fit above it.
+
 ## 0.3.1 Preview (7 October 2026)
 
 - **Character selection**: your character now faces you instead of showing its back, and stands beside the menu instead of behind it. On phones it used to be hidden completely.
