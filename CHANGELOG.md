@@ -2,6 +2,10 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.3.4 Preview (8 October 2026)
+
+- **Long sessions stay smooth**: cars, pedestrians and the collectible cats were never fully cleared from memory after they left the street, so memory crept up during long drives and chases, which phones handle badly. They're now freed properly, and memory stays flat.
+
 ## 0.3.3 Preview (7 October 2026)
 
 - **Pause menu on phones in landscape**: the logo was cut off at the top, "Quit to Title" fell off the bottom, and the "Best in landscape" tip could cover the menu. The pause menu now fits, and the tip only shows on the title screen.
