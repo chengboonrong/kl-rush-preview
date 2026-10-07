@@ -2,6 +2,13 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.2.3 Preview (7 October 2026)
+
+Fixes from the first anonymous error reports.
+
+- **iPhone: graphics reset during play.** Safari sometimes resets a page's graphics, for example when the phone is short on memory or the game is in the background. The game used to freeze. Now it saves your progress and shows a Reload button, or reloads by itself when you come back from another app.
+- **Rotating the phone while the game loads** no longer causes an error.
+
 ## 0.2.2 Preview (7 October 2026)
 
 **Gamepads**
