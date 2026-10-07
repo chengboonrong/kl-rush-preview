@@ -2,6 +2,12 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.2.1 Preview (7 October 2026)
+
+- The mission "Hot Wheels" is now called **"Hot Car"** in English. The Malay title, "Kereta Panas", is unchanged.
+- **Phones in landscape with Safari's toolbars showing**: the title screen no longer covers the menu. The tip line is hidden, the menu is tighter, and the full-screen hint moves to the top right.
+- **Confirmed on an iPhone 15 Plus**: 0.2.0 loads in about 5 seconds, down from about a minute in 0.1.x, and runs at about 60 fps.
+
 ## 0.2.0 Preview (7 October 2026)
 
 **New options in Settings**
