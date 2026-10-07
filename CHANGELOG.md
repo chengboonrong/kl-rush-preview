@@ -2,6 +2,17 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.3.0 Preview (7 October 2026)
+
+**Driving feel, part 1**
+
+- **A new loading screen**: Kuala Lumpur's skyline at dusk lights up window by window as the game really loads, from the street up, with the percentage beside it. When everything is ready the tower beacons switch on and the city fades into the title screen. If loading ever gets stuck, a Reload button appears.
+- **Try the new driving physics**: Settings → Driving physics → **New (experimental)**, then Reload. Cars, vans, the bus and the lorry get real suspension and tyre grip, kerbs you can feel, slides, rollovers (your car rights itself after a couple of seconds), crash damage from the real impact, and an automatic gearbox. Classic stays the default. **Tell us which you prefer** with the Feedback button: reports now say which one you were driving. Motorbikes and traffic keep the classic model for now.
+- **Crash camera**: hit something hard and the game drops into slow motion with a dramatic roadside shot, then snaps back. Not with Camera motion set to Reduced, and mission timers slow down too, so it's fair.
+- **Sound**: engines rev through their gears (the kapcai, the scooter's drone, the turbo whistle on buses and lorries), tyres squeal and scrub, kerbs thump, and crashes go from a knock to a crunch to breaking glass.
+- **Faster to start**: less to download before the title screen, and repeat visits reuse what's already downloaded.
+- **iPhone**: sound comes back after a phone call or locking the screen.
+
 ## 0.2.3 Preview (7 October 2026)
 
 Fixes from the first anonymous error reports.
