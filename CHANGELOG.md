@@ -2,6 +2,27 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.4.0 Preview (8 October 2026)
+
+**A living city**
+- **Traffic reacts**: cars brake and honk at crashes, then steer round wrecks, your stopped car and roadblocks.
+- **Police roadblocks** from three stars: cars across the road ahead, with a gap at three stars, a stinger at four and no gap at five. On the classic driving, police now ram, PIT, brake-check and box you in.
+- **Time of day**: quiet streets and joggers at dawn, office crowds and full mamak at lunch, and a **pasar malam on Petaling Street** from 6:30 pm.
+- **With the new physics** (Settings → Driving physics → New (experimental), then reload): police and nearby cars are real physics cars, so PITs, spin-outs and pile-ups happen, and people hit by a car tumble (no gore) and get back up. Classic remains the default.
+
+**中文（预览） and more**
+- **Simplified Chinese** joins English and Bahasa Melayu (Settings or the title screen). It's a machine-translated preview with some corrections, Malaysian wording (德士, 罗厘, 嘛嘛档) and place names kept in Malay. Full review by Malaysian Chinese speakers is still pending. Spot a mistake? Tell us with the Feedback button.
+- Existing saves migrate to schema 2, preserving language and progress.
+- **A new look**: a Malaysian number-plate logo, road-sign place names, and tips from Radio Pecut FM and a teksi driver in Manglish and BM.
+- **Settings → About & credits**, including our inspiration: 臺北狂飆 Taipei Rush by @aicodewithme.
+- **Settings → Benchmark**: a one-minute test of how smoothly the game runs on your device, with a score, a recommended setting, and an optional anonymous result that helps us make the game run better on more phones.
+- **Settings → Display → Performance stats**: the diagnostic box defaults Off, including with `?perf`. On or Off applies immediately and is saved for your next visit. Show FPS stays separate.
+
+**Smoother**
+- Roughly **half as many draw calls** in busy streets and chases, so busy scenes run more smoothly, especially on phones.
+- **Settings → Graphics engine**: if your browser's graphics keep resetting, the game switches that device to a steadier mode (WebGL2) by itself; you can switch back here.
+- The taxi streak bonus now caps at RM 5 a fare. Mission replays pay a quarter of mission rewards and in-mission cash; improved-medal bonuses remain full.
+
 ## 0.3.4 Preview (8 October 2026)
 
 - **Long sessions stay smooth**: cars, pedestrians and the collectible cats were never fully cleared from memory after they left the street, so memory crept up during long drives and chases, which phones handle badly. They're now freed properly, and memory stays flat.
