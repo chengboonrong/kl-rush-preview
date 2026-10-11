@@ -2,6 +2,89 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.4.19 Preview (11 October 2026)
+
+- **Side jobs open through the story.** In a new game, taxi fares and the Bas Kota bus route open after *Back in KL*, and food delivery after *Delivery Rookie*. The night race still opens after *Midnight Rempit*. Pressing the job key on a job that isn't open yet tells you which mission opens it.
+- Saves from earlier versions keep every job open.
+
+## 0.4.18 Preview (11 October 2026)
+
+- **Retry failed missions from a checkpoint.** Story missions now save a checkpoint on the scooter, lorry, bike and car runs (after each of the first two deliveries, and after losing the police). When you fail, choose to retry from the last checkpoint or quit. Cash already earned isn't paid twice. Works with keyboard, gamepad and touch.
+- After three fails in a row at the same checkpoint you can also **skip that part**. A skipped mission still pays its reward but earns no medal.
+- Fixed: mission 1 could get stuck on "Follow Faiz" if Faiz was knocked down on the walk. He now gets up and walks on.
+
+## 0.4.17 Preview (11 October 2026)
+
+- **Uncle Muthu is now Uncle Basheer**, and his mamak on Jalan Tun Perak is **Restoran Basheer Maju**, in English, Bahasa Melayu and Simplified Chinese. A mamak is an Indian Muslim restaurant, so the name now fits. Meals, orders and journal entries carry over.
+- Faiz's lines that name him have new Malay voice takes, in the same voice as before.
+
+## 0.4.16 Preview (11 October 2026)
+
+- **A map you can zoom and pan.** Pinch or use the + and − buttons on a phone, scroll with a mouse, drag to move, and tap the target button to centre on yourself. On a phone it opens zoomed in on you, and place names stay readable at every zoom.
+- Tap near a place on the map to put your waypoint on it. The minimap now shows the distance to an objective or waypoint beyond its edge, and zooms out as you speed up.
+- **Better touch controls.** The whole lower-left of the screen answers to the stick: touch anywhere and it appears under your thumb. Action buttons are round and fan out on an arc around your right thumb, with the biggest (Jump on foot, Gas in a car) in the corner. In a car, hold Exit briefly when you're going fast, so you don't bail out by accident.
+
+## 0.4.15 Preview (11 October 2026)
+
+- **Every Faiz line in the story now has a voice**, thirteen new Malay lines across the homecoming, durian, rempit, sports-car and Merdeka missions.
+- **Women on the street chat aloud** too: Malay, Chinese and Indian women say "Eh, where are you going? Come, eat first." in the same range of accents as the men, from Kelantan and Sarawak Malay to Mandarin, Cantonese and Hokkien.
+- The voices have now been reviewed, and tested on a real phone.
+
+## 0.4.14 Preview (11 October 2026)
+
+- **The Rimba has a detailed new body**, with proper wheels and tinted glass. It loads after the title screen, and falls back to the old body if the files fail to load. The other cars keep their simpler models for now.
+- Front seats sit lower, so drivers' heads stay under the roof.
+
+## 0.4.13 Preview (11 October 2026)
+
+- **A real durian.** A durian bought at the Jalan Alor stall now sits on the tray as an opened fruit: spiky green-to-brown husk, five yellow pods.
+- Carried meals sit on your right hand where the camera can see them, instead of being hidden behind your body.
+- On phones, the meal panel no longer covers the Interact button or the stick.
+- Food journal: search works in your own language (try 榴梿), and buttons and filters are easier to read.
+
+## 0.4.12 Preview (11 October 2026)
+
+- **Fewer touch buttons.** On phones and tablets, buttons appear only when they would do something: Interact when something nearby can be used, Ride near a vehicle, Nitro once fitted, Job in taxis, buses and bikes. Walking with nothing nearby now shows 7 buttons instead of 11, and each button keeps a fixed place.
+- Tap the minimap to open the city map. Pause, Phone and Camera sit beside it.
+- The "Get in" prompt names the vehicle you would actually get into, and no longer offers a wrecked car.
+
+## 0.4.11 Preview (10 October 2026)
+
+- **The city speaks.** Faiz and Uncle Basheer speak Malay in the first missions, with subtitles in English, Bahasa Melayu or Simplified Chinese. Passers-by sometimes call out "Eh, where are you going? Come, eat first." in Malay, Manglish, Mandarin, Cantonese or Hokkien. Auntie Mei Ling (Petaling Street), Uncle Lim (Jalan Pudu) and Priya (KL Sentral) call out when you walk up.
+- The voices are AI-generated with VoxCPM2 (Apache 2.0); Settings and About & credits say so.
+- A smaller first download: speech and a few extras only load when needed.
+
+## 0.4.10 Preview (10 October 2026)
+
+- **Petaling Street is covered.** A steel roof on red columns runs the length of the street, with translucent panels in red, blue, green, yellow and white, and rows of big red lanterns that glow at night. A Chinatown gate stands at each end. All business names on the signs are invented.
+- Under the roof, the camera stays below the lanterns.
+
+## 0.4.9 Preview (10 October 2026)
+
+- **Eight local car bodies** join traffic, parked cars, the garage and the showroom, including a family MPV with seven seats. Cars use parody names in English, Bahasa Melayu and Simplified Chinese.
+- The showroom has group and car pickers, with camera, seat, colour and night options.
+
+## 0.4.8 Preview (10 October 2026)
+
+- Smoother city rendering: buildings share GPU data instead of uploading it again for each one. Graphics quality is unchanged.
+
+## 0.4.7 Preview (9 October 2026)
+
+- **Food culture.** Sit at a mamak table, order a food and a drink, eat and linger. Street vendors sell their dishes. New serving models for roti canai, roti tisu, nasi lemak, cendol and teh tarik.
+- **The Food journal** on your phone lists 42 Malaysian dishes, with category, cuisine and region filters. Eat the five starter dishes to earn the **Jom Makan** badge.
+- Saves update to a new version with an empty food collection. Your progress is kept.
+
+## 0.4.6 Preview (9 October 2026)
+
+- **Preview experiments** (Settings → Preview experiments, all off by default): a Petromas fuel stop near Dataran Merdeka with petrol, diesel and a subsidised fuel price, an in-game MyCard wallet with IC and licence, a driving school with quizzes, a Touch 'n Go card, and a paid monorail ride. These use an invented IC and fixed game prices, not real services.
+- Saves are protected: a second tab, or a save from a newer version, can no longer overwrite your progress.
+
+## 0.4.1 Preview (8 October 2026)
+
+- **A new pocket dashboard** with missions, records, map, weather, radio, settings, controls and fullscreen, plus separate touch layouts and control guides for walking and driving.
+- On phones the minimap moved to the top-left, clear of the stick.
+- Fixed: overlapping touches, rotation and menus no longer leave controls stuck "held". The radio shows whether it is really playing.
+
 ## 0.4.0 Preview (8 October 2026)
 
 **A living city**

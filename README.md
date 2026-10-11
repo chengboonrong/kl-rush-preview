@@ -6,7 +6,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.4.0 Preview.** The whole game is playable, but it is still growing toward 1.0 and your progress may be reset before then. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
+**Version 0.4.19 Preview.** The whole game is playable, but it is still growing toward 1.0 and your progress may be reset before then. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
 
 🎬 [Watch the 36-second trailer](media/kl-rush-trailer-720p.mp4)
 
@@ -16,10 +16,12 @@
   - Kapcai, cars, buses and a sports car, on left-hand roads with traffic lights, monorail trains overhead and traffic that overtakes and filters.
   - Pass the Petronas Twin Towers, KL Tower, Merdeka 118, the Sultan Abdul Samad Building, Masjid Jamek, Central Market, Petaling Street and the Jalan Alor night market.
 - **Day, night and tropical rain**: golden-hour skylines, neon and lanterns after dark, afternoon storms that leave the roads shining.
-- **Six story missions** with medals and replays. Side jobs: taxi, delivery, city bus route and street races.
+- **Six story missions** with medals, replays, and checkpoints to retry from if you fail. Side jobs open as the story teaches them: taxi, delivery, city bus route and street races.
+- **Voices and food.** Malay story voices and chatty passers-by in many accents, mamak tables, a Food journal of Malaysian dishes, and a Jom Makan badge.
 - **Police chases** with five wanted levels, plus an impound lot and a car wash to clear your name.
+- **Petaling Street under its red roof**, eight local car bodies, and a detailed Rimba.
 - **Garage**: buy vehicles and upgrade engine, tyres, armour and nitro. Change the paint.
-- **English, Bahasa Melayu and Simplified Chinese (preview).** Keyboard and mouse, gamepad or touch.
+- **English, Bahasa Melayu and Simplified Chinese (preview).** Keyboard and mouse, gamepad or touch, with a zoomable city map.
 
 ## Screenshots
 
