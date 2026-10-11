@@ -1,3 +1,5 @@
+<p align="center"><img src="media/logo.png" alt="KL Rush: Jom Pecut" width="420"></p>
+
 # KL Rush · Jom Pecut di KL
 
 **An open-world Kuala Lumpur you can drive, right in your browser.** No download, works on desktop and phone.
