@@ -8,7 +8,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.4.19 Preview.** The whole game is playable, but it is still growing toward 1.0 and your progress may be reset before then. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
+**Version 0.4.20 Preview.** The whole game is playable, but it is still growing toward 1.0 and your progress may be reset before then. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
 
 🎬 [Watch the 36-second trailer](media/kl-rush-trailer-720p.mp4)
 
@@ -58,6 +58,6 @@ Donations are optional and go toward development time and testing on real device
 
 KL Rush is an independent game made in Malaysia. It is **not affiliated with or endorsed by** the owners of the buildings, brands and places it depicts; their names belong to their respective owners.
 
-Privacy: no accounts, ads or tracking; optional anonymous error reports. See [PRIVACY.md](PRIVACY.md).
+Privacy: no accounts, ads or cookies; cookie-free visit counts and optional anonymous error reports. See [PRIVACY.md](PRIVACY.md).
 
 The game's source code is private. This repository holds the public preview page, release notes and feedback. © 2026 chengboonrong. All rights reserved: see [NOTICE.md](NOTICE.md).

@@ -1,6 +1,10 @@
 # Privacy
 
-KL Rush is a free browser game. It has no accounts, no ads, no cookies and no analytics or tracking scripts.
+KL Rush is a free browser game. It has no accounts, no ads and no cookies. From version 0.4.20 the public site counts visits with cookie-free analytics (see below), and it has no advertising or cross-site tracking.
+
+## Visit counts (from version 0.4.20)
+
+The public site (kl-rush.vercel.app) uses [Vercel Web Analytics](https://vercel.com/docs/analytics/privacy-policy) to count visits. It records page views and, for each visit, the country, device type, browser, operating system and the site that referred you. It sets no cookies, does not follow you across other sites, and stores no name, account or saved progress. Vercel handles connection details such as IP addresses to produce the counts, under [its privacy policy](https://vercel.com/legal/privacy-policy). The script loads only on kl-rush.vercel.app, after the loading screen. Browsers or extensions that block trackers will usually block it, and then nothing is counted.
 
 ## Error reports (from version 0.2)
 
@@ -45,4 +49,4 @@ Your progress and settings are saved in your browser's local storage on your dev
 
 Open an issue on this repository. Please don't include personal details, because issues are public.
 
-_Last updated: 8 October 2026 (benchmark reporting and technical-report context)._
+_Last updated: 12 October 2026 (cookie-free visit counts)._

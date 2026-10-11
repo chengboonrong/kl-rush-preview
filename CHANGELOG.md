@@ -2,6 +2,10 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.4.20 Preview (12 October 2026)
+
+- **Cookie-free visit counts** on the public site, so I can see roughly how many people play and which countries they come from. It records page views, country, device, browser and referrer, with no cookies, accounts or saved progress. Details are in [PRIVACY.md](PRIVACY.md). Ad blockers and some privacy browsers block it.
+
 ## 0.4.19 Preview (11 October 2026)
 
 - **Side jobs open through the story.** In a new game, taxi fares and the Bas Kota bus route open after *Back in KL*, and food delivery after *Delivery Rookie*. The night race still opens after *Midnight Rempit*. Pressing the job key on a job that isn't open yet tells you which mission opens it.
