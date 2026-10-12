@@ -2,6 +2,11 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.4.23 Preview (13 October 2026)
+
+- **Smoother driving on iPhone.** On devices that run the game on WebGL2 (iPhones switch to it after a graphics restart), each car, bike or bus that came into view froze the game for a split second while its graphics were prepared. All cars now share that work, so busy streets stay smooth. In a test drive at iPhone 15 Plus screen size, the average went from about 39 to 55 frames per second, and the long freezes almost disappeared.
+- **Less work for the graphics chip on every device.** Trees, parked bikes and skid marks no longer resend their positions every frame, only when something changes.
+
 ## 0.4.22 Preview (13 October 2026)
 
 - **Easier to read.** The headings in the dark boxes on the phone (the card counter's quote and receipt, the fuel pump's total and receipt) are now cream-gold instead of brown on dark teal. With a controller, the selected Resume button in the pause menu stays light, and the yellow ring around the selected item is no longer cut off at the edge of a panel.
