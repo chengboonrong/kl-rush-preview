@@ -2,6 +2,18 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.4.22 Preview (13 October 2026)
+
+- **Easier to read.** The headings in the dark boxes on the phone (the card counter's quote and receipt, the fuel pump's total and receipt) are now cream-gold instead of brown on dark teal. With a controller, the selected Resume button in the pause menu stays light, and the yellow ring around the selected item is no longer cut off at the edge of a panel.
+- **No punching with a meal in hand.** The punch used to take your hand from under the tray, which left the tray floating in the air.
+
+## 0.4.21 Preview (13 October 2026)
+
+- **Fixes from crash reports.** Loading no longer stops with "Something went wrong while loading" in Brave on iPhone or some apps' built-in browsers. Those browsers add their own scripts to the page, and an error in one of them stopped the game's loading screen.
+- In Firefox for iPhone, loading now finishes properly. It used to skip its last steps, so Petaling Street's gates and roof, the detailed cars and the Ultra city textures were missing.
+- Fixed a rare error when a crash threw you off a bike and knocked you out during a race.
+- When your browser can't start 3D graphics, the loading screen says so instead of showing a code error.
+
 ## 0.4.20 Preview (12 October 2026)
 
 - **Cookie-free visit counts** on the public site, so I can see roughly how many people play and which countries they come from. It records page views, country, device, browser and referrer, with no cookies, accounts or saved progress. Details are in [PRIVACY.md](PRIVACY.md). Ad blockers and some privacy browsers block it.
