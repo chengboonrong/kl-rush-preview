@@ -2,6 +2,10 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.4.24 Preview (13 October 2026)
+
+- **No more accidental zoom on phones.** On iPhone, a quick double-tap on the pause menu, on the dark background behind a panel or on the language picker could zoom the whole page in, and nothing but a reload zoomed it back out. Double-tap zoom is now off everywhere in the game, and menus still scroll. Thanks to the player who reported it.
+
 ## 0.4.23 Preview (13 October 2026)
 
 - **Smoother driving on iPhone.** On devices that run the game on WebGL2 (iPhones switch to it after a graphics restart), each car, bike or bus that came into view froze the game for a split second while its graphics were prepared. All cars now share that work, so busy streets stay smooth. In a test drive at iPhone 15 Plus screen size, the average went from about 39 to 55 frames per second, and the long freezes almost disappeared.
