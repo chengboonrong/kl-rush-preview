@@ -2,6 +2,26 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.4.27 Preview (14 October 2026)
+
+- **Five stars is serious now.** More patrol cars and more officers on foot come after you, and police motorbikes join from 4 stars, riding into lanes and onto pavements. At 5 stars an armoured police truck rams you off the road and drops a squad of four officers when you're on foot.
+- **A police helicopter** at 4 and 5 stars circles overhead, with a searchlight on you at night. While it can see you, your stars won't fade. Get under a roof or put a building between you and it.
+- Police cars, motorbikes and the truck knock you down for the arrest; they don't run you over.
+
+## 0.4.26 Preview (14 October 2026)
+
+- Police cars drive onto the pavement again to reach you when you're on foot.
+
+## 0.4.25 Preview (14 October 2026)
+
+Fixes from player reports. Thank you for writing in.
+
+- **The police catch you now.** Before, police cars couldn't find their way to you on foot, so five stars never ended in an arrest. Now they drive right up, officers outrun a sprint from 3 stars and tackle you, and more officers come on foot. Your stars only fade when no officer can see you.
+- **Someone calls 999.** Punch someone with no police around, and the person you hit or someone who saw it calls the police. A star follows a few seconds later.
+- **Busier streets.** Cars now appear much closer to you, so the street you're on has traffic, especially on phones on Low graphics. Stand in front of a car to stop it, then take it.
+- **A gentler start.** New games start at 4:30 in the afternoon, and no rain starts until the first mission is done. In Chinese, the first mission is now called 欢迎回到 KL.
+- **A way out of Sungai Klang.** The railings by the river now stop you. If you end up in the water, walk into the wall to climb out, or choose **Get me out** in the pause menu.
+
 ## 0.4.24 Preview (13 October 2026)
 
 - **No more accidental zoom on phones.** On iPhone, a quick double-tap on the pause menu, on the dark background behind a panel or on the language picker could zoom the whole page in, and nothing but a reload zoomed it back out. Double-tap zoom is now off everywhere in the game, and menus still scroll. Thanks to the player who reported it.
