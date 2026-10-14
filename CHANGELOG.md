@@ -1,6 +1,28 @@
 # What's new
 
-Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (all 1.0 content is in, and saves always carry over). See the [roadmap](ROADMAP.md).
+Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
+
+## 0.5.0 Beta (14 October 2026)
+
+The first beta. From now on, your saves always carry over.
+
+- **Eight new story missions (Arc 2).** Faiz and Uncle Basheer take on the tow-lorry crew. You follow a tow lorry, cater a wedding feast in a thunderstorm, help the volunteer fire crew, take night photos for Inspector Nadia and escort an ambulance to Hospital KL. Mission 1 now also teaches you to drive.
+- **Motorbikes on real physics.** Bikes lean into corners and throw you off in a crash. Midnight Rempit is raced on them.
+- **Liga Malam:** eight night races on a ladder, four on a kapcai and four in a car. Gold in all eight wins two gold vehicles.
+- **Fuel.** Three petrol stations: Hell, Petronanas and BolehPetrol. Pump by hand, tap your MyCard for subsidised RON95, don't put in the wrong fuel, and buy a jerrycan or pay for a tow when you run dry.
+- **Your MyCard and driving licences.**
+  - Lose your MyCard and replace it at the counter at Pudu Sentral.
+  - Learn to drive lorries and taxis, then pass a real road test.
+  - Police roadside checks hand out saman. Pay them on your phone before they get more expensive.
+- **Getting around.**
+  - Pay with a Tolak 'n Go card or cash at Kedai 24 Jam stores.
+  - Ride every monorail stop, plus the Kelana Jaya and Kajang lines through an underground station.
+  - Deliver parcels by train as a courier.
+- **New jobs and things to do.** Job ranks for taxi, delivery and Bas Kota. Mekanik Bergerak repair shifts. A photo album of 12 KL landmarks.
+- **New places.** The Jalan P. Ramlee flyover and two diagonal streets in the old town, a graffiti lane off Petaling Street with a 16th cat, and the Wisma Senja rooftop in Bukit Bintang with KL Tower and the Petronas Towers in view.
+- **Controls.** Prompts show the right key, controller button or touch button. Every menu works with a controller. First-time tips explain the new features, and you can turn them off.
+- Fuel, licences, the driving school, the card and rail rides are on for everyone. You can turn each of them off in Settings → Game systems.
+- Traffic lights change now, and traffic waits behind you at a red light.
 
 ## 0.4.27 Preview (14 October 2026)
 
