@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KL Rush · Jom Pecut di KL</title>
+<meta name="description" content="KL Rush 0.5 Beta: a free open-world Kuala Lumpur you can drive, ride and walk in your browser. One day in the city, the story line, and the people on it.">
+<link rel="canonical" href="https://chengboonrong.github.io/kl-rush-preview/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chengboonrong.github.io/kl-rush-preview/">
+<meta property="og:title" content="KL Rush · Jom Pecut di KL">
+<meta property="og:description" content="KL Rush 0.5 Beta: a free open-world Kuala Lumpur you can drive, ride and walk in your browser. One day in the city, the story line, and the people on it.">
+<meta property="og:image" content="https://chengboonrong.github.io/kl-rush-preview/og.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,800;1,600&family=DotGothic16&family=Overpass:ital,wght@0,400;0,600;0,700;1,400&family=Overpass+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: KL's own objects carry the content. A number plate and a Kedai 24 Jam receipt up top,
+   one game day told by the clock with the sky changing behind it, the story drawn as a rail line,
+   a cast list on asphalt, and a dot-matrix departure board for what's next.
+   Each section sets its own ground and ink on purpose, so the page has one look in any theme. */
+:root {
+  --ink: #111214;
+  --ink-2: #4b4d55;
+  --asphalt: #15161a;
+  --asphalt-2: #1e2026;
+  --rule-dark: #34363f;
+  --chalk: #eeede6;
+  --chalk-2: #a7a9b3;
+  --paper: #f7f7f3;
+  --paper-rule: #d9d9d2;
+  --plate: #0b0b0c;
+  --sticker: #f2c443;
+  --line-bk: #d7263d;   /* Arc 1 line */
+  --line-cm: #0b7a44;   /* Arc 2 line */
+  --line-kk: #9a9aa0;   /* Arc 3, under construction */
+  --amber: #ffb23e;
+  --signboard-blue: #1f4fa3;
+  --signboard-green: #0b6b3d;
+
+  /* the sky over one game day */
+  --sky-1630: #e9d6ae;
+  --sky-petang: #e4b98a;
+  --sky-senja: #c9708a;
+  --sky-1830: #7d3f7a;
+  --sky-1900: #3a2860;
+  --sky-malam: #1a1b3c;
+  --sky-lewat: #0f1024;
+  --sky-0500: #93a7bd;
+
+  --f-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --f-body: "Overpass", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "Overpass Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --f-dot: "DotGothic16", "Overpass Mono", ui-monospace, monospace;
+
+  --wrap: 74rem;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body { background: var(--asphalt); color: var(--chalk); font: 400 1rem/1.6 var(--f-body); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--sticker); outline-offset: 3px; }
+h1, h2, h3, h4 { margin: 0; text-wrap: balance; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+img, video { display: block; max-width: 100%; height: auto; }
+.band { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: var(--wrap); margin-inline: auto; }
+.tnum { font-variant-numeric: tabular-nums; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- top strip ---------- */
+.strip { background: var(--plate); padding-block: 9px; border-bottom: 1px solid #000; position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; }
+.strip .wrap { display: flex; align-items: center; gap: 10px 22px; flex-wrap: wrap; }
+.strip nav { display: flex; flex-wrap: wrap; gap: 2px 18px; margin-right: auto; }
+.strip nav a { font: 600 1rem/1 var(--f-display); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; color: var(--chalk-2); padding-block: 6px; }
+.strip nav a:hover { color: var(--chalk); }
+.clock { font: 600 0.8125rem/1 var(--f-mono); color: var(--chalk-2); display: flex; gap: 8px; align-items: baseline; }
+.clock output { color: var(--sticker); font-size: 1rem; }
+
+/* ---------- hero ---------- */
+.hero { position: relative; isolation: isolate; padding-block: clamp(40px, 8vw, 96px) clamp(40px, 6vw, 72px); background: var(--asphalt); }
+.hero::before { content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(90deg, rgba(17,18,20,0.92) 0%, rgba(17,18,20,0.7) 42%, rgba(17,18,20,0.15) 75%), url("shots/aerial.jpg") center / cover no-repeat; }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 20rem); gap: clamp(32px, 6vw, 80px); align-items: center; }
+.hero-text { display: grid; gap: 24px; justify-items: start; }
+.hero h1 { width: min(560px, 100%); position: relative; }
+.hero h1 img { width: 100%; }
+.beta { position: absolute; right: 2%; bottom: -14px; background: var(--sticker); color: var(--ink); font: 800 clamp(1rem, 2.4vw, 1.375rem)/1 var(--f-display); letter-spacing: 0.06em; padding: 7px 12px 5px; border: 2px solid var(--ink); border-radius: 5px; transform: rotate(4deg); }
+.tagline { font: 800 clamp(2.5rem, 7vw, 4.75rem)/0.9 var(--f-display); text-transform: uppercase; letter-spacing: -0.005em; margin-top: 10px; }
+.tagline span { display: block; color: var(--sticker); }
+.hero-sub { max-width: 31rem; font-size: 1.125rem; color: var(--chalk); }
+.ctas { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: center; }
+.go { display: inline-flex; align-items: center; gap: 12px; background: var(--sticker); color: var(--ink); text-decoration: none; font: 800 1.375rem/1 var(--f-display); letter-spacing: 0.06em; text-transform: uppercase; padding: 14px 20px 12px; border-radius: 6px; border: 3px solid var(--ink); outline: 2px solid var(--sticker); outline-offset: 0; }
+.go:hover { background: #ffd65e; }
+.go:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.checker { width: 18px; height: 18px; flex: none; background: conic-gradient(var(--ink) 25%, transparent 0 50%, var(--ink) 0 75%, transparent 0) 0 0 / 9px 9px; }
+.quiet-link { font: 600 1.0625rem/1 var(--f-display); letter-spacing: 0.08em; text-transform: uppercase; text-underline-offset: 5px; text-decoration-thickness: 2px; }
+.hero-fine { font: 400 0.8125rem/1.5 var(--f-mono); color: var(--chalk-2); }
+
+/* receipt */
+.receipt { background: #fbfbf7; color: #1a1a1a; font: 400 0.8125rem/1.45 var(--f-mono); padding: 22px 20px 26px; transform: rotate(1.6deg); box-shadow: 0 18px 40px rgba(0,0,0,0.45); position: relative; width: 100%; max-width: 20rem; justify-self: end;
+  -webkit-mask: linear-gradient(#000 0 0) top / 100% calc(100% - 10px) no-repeat, conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / 14px 10px repeat-x;
+          mask: linear-gradient(#000 0 0) top / 100% calc(100% - 10px) no-repeat, conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / 14px 10px repeat-x; }
+.receipt header { text-align: center; display: grid; gap: 2px; padding-bottom: 12px; border-bottom: 1px dashed #888; }
+.receipt header b { font: 800 1.375rem/1 var(--f-display); letter-spacing: 0.1em; }
+.receipt ul { padding-block: 10px; border-bottom: 1px dashed #888; display: grid; gap: 3px; }
+.receipt li { display: grid; grid-template-columns: 1fr auto; gap: 10px; }
+.receipt li span:last-child { text-align: right; }
+.receipt .total { display: grid; grid-template-columns: 1fr auto; padding-top: 10px; font-weight: 600; font-size: 1rem; }
+.receipt footer { margin-top: 12px; text-align: center; font-size: 0.75rem; color: #444; display: grid; gap: 4px; }
+.receipt .barcode { height: 34px; margin: 8px auto 0; width: 80%; background: repeating-linear-gradient(90deg, #1a1a1a 0 2px, transparent 2px 4px, #1a1a1a 4px 5px, transparent 5px 8px, #1a1a1a 8px 11px, transparent 11px 12px); }
+
+/* ---------- one day (world) ---------- */
+.day-intro { background: var(--sky-1630); color: var(--ink); padding-block: clamp(56px, 9vw, 112px) 0; }
+.day-intro .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px clamp(24px, 5vw, 72px); align-items: end; }
+.day-title { font: 800 clamp(3rem, 10vw, 7.5rem)/0.84 var(--f-display); text-transform: uppercase; letter-spacing: -0.01em; }
+.day-title small { display: block; font: italic 600 clamp(1.25rem, 2.6vw, 1.75rem)/1.2 var(--f-display); text-transform: none; letter-spacing: 0.01em; margin-top: 14px; color: #5b4a2c; }
+.day-lede { font-size: 1.125rem; max-width: 34rem; color: #2a241a; }
+.day-lede b { color: var(--ink); }
+
+.stop { --from: var(--sky-1630); --to: var(--sky-1630); background: linear-gradient(var(--from), var(--to)); color: var(--fg, var(--ink)); padding-block: clamp(48px, 7vw, 88px); }
+.stop .wrap { display: grid; grid-template-columns: 8.5rem minmax(0, 25rem) minmax(0, 1fr); gap: 20px clamp(20px, 3.5vw, 48px); align-items: start; }
+.stop time { font: 600 clamp(2rem, 4vw, 2.75rem)/1 var(--f-mono); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; padding-top: 4px; }
+.stop time.word { font: 800 clamp(1.75rem, 3.6vw, 2.5rem)/0.95 var(--f-display); letter-spacing: 0.02em; text-transform: uppercase; }
+.stop time small { display: block; font: 400 0.75rem/1.3 var(--f-mono); letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.75; margin-top: 8px; }
+.stop-text { display: grid; gap: 14px; }
+.stop h3 { font: 800 clamp(1.75rem, 3.4vw, 2.5rem)/0.98 var(--f-display); text-transform: uppercase; }
+.stop p { font-size: 1.0625rem; opacity: 0.92; }
+.stop figure { margin: 0; display: grid; gap: 8px; }
+.stop figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.stop figcaption { font: 400 0.8125rem/1.4 var(--f-mono); opacity: 0.8; }
+.stop.flip .wrap { grid-template-columns: 8.5rem minmax(0, 1fr) minmax(0, 25rem); }
+.stop.flip figure { grid-column: 2; grid-row: 1; }
+.stop.flip .stop-text { grid-column: 3; grid-row: 1; }
+.stop.bare .wrap { grid-template-columns: 8.5rem minmax(0, 1fr); }
+.facts { display: grid; gap: 0; border-top: 1px solid currentColor; }
+.facts li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; padding-block: 8px; border-bottom: 1px solid color-mix(in srgb, currentColor 30%, transparent); font-size: 0.9375rem; }
+.facts li b { font: 600 0.875rem/1.5 var(--f-mono); text-align: right; white-space: nowrap; }
+.facts.cols { grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); column-gap: 32px; }
+
+.s-1630 { --from: var(--sky-1630); --to: var(--sky-1630); }
+.s-petang { --from: var(--sky-1630); --to: var(--sky-petang); }
+.s-senja { --from: var(--sky-petang); --to: var(--sky-senja); --fg: #1b0f16; }
+.s-1830 { --from: var(--sky-senja); --to: var(--sky-1830); --fg: #fff4f6; }
+.s-1900 { --from: var(--sky-1830); --to: var(--sky-1900); --fg: #f6efff; }
+.s-malam { --from: var(--sky-1900); --to: var(--sky-malam); --fg: #ecebf7; }
+.s-lewat { --from: var(--sky-malam); --to: var(--sky-lewat); --fg: #e6e6f2; }
+.s-0500 { --from: var(--sky-lewat); --to: var(--sky-0500); --fg: #eef2f7; }
+
+/* ---------- story line ---------- */
+.story { background: var(--paper); color: var(--ink); padding-block: clamp(64px, 10vw, 120px); }
+.story-top { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 28px clamp(28px, 6vw, 88px); align-items: end; margin-bottom: clamp(48px, 7vw, 84px); }
+.story-title { font: 800 clamp(3rem, 10vw, 7.5rem)/0.84 var(--f-display); text-transform: uppercase; letter-spacing: -0.01em; }
+.story-title small { display: block; font: italic 600 clamp(1.25rem, 2.6vw, 1.75rem)/1.2 var(--f-display); text-transform: none; color: var(--ink-2); margin-top: 14px; }
+.story-copy { display: grid; gap: 14px; font-size: 1.0625rem; color: #2c2e33; max-width: 36rem; }
+.story-copy b { color: var(--ink); }
+.greeting { margin-top: 10px; padding-top: 16px; border-top: 3px solid var(--ink); }
+.greeting q { display: block; font: 800 clamp(1.5rem, 3vw, 2rem)/1.08 var(--f-display); color: var(--ink); quotes: "“" "”"; }
+.greeting span { display: block; margin-top: 6px; font-size: 0.9375rem; color: var(--ink-2); }
+
+.line-head { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; padding-block: 18px 22px; }
+.roundel { display: inline-grid; place-items: center; min-width: 3.25rem; height: 2.25rem; padding: 4px 10px 0; border-radius: 6px; background: var(--line); color: #fff; font: 800 1.375rem/1 var(--f-display); letter-spacing: 0.04em; }
+.line-head h3 { font: 800 clamp(1.75rem, 4vw, 2.75rem)/1 var(--f-display); text-transform: uppercase; }
+.line-head .meaning { font: italic 600 1.25rem/1 var(--f-display); color: var(--ink-2); }
+.line-head .state { margin-left: auto; font: 600 0.75rem/1 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
+.line { --line: var(--line-bk); }
+.line.cm { --line: var(--line-cm); }
+.line.kk { --line: var(--line-kk); }
+.stations { display: grid; }
+.st { display: grid; grid-template-columns: 4.25rem 2.5rem minmax(0, 15rem) minmax(0, 1fr) 11rem; gap: 0 18px; align-items: start; position: relative; padding-bottom: 26px; }
+.st::before { content: ""; position: absolute; left: calc(4.25rem + 18px + 1.25rem - 5px); top: 10px; bottom: -10px; width: 10px; background: var(--line); }
+.st:last-child::before { bottom: auto; height: 0; }
+.st .code { justify-self: end; font: 600 0.8125rem/1 var(--f-mono); padding: 6px 7px 4px; border-radius: 4px; border: 2px solid var(--line); color: var(--ink); background: var(--paper); margin-top: 1px; white-space: nowrap; }
+.st .dot { width: 26px; height: 26px; border-radius: 50%; background: #fff; border: 5px solid var(--ink); justify-self: center; position: relative; z-index: 1; }
+.st h4 { font: 800 1.5rem/1 var(--f-display); text-transform: uppercase; letter-spacing: 0.01em; padding-top: 2px; }
+.st h4 small { display: block; font: italic 600 1rem/1.2 var(--f-display); text-transform: none; color: var(--ink-2); letter-spacing: 0; margin-top: 3px; }
+.st .what { display: grid; gap: 8px; font-size: 0.9375rem; color: #2c2e33; padding-top: 3px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { font: 600 0.6875rem/1 var(--f-mono); letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 7px 4px; border-radius: 3px; background: #e9e9e3; color: #33353b; }
+.tag.on { background: var(--ink); color: #fff; }
+.tag.time { background: var(--sticker); color: var(--ink); }
+.st .thumb { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 3px; }
+.st.end::after { content: ""; position: absolute; left: calc(4.25rem + 18px + 1.25rem - 16px); top: 6px; width: 32px; height: 32px; border-radius: 50%; border: 6px solid var(--line); background: #fff; z-index: 0; }
+.change { margin: 6px 0 12px calc(4.25rem + 18px); display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); gap: 18px; align-items: center; }
+.change .swap { width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 5px solid var(--ink); background: linear-gradient(90deg, var(--line-bk) 50%, var(--line-cm) 50%); }
+.change p { font: 600 1rem/1.4 var(--f-body); }
+.change p span { display: block; font-weight: 400; color: var(--ink-2); font-size: 0.9375rem; }
+.line.kk .st::before { background: repeating-linear-gradient(var(--line) 0 12px, transparent 12px 20px); }
+.line.kk .st .dot { border-color: var(--line); }
+.line.kk .st h4 { color: #6c6d73; }
+.kk-note { margin: 0 0 18px calc(4.25rem + 18px); padding: 10px 14px; background: repeating-linear-gradient(-45deg, var(--sticker) 0 12px, #1a1a1a 12px 24px); display: inline-block; }
+.kk-note span { background: var(--sticker); color: var(--ink); font: 800 1rem/1 var(--f-display); letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 10px 4px; display: inline-block; }
+.rules { margin-top: clamp(48px, 7vw, 80px); display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 0; border-top: 3px solid var(--ink); }
+.rules p { padding: 16px 20px 16px 0; font-size: 0.9375rem; color: #2c2e33; }
+.rules b { display: block; font: 800 1.25rem/1.1 var(--f-display); text-transform: uppercase; color: var(--ink); margin-bottom: 4px; }
+
+/* ---------- cast ---------- */
+.cast { background: var(--asphalt); padding-block: clamp(64px, 10vw, 120px); }
+.cast-title { font: 800 clamp(3rem, 10vw, 7.5rem)/0.84 var(--f-display); text-transform: uppercase; letter-spacing: -0.01em; margin-bottom: clamp(36px, 6vw, 64px); }
+.cast-title small { display: block; font: italic 600 clamp(1.25rem, 2.6vw, 1.75rem)/1.2 var(--f-display); text-transform: none; color: var(--chalk-2); margin-top: 14px; }
+.person { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 16px clamp(24px, 5vw, 72px); padding-block: 32px; border-top: 1px solid var(--rule-dark); align-items: start; }
+.person:last-of-type { border-bottom: 1px solid var(--rule-dark); }
+.who { display: grid; gap: 12px; justify-items: start; }
+.signboard { font: 800 0.9375rem/1 var(--f-display); letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 12px 6px; border-radius: 2px; }
+.sb-faiz { background: var(--signboard-blue); color: #fff; }
+.sb-basheer { background: #fff; color: var(--signboard-green); box-shadow: inset 0 -4px 0 var(--signboard-green); }
+.sb-nadia { background: #2a2f3a; color: #fff; box-shadow: inset 0 -4px 0 #4aa8ff; }
+.sb-tunda { background: repeating-linear-gradient(-45deg, var(--sticker) 0 10px, #111 10px 20px); color: #111; padding: 6px; }
+.sb-tunda span { background: var(--sticker); padding: 3px 8px 1px; display: inline-block; }
+.sb-suresh { background: transparent; color: var(--chalk-2); border: 1px dashed var(--chalk-2); }
+.person h3 { font: 800 clamp(2.75rem, 7vw, 5rem)/0.86 var(--f-display); text-transform: uppercase; letter-spacing: -0.005em; }
+.person .role { font: 600 0.875rem/1.3 var(--f-mono); color: var(--sticker); }
+.person .about { display: grid; gap: 14px; color: var(--chalk-2); font-size: 1rem; }
+.person blockquote { margin: 0; font: 600 clamp(1.25rem, 2.4vw, 1.625rem)/1.15 var(--f-display); color: var(--chalk); }
+.person blockquote cite { display: block; margin-top: 6px; font: 400 0.8125rem/1.4 var(--f-mono); color: var(--chalk-2); font-style: normal; }
+.boards { font: 600 0.75rem/1 var(--f-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--chalk-2); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.boards a { text-decoration: none; color: #fff; padding: 5px 7px 3px; border-radius: 3px; }
+.boards a.bk { background: var(--line-bk); }
+.boards a.cm { background: var(--line-cm); }
+.boards a.kk { background: #55565c; }
+.person.small h3 { font-size: clamp(2.25rem, 5vw, 3.5rem); }
+
+.you { margin-top: clamp(48px, 7vw, 80px); display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 2fr); gap: 16px clamp(24px, 5vw, 72px); }
+.you h3 { font: 800 clamp(2rem, 4vw, 2.75rem)/0.95 var(--f-display); text-transform: uppercase; }
+.you h3 small { display: block; font: 400 1rem/1.5 var(--f-body); text-transform: none; color: var(--chalk-2); margin-top: 10px; }
+.looks { font-size: clamp(1.125rem, 2vw, 1.375rem); line-height: 1.55; color: var(--chalk-2); }
+.looks b { font: 800 1.15em/1 var(--f-display); text-transform: uppercase; color: var(--chalk); letter-spacing: 0.02em; }
+
+.voices { margin-top: clamp(56px, 8vw, 96px); }
+.voices h3 { font: 800 clamp(2rem, 4vw, 2.75rem)/0.95 var(--f-display); text-transform: uppercase; margin-bottom: 8px; }
+.voices > p { color: var(--chalk-2); max-width: 40rem; margin-bottom: 28px; }
+.eat { columns: 3 17rem; column-gap: 36px; }
+.eat li { break-inside: avoid; padding-block: 12px; border-top: 1px solid var(--rule-dark); display: grid; gap: 4px; }
+.eat q { quotes: none; font: 600 1.375rem/1.15 var(--f-display); color: var(--chalk); }
+.eat li:first-child q { font-size: 2rem; color: var(--sticker); }
+.eat span { font: 400 0.75rem/1.3 var(--f-mono); color: var(--chalk-2); letter-spacing: 0.04em; }
+.callers { margin-top: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 24px 36px; }
+.callers li { display: grid; gap: 6px; align-content: start; }
+.callers b { font: 800 1.25rem/1.1 var(--f-display); text-transform: uppercase; letter-spacing: 0.02em; }
+.callers q { font-size: 0.9375rem; color: var(--chalk); }
+.callers span { font: 400 0.75rem/1.4 var(--f-mono); color: var(--chalk-2); }
+.fine { margin-top: 28px; font-size: 0.8125rem; color: var(--chalk-2); max-width: 46rem; }
+
+/* ---------- trailer ---------- */
+.reel { background: #000; padding-block: clamp(40px, 6vw, 72px); }
+.reel .wrap { display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr); gap: 24px clamp(24px, 4vw, 48px); align-items: end; }
+.reel video { width: 100%; aspect-ratio: 16 / 9; background: #000; }
+.reel h2 { font: 800 clamp(2rem, 4vw, 3rem)/0.95 var(--f-display); text-transform: uppercase; }
+.reel p { color: var(--chalk-2); margin-top: 10px; }
+
+/* ---------- departures ---------- */
+.departures { background: var(--asphalt-2); padding-block: clamp(64px, 10vw, 112px); }
+.departures h2 { font: 800 clamp(3rem, 9vw, 6.5rem)/0.86 var(--f-display); text-transform: uppercase; margin-bottom: 10px; }
+.departures h2 small { display: block; font: italic 600 clamp(1.25rem, 2.6vw, 1.75rem)/1.2 var(--f-display); text-transform: none; color: var(--chalk-2); margin-top: 12px; }
+.board-wrap { margin-top: 32px; overflow-x: auto; background: #050505; border: 10px solid #26282e; border-radius: 6px; }
+.board { width: 100%; min-width: 46rem; border-collapse: collapse; font-family: var(--f-dot); color: var(--amber); text-shadow: 0 0 6px rgba(255,178,62,0.45); }
+.board th { text-align: left; font-weight: 400; font-size: 0.8125rem; letter-spacing: 0.12em; color: #c9893a; padding: 14px 16px 10px; border-bottom: 2px solid #1d1e22; }
+.board td { padding: 12px 16px; border-bottom: 1px solid #16171a; vertical-align: top; font-size: 1rem; line-height: 1.45; }
+.board td:first-child { font-size: 1.25rem; white-space: nowrap; }
+.board td:nth-child(2) { font-size: 1.25rem; letter-spacing: 0.06em; white-space: nowrap; }
+.board td:nth-child(3) { color: #e4a23d; font-size: 0.9375rem; }
+.board td:last-child { white-space: nowrap; letter-spacing: 0.08em; }
+.board tr.now td { color: #ffe08a; }
+.board tr.now td:last-child a { color: #111; background: var(--amber); text-shadow: none; text-decoration: none; padding: 3px 8px 1px; }
+.board tr.next td:last-child { animation: blink 1.2s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0.25; } }
+.board-note { margin-top: 14px; font: 400 0.8125rem/1.5 var(--f-mono); color: var(--chalk-2); }
+
+/* ---------- footer ---------- */
+.foot { background: var(--plate); padding-block: 48px 56px; }
+.foot .wrap { display: grid; gap: 28px; }
+.foot-top { display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center; }
+.foot-top img { width: min(280px, 100%); }
+.foot nav { display: flex; flex-wrap: wrap; gap: 6px 22px; }
+.foot nav a { font: 600 1.0625rem/1 var(--f-display); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; padding-block: 6px; }
+.foot nav a:hover { color: var(--sticker); }
+.foot .fine { margin-top: 0; }
+.foot .fine p + p { margin-top: 8px; }
+
+/* ---------- narrow screens ---------- */
+@media (max-width: 1000px) {
+  .st { grid-template-columns: 4.25rem 2.5rem minmax(0, 1fr); }
+  .st .what { grid-column: 3; }
+  .st .thumb { grid-column: 3; max-width: 22rem; margin-top: 10px; }
+}
+@media (max-width: 860px) {
+  .hero .wrap, .day-intro .wrap, .story-top, .person, .you, .reel .wrap { grid-template-columns: minmax(0, 1fr); }
+  .receipt { justify-self: start; transform: rotate(-1deg); }
+  .stop .wrap, .stop.flip .wrap, .stop.bare .wrap { grid-template-columns: minmax(0, 1fr); }
+  .stop.flip figure, .stop.flip .stop-text { grid-column: auto; grid-row: auto; }
+  .stop.flip figure { order: 3; }
+}
+@media (max-width: 560px) {
+  .st { grid-template-columns: 3.75rem 2rem minmax(0, 1fr); gap: 0 12px; }
+  .st::before { left: calc(3.75rem + 12px + 1rem - 5px); }
+  .st.end::after { left: calc(3.75rem + 12px + 1rem - 16px); }
+  .st .dot { width: 22px; height: 22px; border-width: 4px; }
+  .change, .kk-note { margin-left: 0; }
+  .line-head .state { margin-left: 0; width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .board tr.next td:last-child { animation: none; }
+}
+</style>
+</head>
+<body>
+<header class="strip band">
+  <div class="wrap">
+    <nav aria-label="Sections">
+      <a href="#hari">Sehari di KL</a>
+      <a href="#cerita">Laluan cerita</a>
+      <a href="#watak">Watak</a>
+      <a href="#berlepas">Berlepas</a>
+    </nav>
+    <span class="clock" title="Game time: one game minute per real second">KL <output id="clock" class="tnum">16:30</output></span>
+  </div>
+</header>
+
+<section class="hero band" aria-labelledby="title">
+  <div class="wrap">
+    <div class="hero-text">
+      <h1 id="title"><img src="img/logo.svg" alt="KL Rush: Jom Pecut" width="1040" height="316"><span class="beta">0.5 BETA</span></h1>
+      <p class="tagline">Balik KL.<span>Jom pecut.</span></p>
+      <p class="hero-sub">An open-world Kuala Lumpur you can drive, ride and walk, free in your browser. Come home, get pulled into your cousin's car jobs, then help Uncle Basheer's street stand up to a tow-lorry racket.</p>
+      <div class="ctas">
+        <a class="go" href="https://kl-rush.vercel.app" target="_blank" rel="noopener"><span class="checker" aria-hidden="true"></span>Main percuma</a>
+        <a class="quiet-link" href="#treler">Tonton treler · 50 s</a>
+      </div>
+      <p class="hero-fine">Chrome, Edge or Safari · computer or phone · keyboard, controller or touch<br>English · Bahasa Melayu · 简体中文 (preview)</p>
+    </div>
+
+    <article class="receipt" aria-label="What's new in 0.5 Beta">
+      <header><b>KEDAI 24 JAM</b><span>RESIT · 0.5 BETA</span><span class="tnum">14/10/2026 · NO. 0.5.0-BETA</span></header>
+      <ul class="tnum">
+        <li><span>MISI ARC 2 "CARI MAKAN"</span><span>×8</span></li>
+        <li><span>LIGA MALAM, NIGHT RACES</span><span>×8</span></li>
+        <li><span>MOTORBIKE PHYSICS</span><span>×1</span></li>
+        <li><span>PETROL STATIONS</span><span>×3</span></li>
+        <li><span>RAIL LINES TO RIDE</span><span>×3</span></li>
+        <li><span>KEDAI 24 JAM STORES</span><span>×3</span></li>
+        <li><span>LICENCE CLASSES E, PSV</span><span>+2</span></li>
+        <li><span>JOB RANKS: TAXI, FOOD, BUS</span><span>×3</span></li>
+        <li><span>MEKANIK BERGERAK SHIFTS</span><span>∞</span></li>
+        <li><span>LANDMARK PHOTOS</span><span>×12</span></li>
+        <li><span>FLYOVER + DIAGONAL ST.</span><span>1+2</span></li>
+        <li><span>GRAFFITI LANE + CAT NO. 16</span><span>×1</span></li>
+        <li><span>WISMA SENJA ROOFTOP</span><span>×1</span></li>
+      </ul>
+      <div class="total tnum"><span>JUMLAH</span><span>RM 0.00</span></div>
+      <footer><span>Free. No ads. No account.</span><span>Saves always carry over from now on.</span><span>TERIMA KASIH, DATANG LAGI</span><div class="barcode" aria-hidden="true"></div></footer>
+    </article>
+  </div>
+</section>
+
+<main>
+<!-- ================= ONE DAY ================= -->
+<section id="hari" aria-labelledby="hari-h">
+  <div class="day-intro band">
+    <div class="wrap">
+      <h2 id="hari-h" class="day-title">Sehari di KL<small>One day in the city, by the game clock</small></h2>
+      <p class="day-lede">The game is <b>real Kuala Lumpur at phone size</b>: real landmarks and streets, simple shapes, muted walls and roads, and strong colour only where KL has it. A day here takes <b>24 real minutes</b>, one game minute every second. This is what that day looks like in 0.5.</p>
+    </div>
+  </div>
+
+  <article class="stop s-1630 band" aria-labelledby="t1">
+    <div class="wrap">
+      <time datetime="16:30">16:30<small>A new game starts</small></time>
+      <div class="stop-text">
+        <h3 id="t1">You land at Pasar Seni</h3>
+        <p>No rain until your first mission is done. In front of you is a 9 × 9 grid of city blocks across 19 districts, from Kampung Baru's wooden houses to KL Sentral, with the Sungai Klang running through and left-hand traffic on every road.</p>
+        <p>New in 0.5: the Jalan P. Ramlee flyover and two diagonal streets in the old town, both on the map and in the GPS. Traffic lights change now, and cars queue behind you at a red.</p>
+      </div>
+      <figure><img src="shots/flyover.jpg" alt="A red car on the Jalan P. Ramlee flyover at dusk" width="1600" height="900" loading="lazy"><figcaption>Jalan P. Ramlee flyover</figcaption></figure>
+    </div>
+  </article>
+
+  <article class="stop s-petang bare band" aria-labelledby="t2">
+    <div class="wrap">
+      <time class="word">Petang<small>Afternoon, often wet</small></time>
+      <div class="stop-text">
+        <h3 id="t2">Fill up, get your papers in order</h3>
+        <p>Afternoon thunderstorms roll in and leave the roads shining. Motorbikes now run on real physics: they lean into corners and throw you off in a crash.</p>
+        <ul class="facts cols">
+          <li><span>Hell, Jalan Kuching</span><b>petrol</b></li>
+          <li><span>Petronanas, Jalan Ampang</span><b>petrol</b></li>
+          <li><span>BolehPetrol, Jalan Syed Putra</span><b>petrol</b></li>
+          <li><span>Tap your MyCard for subsidised RON95</span><b>weekly quota</b></li>
+          <li><span>Wrong fuel in the tank</span><b>flush it</b></li>
+          <li><span>Ran dry on the road</span><b>jerrycan or tow</b></li>
+          <li><span>Lost MyCard, JBN · JPG counter</span><b>Pudu Sentral</b></li>
+          <li><span>New licence classes, lorry and taxi</span><b>E · PSV</b></li>
+          <li><span>A real road test after the yard</span><b>L · P plates</b></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <article class="stop s-senja flip band" aria-labelledby="t3">
+    <div class="wrap">
+      <time class="word">Senja<small>Dusk</small></time>
+      <figure><img src="shots/monorail.jpg" alt="The monorail passing lit office towers at dusk" width="1600" height="900" loading="lazy"><figcaption>The monorail at dusk</figcaption></figure>
+      <div class="stop-text">
+        <h3 id="t3">Ride the rails</h3>
+        <p>Every monorail stop on the map, plus the Kelana Jaya and Kajang lines through a walkable underground concourse at Pasar Seni. Fares go by distance.</p>
+        <p>Pay with a Tolak 'n Go card or cash at three Kedai 24 Jam stores. The courier job sends you between stations with parcels.</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="stop s-1830 band" aria-labelledby="t4">
+    <div class="wrap">
+      <time datetime="18:30">18:30<small>Pasar malam opens</small></time>
+      <div class="stop-text">
+        <h3 id="t4">Petaling Street lights up</h3>
+        <p>The pasar malam runs until about 23:30 under the long roof and its sixty-four red lanterns. Off to the side, the new graffiti lane: original wall art, preset stamps to leave your mark, and the sixteenth stray cat.</p>
+        <p>After six, Jalan Alor has satay smoke and plastic stools, and a durian stall that serves an opened fruit for RM 6.</p>
+      </div>
+      <figure><img src="shots/graffiti.jpg" alt="A narrow lane of colourful wall art with a ginger cat sitting in it" width="1600" height="900" loading="lazy"><figcaption>The graffiti lane off Petaling Street, and cat no. 16</figcaption></figure>
+    </div>
+  </article>
+
+  <article class="stop s-1900 flip band" aria-labelledby="t5">
+    <div class="wrap">
+      <time datetime="19:00">19:00<small>until 04:00</small></time>
+      <figure><img src="shots/bike.jpg" alt="A rider on a kapcai crossing a zebra crossing between lit towers at night" width="1600" height="900" loading="lazy"><figcaption>Liga Malam on a kapcai</figcaption></figure>
+      <div class="stop-text">
+        <h3 id="t5">Liga Malam</h3>
+        <p>Eight night races on a ladder, four on a kapcai and four in a car, each with its own medal. Gold in all eight wins two gold vehicles.</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="stop s-malam band" aria-labelledby="t6">
+    <div class="wrap">
+      <time class="word">Malam<small>Night</small></time>
+      <div class="stop-text">
+        <h3 id="t6">Mind the cones</h3>
+        <p>Roadside checks start after mission 2. A saman gets dearer the longer you leave it, so pay it on the phone's Saman tab before demerit points and a blacklist arrive.</p>
+        <ul class="facts">
+          <li><span>Someone sees you throw a punch and calls 999</span><b>★</b></li>
+          <li><span>Roadblocks and spike strips</span><b>★★★</b></li>
+          <li><span>Police motorbikes and a helicopter</span><b>★★★★</b></li>
+          <li><span>An armoured truck and a squad of four</span><b>★★★★★</b></li>
+        </ul>
+        <p>Get under a roof and the searchlight loses you.</p>
+      </div>
+      <figure><img src="shots/checkpoint.jpg" alt="Traffic cones channelling cars into a police roadside check at dusk" width="1600" height="900" loading="lazy"><figcaption>A police roadside check</figcaption></figure>
+    </div>
+  </article>
+
+  <article class="stop s-lewat flip band" aria-labelledby="t7">
+    <div class="wrap">
+      <time class="word">Lewat malam<small>Late</small></time>
+      <figure><img src="shots/rooftop.jpg" alt="The Petronas Twin Towers seen from a rooftop railing at dusk" width="1600" height="900" loading="lazy"><figcaption>Wisma Senja rooftop, Bukit Bintang</figcaption></figure>
+      <div class="stop-text">
+        <h3 id="t7">Go up Wisma Senja</h3>
+        <p>A new rooftop in Bukit Bintang that looks out at KL Tower and the Petronas Towers.</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="stop s-0500 bare band" aria-labelledby="t8">
+    <div class="wrap">
+      <time datetime="05:00">05:00<small>Back to work</small></time>
+      <div class="stop-text">
+        <h3 id="t8">Cari makan</h3>
+        <p>The story teaches each job before it opens. Taxi, food delivery and Bas Kota now have ranks, each with a reward you get once.</p>
+        <ul class="facts cols">
+          <li><span>Rank rewards: gold taxi paint, a bus horn, destination signs</span><b>once each</b></li>
+          <li><span>Mekanik Bergerak breakdown shifts</span><b>repeatable</b></li>
+          <li><span>Parcels by train</span><b>courier</b></li>
+          <li><span>Landmarks for the photo album</span><b>12</b></li>
+          <li><span>Stray cats hiding in the city</span><b>16</b></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ================= STORY LINE ================= -->
+<section class="story band" id="cerita" aria-labelledby="cerita-h">
+  <div class="wrap">
+    <div class="story-top">
+      <h2 id="cerita-h" class="story-title">Laluan cerita<small>The story, stop by stop</small></h2>
+      <div class="story-copy">
+        <p>You come home to KL after years away. Your cousin <b>Faiz</b> has car jobs for you, the kind where you don't ask questions. When those go wrong you lie low at <b>Uncle Basheer</b>'s, and find <b>Bos Tunda</b>'s tow crew squeezing every shop on Jalan Tun Perak.</p>
+        <p><b>14 of 22 stops are open.</b> The last line is still being built.</p>
+        <div class="greeting"><q>Weh, sepupu! Lama gila tak jumpa. Selamat balik ke KL!</q><span>Oi, cousin! Ages since I last saw you. Welcome back to KL! · Faiz, BK1</span></div>
+      </div>
+    </div>
+
+    <div class="line bk" aria-labelledby="bk-h">
+      <div class="line-head"><span class="roundel">BK</span><h3 id="bk-h">Back in KL</h3><span class="state">Arc 1 · open</span></div>
+      <ol class="stations">
+        <li class="st" id="bk1"><span class="code">BK1</span><span class="dot"></span><h4>Back in KL</h4><div class="what"><p>Faiz walks you from Pasar Seni past Masjid Jamek and the River of Life, then teaches your first ride and, new in 0.5, your first drive.</p><div class="tags"><span class="tag on">Faiz · Basheer board</span></div></div></li>
+        <li class="st"><span class="code">BK2</span><span class="dot"></span><h4>Delivery Rookie</h4><div class="what"><p>Three hot orders for Uncle Basheer: Dataran Merdeka, KL Tower and the Twin Towers.</p><div class="tags"><span class="tag">Roadside checks begin after this stop</span></div></div></li>
+        <li class="st"><span class="code">BK3</span><span class="dot"></span><h4>Durian Run</h4><div class="what"><p>A lorry of Musang King to Jalan Alor. Drive gently: every bump costs money.</p></div></li>
+        <li class="st"><span class="code">BK4</span><span class="dot"></span><h4>Midnight Rempit</h4><div class="what"><p>A kapcai race round the old town and the Golden Triangle, now on bike physics against rivals who stick to the road.</p></div></li>
+        <li class="st"><span class="code">BK5</span><span class="dot"></span><h4>Hot Car</h4><div class="what"><p>Lift an orange sports car from Bintang Walk for a client nobody vouches for, then lose the police.</p></div></li>
+        <li class="st"><span class="code">BK6</span><span class="dot"></span><h4>King of the Road</h4><div class="what"><p>The deal turns. Escape from Merdeka 118.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="change" role="note"><span class="swap" aria-hidden="true"></span><p>Tukar di sini untuk Cari Makan<span>Change here. Arc 2 opens one game day later, with a message from Uncle Basheer.</span></p></div>
+
+    <div class="line cm" aria-labelledby="cm-h">
+      <div class="line-head"><span class="roundel">CM</span><h3 id="cm-h">Cari Makan</h3><span class="meaning">making a living</span><span class="state">Arc 2 · new in 0.5</span></div>
+      <ol class="stations">
+        <li class="st" id="cm7"><span class="code">CM7</span><span class="dot"></span><h4>Kena Tunda<small>Towed</small></h4><div class="what"><p>The crew took Basheer's pink scooter. Tail the tow lorry from 15 to 120 m back, then take it home.</p><div class="tags"><span class="tag on">Bos Tunda's crew boards</span></div></div><img class="thumb" src="shots/tow.jpg" alt="A tow lorry carrying a pink scooter past the Sultan Abdul Samad Building" width="1600" height="900" loading="lazy"></li>
+        <li class="st"><span class="code">CM8</span><span class="dot"></span><h4>Kenduri<small>The feast</small></h4><div class="what"><p>Nasi minyak, kari kambing, dalca and acar to a Kampung Baru wedding, through a thunderstorm, before the kompang starts.</p></div><img class="thumb" src="shots/kenduri.jpg" alt="A wedding canopy reading Selamat Pengantin Baru on a kampung lawn" width="1600" height="900" loading="lazy"></li>
+        <li class="st"><span class="code">CM9</span><span class="dot"></span><h4>Bekalan Pagi<small>Morning supplies</small></h4><div class="what"><p>Flour, milk and eggs, with a crew van watching.</p><div class="tags"><span class="tag time">05:00–09:00 only</span></div></div></li>
+        <li class="st"><span class="code">CM10</span><span class="dot"></span><h4>Rebut Kerja<small>Steal the job</small></h4><div class="what"><p>Beat the tow lorries to three stranded cars and fix them yourself.</p><div class="tags"><span class="tag">Opens Mekanik Bergerak</span></div></div></li>
+        <li class="st"><span class="code">CM11</span><span class="dot"></span><h4>Lorong Api<small>Fire lane</small></h4><div class="what"><p>Shove the lorries out of the back lane so the volunteer fire engine gets through, then take the hose.</p></div></li>
+        <li class="st" id="cm12"><span class="code">CM12</span><span class="dot"></span><h4>Gambar Bukti<small>Evidence</small></h4><div class="what"><p>A night job. Tail Bos Tunda and photograph three pay-offs without being seen.</p><div class="tags"><span class="tag on">Inspector Nadia boards</span><span class="tag">Opens the photo album</span></div></div></li>
+        <li class="st"><span class="code">CM13</span><span class="dot"></span><h4>Malam Bola<small>Football night</small></h4><div class="what"><p>The whole street is watching the match at the restaurant when the crew grabs the cash box.</p></div><img class="thumb" src="shots/mamak.jpg" alt="People cheering at a football screen outside a mamak restaurant at night" width="1600" height="900" loading="lazy"></li>
+        <li class="st end"><span class="code">CM14</span><span class="dot"></span><h4>Cepat, Uncle!<small>Hurry, Uncle!</small></h4><div class="what"><p>Clear the road for an ambulance racing to Hospital KL.</p><div class="tags"><span class="tag">End of the line in 0.5</span></div></div><img class="thumb" src="shots/ambulance.jpg" alt="An ambulance driving down a wide road past a mosque" width="1600" height="900" loading="lazy"></li>
+      </ol>
+    </div>
+
+    <div class="line kk" aria-labelledby="kk-h">
+      <div class="line-head"><span class="roundel">KK</span><h3 id="kk-h">Kota Kita</h3><span class="meaning">our city</span><span class="state">Arc 3 · opens in 0.6</span></div>
+      <p class="kk-note"><span>Dalam pembinaan · Under construction</span></p>
+      <ol class="stations">
+        <li class="st"><span class="code">KK15</span><span class="dot"></span><h4>Kereta Hilang</h4></li>
+        <li class="st"><span class="code">KK16</span><span class="dot"></span><h4>Gotong-royong</h4></li>
+        <li class="st" id="kk17"><span class="code">KK17</span><span class="dot"></span><h4>Kejar Monorel</h4></li>
+        <li class="st"><span class="code">KK18</span><span class="dot"></span><h4>Saksi</h4></li>
+        <li class="st"><span class="code">KK19</span><span class="dot"></span><h4>Tarik Balik</h4></li>
+        <li class="st"><span class="code">KK20</span><span class="dot"></span><h4>Tapak Tunda</h4></li>
+        <li class="st"><span class="code">KK21</span><span class="dot"></span><h4>Jejambat</h4></li>
+        <li class="st"><span class="code">KK22</span><span class="dot"></span><h4>Jom Pecut</h4><div class="what"><p>Working titles. The line ends at KL Sentral.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="rules">
+      <p><b>No guns</b>Fights are punches. Police tackle and cuff. Nobody bleeds.</p>
+      <p><b>Honest institutions</b>The police, the Bomba and the hospital are on the level. The villain runs a racket out of a tow yard.</p>
+      <p><b>Retry from checkpoints</b>Fail and pick up from the last checkpoint. After three tries you can skip ahead, without the medal.</p>
+      <p><b>Replay for gold</b>Every stop can be replayed for a better medal. Some open only at certain hours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAST ================= -->
+<section class="cast band" id="watak" aria-labelledby="watak-h">
+  <div class="wrap">
+    <h2 id="watak-h" class="cast-title">Watak<small>Who you'll meet on Jalan Tun Perak</small></h2>
+
+    <article class="person">
+      <div class="who"><span class="signboard sb-faiz">Bengkel Faiz</span><h3>Faiz</h3><span class="role">Your cousin · mechanic</span></div>
+      <div class="about">
+        <p>Warm, cheeky and always hustling. He meets you at Pasar Seni, teaches you to ride, and hands you jobs with one rule: don't ask questions. By Arc 2 he's finding out that clean work pays too.</p>
+        <blockquote>“Honest work still counts here.”<cite>Faiz, after Rebut Kerja</cite></blockquote>
+        <div class="boards">Boards at <a class="bk" href="#bk1">BK1</a> · voiced in Malay</div>
+      </div>
+    </article>
+
+    <article class="person">
+      <div class="who"><span class="signboard sb-basheer">Restoran Basheer Maju</span><h3>Uncle Basheer</h3><span class="role">Owner of the mamak restaurant</span></div>
+      <div class="about">
+        <p>Hospitable, bossy and caring. He feeds half the street and gives you your first honest deliveries. When the tow crew starts on his neighbours, he asks the street to stand together.</p>
+        <blockquote>“That crew wants every shop on this street to pay them. We need to help each other.”<cite>Uncle Basheer, Arc 2</cite></blockquote>
+        <div class="boards">Boards at <a class="bk" href="#bk1">BK1</a> · voiced in Malay and Manglish</div>
+      </div>
+    </article>
+
+    <article class="person small">
+      <div class="who"><span class="signboard sb-nadia">Inspektor</span><h3>Inspector Nadia</h3><span class="role">Honest police officer</span></div>
+      <div class="about">
+        <p>On the tow-crew case. She needs evidence, and you have a phone camera and a talent for not being seen. She leads Arc 3.</p>
+        <div class="boards">Boards at <a class="cm" href="#cm12">CM12</a></div>
+      </div>
+    </article>
+
+    <article class="person small">
+      <div class="who"><span class="signboard sb-tunda"><span>Tapak Tunda</span></span><h3>Bos Tunda</h3><span class="role">The tow boss</span></div>
+      <div class="about">
+        <p>Runs a clamp-and-tow protection racket from his yard: clamped customers, scared-off suppliers, a blocked back lane. <i>Tunda</i> means tow. It also means postpone, which is what he does to everyone's business.</p>
+        <div class="boards">His crew boards at <a class="cm" href="#cm7">CM7</a></div>
+      </div>
+    </article>
+
+    <article class="person small">
+      <div class="who"><span class="signboard sb-suresh">Buku akaun</span><h3>Suresh</h3><span class="role">The crew's bookkeeper</span></div>
+      <div class="about">
+        <p>Keeps the racket's books. He arrives with Arc 3.</p>
+        <div class="boards">Boards at <a class="kk" href="#kk17">KK17</a> · in 0.6</div>
+      </div>
+    </article>
+
+    <div class="you">
+      <h3>And you<small>Faiz's cousin, back from overseas. Pick a look.</small></h3>
+      <p class="looks"><b>Amir</b>, a street courier who knows every lorong. <b>Mei Ling</b>, a parkour-mad architecture student. <b>Aisyah</b>, a food-stall heiress with a fast scooter. <b>Ravi</b>, banker by day, getaway driver by night. <b>Tok Mat</b>, a retired silat master, still undefeated. <b>Jess</b>, a backpacker who missed her flight home.</p>
+    </div>
+
+    <div class="voices">
+      <h3>Mari makan dulu</h3>
+      <p>Walk past people and they'll ask where you're going and tell you to eat first, each in their own speech. Here is that one line, all eleven ways the city says it.</p>
+      <ul class="eat">
+        <li><q lang="ms">Eh, awak nak pergi mana? Mari makan dulu.</q><span>KL Malay</span></li>
+        <li><q lang="ms">Demo nok gi mano? Mari make dulu.</q><span>Kelantan</span></li>
+        <li><q lang="ms">Mung nok gi mane? Mari makang dulu.</q><span>Terengganu</span></li>
+        <li><q lang="ms">Weh, hang nak pi mana? Mai makan dulu.</q><span>Kedah and Penang</span></li>
+        <li><q lang="ms">Ekau nak poi mano? Mari makan dulu.</q><span>Negeri Sembilan</span></li>
+        <li><q lang="ms">Kitak mok pergi kini? Mari makan dolok.</q><span>Sarawak</span></li>
+        <li><q lang="ms">Ko mau pigi mana? Mari makan dulu bah.</q><span>Sabah</span></li>
+        <li><q lang="en">Eh, where you going? Come, eat first lah.</q><span>Manglish</span></li>
+        <li><q lang="zh">诶，你要去哪里？来，先吃饭咯。</q><span>Malaysian Mandarin</span></li>
+        <li><q lang="yue">喂，你去边度呀？嚟，食咗饭先啦。</q><span>Cantonese</span></li>
+        <li><q lang="nan">欸，你欲去佗位？來，先食飯啦。</q><span>Hokkien</span></li>
+      </ul>
+      <ul class="callers">
+        <li><b>The durian seller</b><q>Hey, handsome! Come and look, the durians are great today.</q><span>Petaling Street · Cantonese, Mandarin, Manglish</span></li>
+        <li><b>Lim</b><q>Young man, your motorbike broke down? Come, I fix it for you.</q><span>Motorbike workshop, Jalan Pudu · Hokkien, Malay</span></li>
+        <li><b>Priya</b><q>Hold tight ah, we go through Brickfields!</q><span>Pickup point, KL Sentral · Manglish, Malay</span></li>
+      </ul>
+      <p class="fine">Voices are AI-generated and marked that way in Settings. More Malay, Manglish and Cantonese story voices are planned before 1.0.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAILER ================= -->
+<section class="reel band" id="treler" aria-labelledby="treler-h">
+  <div class="wrap">
+    <video controls preload="none" playsinline poster="shots/redlight.jpg" src="media/kl-rush-0.5-beta-trailer.mp4" aria-label="KL Rush 0.5 Beta trailer, 50 seconds"></video>
+    <div>
+      <h2 id="treler-h">0.5 Beta in 50 seconds</h2>
+      <p>The tow lorry, the kenduri, football night, the ambulance run, Liga Malam, the flyover, a roadside check, the monorail, the graffiti lane and the rooftop. Captured in the browser.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEPARTURES ================= -->
+<section class="departures band" id="berlepas" aria-labelledby="berlepas-h">
+  <div class="wrap">
+    <h2 id="berlepas-h">Berlepas<small>Departures: the road to 1.0, and past it</small></h2>
+    <div class="board-wrap" tabindex="0" role="region" aria-label="Release board">
+      <table class="board">
+        <thead><tr><th scope="col">VERSI</th><th scope="col">DESTINASI</th><th scope="col">MELALUI</th><th scope="col">STATUS</th></tr></thead>
+        <tbody>
+          <tr class="now"><td>0.5β</td><td>KUALA LUMPUR</td><td>Arc 2 · Liga Malam · fuel · licences · rail</td><td><a href="https://kl-rush.vercel.app" target="_blank" rel="noopener">SEDIA ▸ MAIN</a></td></tr>
+          <tr class="next"><td>0.6</td><td>KOTA KITA</td><td>Arc 3 · 13×13 map · elevated highway · street details · shopfronts · photo mode</td><td>BERIKUT</td></tr>
+          <tr><td>0.7</td><td>KLIA · SUBANG</td><td>planes and airport jobs · expressways, tolls, R&amp;R · walk-in shops · Bomba and ambulance · Malay and Manglish voices</td><td>DIJADUAL</td></tr>
+          <tr><td>0.8</td><td>SEPANG</td><td>formula racing · race weekend · a tunnel · bargaining · Cantonese voices</td><td>DIJADUAL</td></tr>
+          <tr><td>1.0</td><td>KL PENUH</td><td>all 22 missions · on the web, and Steam if approved</td><td>DIJADUAL</td></tr>
+          <tr><td>1.1</td><td>UTARA</td><td>Penang · Alor Setar · Langkawi</td><td>SELEPAS 1.0</td></tr>
+          <tr><td>1.2</td><td>SELATAN</td><td>Melaka · Johor Bahru · Genting</td><td>SELEPAS 1.0</td></tr>
+          <tr><td>1.3</td><td>KUCHING</td><td>Sarawak</td><td>SELEPAS 1.0</td></tr>
+          <tr><td>1.4</td><td>KOTA KINABALU</td><td>Sabah</td><td>SELEPAS 1.0</td></tr>
+          <tr><td>1.5</td><td>SAYAP</td><td>fly the plane yourself</td><td>SELEPAS 1.0</td></tr>
+          <tr><td>1.6</td><td>ONLINE</td><td>private rooms for up to 8 friends</td><td>SELEPAS 1.0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="board-note">Plans can change. Full roadmap on GitHub.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot band">
+  <div class="wrap">
+    <div class="foot-top">
+      <img src="img/logo.svg" alt="KL Rush: Jom Pecut" width="1040" height="316" loading="lazy">
+      <nav aria-label="Links">
+        <a href="https://kl-rush.vercel.app" target="_blank" rel="noopener">Play</a>
+        <a href="https://github.com/chengboonrong/kl-rush-preview/blob/main/CHANGELOG.md" target="_blank" rel="noopener">What's new</a>
+        <a href="https://github.com/chengboonrong/kl-rush-preview/blob/main/ROADMAP.md" target="_blank" rel="noopener">Roadmap</a>
+        <a href="https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml" target="_blank" rel="noopener">Feedback</a>
+        <a href="https://ko-fi.com/chrischeng9297" target="_blank" rel="noopener">Ko-fi</a>
+      </nav>
+    </div>
+    <div class="fine">
+      <p>KL Rush is free, with no ads and no accounts. Your save lives in your browser. It is an independent game made in Malaysia, not affiliated with or endorsed by the owners of the buildings, brands and places it shows. Their names belong to their owners.</p>
+      <p>Inspired by 臺北狂飆 Taipei Rush by @aicodewithme. © 2026 chengboonrong. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var out = document.getElementById('clock');
+  if (!out) return;
+  var m = 16 * 60 + 30; // a new game starts at 16:30
+  function pad(v) { return (v < 10 ? '0' : '') + v; }
+  setInterval(function () { m = (m + 1) % 1440; out.textContent = pad(Math.floor(m / 60)) + ':' + pad(m % 60); }, 1000);
+})();
+</script>
+
+</body>
+</html>
