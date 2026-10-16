@@ -2,6 +2,30 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.5.6 Beta (16 October 2026)
+
+- **A new monorail livery.** Rempit KL's own white with rose chevrons and a graphite skirt replaces 0.5.5's blue wave, which looked too much like the real KL Monorail's. The monorail cabs no longer have a driver.
+- **Underground trains pull in before you board.** The train now stops just as Board appears, and the next-train board keeps showing "Tiba" while it stands at the platform.
+- The end walls at Bukit Bintang and Pasar Seni no longer shimmer, and the underground halls no longer glow too brightly at night or take on the rain and haze outside.
+- You wait facing a train door, TRX's posters no longer hide behind its wall fins, and you can't walk into the corners of the monorail piers.
+
+## 0.5.5 Beta (16 October 2026)
+
+- **KL's rail stations, rebuilt from photos of the real ones.** All 11 underground stops have their own look. Kelana Jaya line stops have white ceiling grids, stainless screen doors and yellow diamond boarding boxes. Kajang line stops have dark slatted ceilings, black granite and white piers. Each has its own colours and end wall, like Pasar Seni's blue confluence and Bukit Bintang's red angles.
+- **Signs read like KL's:** station codes (KJ10, KG16), Malay above English, line maps, and next-train boards that show the direction. Parody ads go up on the walls.
+- **Trains arrive from the tunnel,** with shaped noses, lit windows, seats and riders. The Kajang line train is wider, with a black face.
+- **Monorail platforms** get cream platform gates that open at the train's doors, a black-and-ochre checkerboard floor, a ribbed roof on white arches, wall fans and red LED next-train boards. The trains got a new livery and a driver, both changed again in 0.5.6.
+- Merdeka and TRX use simple interim designs until a cultural review.
+
+## 0.5.4 Beta (16 October 2026)
+
+- **Haze (jerebu).** On dry days, smoke haze can roll in for a few hours: the towers fade into a warm grey murk and the sun turns into a dim orange disc. Rain washes it out. Settings → Haze turns it off.
+- **A mission title card** shows while a story mission loads, with the sun bears.
+- **Police take the place of traffic in a chase.** The streets thin out as the stars rise, so there are still cars to steal.
+- **Cepat, Uncle!:** the ambulance gets through. Traffic gives way to it at junctions, it eases round queues, and a tow crew clears the lane's lorries once you've moved them.
+- A mission character knocked down by a car gets back up into their part, so a mission can no longer get stuck.
+- Monorail stations, rail entrances, the underground camera and the city map are clearer. The map now shows the Kelana Jaya and Kajang lines. Traffic no longer waits for ever behind someone standing in the road.
+
 ## 0.5.3 Beta (16 October 2026)
 
 - **Set waypoints with a controller.** On the city map, the left stick moves a cursor, A sets or clears a waypoint there, RT and LT zoom, and B closes the map. While the map is open, the controller no longer moves you.

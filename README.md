@@ -8,9 +8,9 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.5.2 Beta.** Sun bears on the loading screen, restyled petrol stations and no more freeze when you change the graphics setting. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
+**Version 0.5.6 Beta.** KL's rail stations rebuilt from photos: all 11 underground stops have their own look, trains pull in from the tunnel, and the monorail platforms get their cream gates and checkerboard floors. Haze rolls in on dry days, and police take traffic's place in a chase. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
 
-🎬 [Watch the 36-second trailer](media/kl-rush-trailer-720p.mp4)
+🎬 [Watch the 50-second trailer](media/kl-rush-trailer-720p.mp4)
 
 ## What you can do
 
@@ -29,6 +29,11 @@
 
 | | |
 | --- | --- |
+| ![KLCC underground concourse with the KJ10 name board](media/screens/klcc-concourse.jpg) | ![A Kelana Jaya train stopped at the KLCC platform](media/screens/kelana-jaya-train-platform.jpg) |
+| ![Pasar Seni concourse with the blue confluence wall](media/screens/pasar-seni-concourse.jpg) | ![Bukit Bintang concourse with its red angular wall](media/screens/bukit-bintang-concourse.jpg) |
+| ![A KL Monorail platform by day](media/screens/monorail-platform-day.jpg) | ![Monorail train in the Rempit KL livery at a platform](media/screens/monorail-train-rempit.jpg) |
+| ![Petronas Twin Towers in jerebu haze](media/screens/haze-klcc.jpg) | ![Petronanas petrol station at night with its canopy lit](media/screens/petronanas-night.jpg) |
+| ![Five-star police chase](media/screens/police-chase-five-star.jpg) | ![Cepat, Uncle! ambulance escort on a KL street](media/screens/ambulance-escort.jpg) |
 | ![Petronas Twin Towers at dusk](media/screens/petronas-dusk.jpg) | ![Jalan Alor night market](media/screens/alor-night-market.jpg) |
 | ![KL Tower skyline at night](media/screens/kltower-night.jpg) | ![Merdeka 118 at golden hour](media/screens/merdeka118-golden.jpg) |
 | ![Masjid Jamek at dusk](media/screens/jamek-dusk.jpg) | ![Merdeka Square](media/screens/merdeka-square-afternoon.jpg) |
