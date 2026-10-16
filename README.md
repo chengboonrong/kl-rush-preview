@@ -8,7 +8,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.5.6 Beta.** KL's rail stations rebuilt from photos: all 11 underground stops have their own look, trains pull in from the tunnel, and the monorail platforms get their cream gates and checkerboard floors. Haze rolls in on dry days, and police take traffic's place in a chase. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
+**Version 0.5.7 Beta.** Ride the underground trains through the tunnel, walk down KL-style station entrances, and open a satellite map of KL that zooms out to all of Malaysia. 0.5.6 rebuilt the rail stations from photos, and haze rolls in on dry days. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
 
 🎬 [Watch the 50-second trailer](media/kl-rush-trailer-720p.mp4)
 

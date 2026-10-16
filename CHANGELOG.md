@@ -2,6 +2,13 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.5.7 Beta (16 October 2026)
+
+- **Ride the underground trains.** After you board, you watch the train pull out, follow it down the tunnel past the stops in between, and step off at your station to walk out through the gates. Skip still jumps to the end.
+- **Station entrances look like KL's.** Each of the 11 entrances now shows a way down, with stairs or escalators and handrails, in one of three styles taken from photos of the real ones: open stair wells, small pavilions and angular canopies. A lit banner over each shows the station's name and line badge, and they light up at night.
+- **The full map is a satellite photo of KL.** It zooms out smoothly to all of Malaysia, with places the game hasn't built yet censored until their update arrives. A new Layers button hides any kind of icon.
+- The train ride panel is now a low bar along the bottom, so the platform stays in view on a phone held sideways.
+
 ## 0.5.6 Beta (16 October 2026)
 
 - **A new monorail livery.** Rempit KL's own white with rose chevrons and a graphite skirt replaces 0.5.5's blue wave, which looked too much like the real KL Monorail's. The monorail cabs no longer have a driver.
