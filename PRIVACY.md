@@ -36,17 +36,6 @@ The game disables Sentry's default personal-data collection and sends no user id
 - **Share in Feedback** opens GitHub's feedback form with the displayed result filled in. GitHub receives that prefilled text when the form opens, but an issue becomes public only if you submit it. This is a separate action from sending a result to Sentry.
 - **Copy result** copies the displayed result to your clipboard.
 
-## Online rooms (test builds only)
-
-The developer is testing online rooms where friends drive around KL together. They are not in the public game. They appear only in test builds opened with a special link, and a player who never opens a room sends nothing to the room server.
-
-- **Who can join.** Only people who have the room's code. There is no room list, no chat and no voice.
-- **What the room server processes.** While you are in a room it handles your IP address (to keep the connection open), your character's name, where your car or character is and which way it is moving, the room code and the game version. To stop anyone guessing codes, it also counts how often an address creates or joins rooms over one minute.
-- **Where it runs.** On [Cloudflare](https://www.cloudflare.com) (Workers and Durable Objects), in a data centre near the players, usually Singapore. Cloudflare handles connection details under [its privacy policy](https://www.cloudflare.com/privacypolicy/).
-- **What is kept.** Nothing after the room closes. A room closes 10 minutes after the last player leaves, and its record is deleted. The room server keeps no request logs.
-- **Your progress.** Rooms never read or change your saved progress.
-- **Test measurements.** Test builds show connection and frame-time numbers on your own screen. **Copy log** copies them to your clipboard, and they go nowhere else unless you paste them somewhere.
-
 ## Data on your device
 
 Your progress and settings are saved in your browser's local storage on your device, as is your choice of graphics engine (Settings → Graphics engine). Saved progress stays on your device. Diagnostic reports include the settings described above. **Export backup** in Settings creates a file only when you choose to. Clearing your browser's site data deletes your progress.
@@ -60,4 +49,4 @@ Your progress and settings are saved in your browser's local storage on your dev
 
 Open an issue on this repository. Please don't include personal details, because issues are public.
 
-_Last updated: 16 October 2026 (online rooms in test builds)._
+_Last updated: 12 October 2026 (cookie-free visit counts)._
