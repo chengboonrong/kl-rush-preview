@@ -2,6 +2,14 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.5.3 Beta (16 October 2026)
+
+- **Set waypoints with a controller.** On the city map, the left stick moves a cursor, A sets or clears a waypoint there, RT and LT zoom, and B closes the map. While the map is open, the controller no longer moves you.
+- **Play on a phone or tablet with a controller or keyboard** and the on-screen controls get out of the way. Touch the screen to bring them back.
+- The right stick turns the camera at the same speed on every screen. It turned twice as fast on 120 Hz screens.
+- The game reads the controller you last pressed, so a USB receiver or wheel plugged in first no longer hides yours.
+- Losing the controller while you play pauses the game.
+
 ## 0.5.2 Beta (16 October 2026)
 
 - **Sun bears on the loading screen.** A Malayan sun bear and her cub stand on the street in front of the skyline, and the mother waves when the lights come on.
