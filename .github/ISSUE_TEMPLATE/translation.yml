@@ -1,0 +1,51 @@
+name: Fix a translation
+description: Suggest better wording for a line in Bahasa Melayu or Chinese. The game's Settings → Report a translation fills in your language, version and the lines on screen.
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping! Chinese is drafted by an open-source machine translator (Qwen3) and corrected by players like you. Terima kasih! 谢谢！
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: Filled in by the game, e.g. zh-Hans (Chinese) or ms (Bahasa Melayu).
+    validations:
+      required: true
+  - type: textarea
+    id: keys
+    attributes:
+      label: Lines on screen
+      description: Filled in by the game. Each line's key, so we find the exact text. Leave the ones you are not fixing.
+  - type: textarea
+    id: current
+    attributes:
+      label: What the game says now
+      description: Copy the line you want to fix, or describe where it appears (screen, mission, button).
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Your suggestion
+      description: How it should read. One line per fix if you have several.
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: Name for the credits (optional)
+      description: The name the game's credits will show for your fix. Leave empty to stay anonymous.
+  - type: input
+    id: build
+    attributes:
+      label: Game version
+      description: Filled in by the game.
+  - type: checkboxes
+    id: cc0
+    attributes:
+      label: Licence
+      options:
+        - label: I release my suggestion under CC0 (public domain), so it can be used in KL Rush and any version of it.
+          required: true
