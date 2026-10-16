@@ -29,6 +29,9 @@
 
 | | |
 | --- | --- |
+| ![Merdeka station entrance at night with its lit name banner](media/screens/entrance-merdeka-night.jpg) | ![Kampung Baru station entrance pavilion by day](media/screens/entrance-kampung-baru-day.jpg) |
+| ![Pasar Seni station entrance at night](media/screens/entrance-pasar-seni-night.jpg) | ![An underground train in the tunnel between stations](media/screens/underground-tunnel-ride.jpg) |
+| ![The full map over Kuala Lumpur](media/screens/satellite-map-kl.jpg) | ![The full map zoomed out to all of Malaysia](media/screens/satellite-map-malaysia.jpg) |
 | ![KLCC underground concourse with the KJ10 name board](media/screens/klcc-concourse.jpg) | ![A Kelana Jaya train stopped at the KLCC platform](media/screens/kelana-jaya-train-platform.jpg) |
 | ![Pasar Seni concourse with the blue confluence wall](media/screens/pasar-seni-concourse.jpg) | ![Bukit Bintang concourse with its red angular wall](media/screens/bukit-bintang-concourse.jpg) |
 | ![A KL Monorail platform by day](media/screens/monorail-platform-day.jpg) | ![Monorail train in the Rempit KL livery at a platform](media/screens/monorail-train-rempit.jpg) |
@@ -39,6 +42,8 @@
 | ![Masjid Jamek at dusk](media/screens/jamek-dusk.jpg) | ![Merdeka Square](media/screens/merdeka-square-afternoon.jpg) |
 | ![Monorail at dusk](media/screens/monorail-dusk.jpg) | ![Rainy night drive](media/screens/rain-night-drive.jpg) |
 | ![Old town at night](media/screens/oldtown-night-drive.jpg) | ![Police chase](media/screens/police-chase-hud.jpg) |
+
+The map zoomed out to Malaysia and the trailer's map shot show Sentinel-2 cloudless 2016 by EOX IT Services GmbH (contains modified Copernicus Sentinel data 2016), under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) licence.
 
 ## Feedback
 
