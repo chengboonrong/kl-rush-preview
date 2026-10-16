@@ -8,7 +8,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.5.0 Beta.** The first beta: your saves now always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
+**Version 0.5.2 Beta.** Sun bears on the loading screen, restyled petrol stations and no more freeze when you change the graphics setting. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
 
 🎬 [Watch the 36-second trailer](media/kl-rush-trailer-720p.mp4)
 

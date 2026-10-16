@@ -2,6 +2,22 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.5.2 Beta (16 October 2026)
+
+- **Sun bears on the loading screen.** A Malayan sun bear and her cub stand on the street in front of the skyline, and the mother waves when the lights come on.
+- **No more freeze when you change the graphics setting.** A small card with the loading screen's skyline and the sun bears shows while the new setting applies, instead of the game stalling for a moment. Screen readers announce it.
+- The loading screen uses less graphics memory, which helps on phones.
+- The title screen's language switch, version and small print are easier to read.
+
+## 0.5.1 Beta (16 October 2026)
+
+- **Petrol stations look like Malaysian petrol stations.** A lit canopy with downlights, a tall price pylon by the road, pumps on raised islands, a glowing kiosk front and black-and-white kerbs. Hell, Petronanas and BolehPetrol each have their own colours, logo and lettering.
+- **The Jalan P. Ramlee flyover stands on piers**, and views that face it and the diagonal streets run faster.
+- **Cepat, Uncle!:** skipping to the last checkpoint no longer fails the mission at once. The same skip in Lorong Api and Malam Bola now moves your vehicle clear too.
+- **Traffic lights** show their red, amber and green bulbs again.
+- Signs at the petrol stations and the JBN · JPG and driving-school counters no longer read backwards from the street.
+- Dataran Merdeka's tag now says the Malayan flag first rose there in 1957. Independence was proclaimed at Stadium Merdeka.
+
 ## 0.5.0 Beta (14 October 2026)
 
 The first beta. From now on, your saves always carry over.
