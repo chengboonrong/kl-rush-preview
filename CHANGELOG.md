@@ -18,6 +18,7 @@ The end of the story and a city half again as wide. Your save carries over.
 - **Voices** for mission 1, with a voice volume setting and subtitles.
 - **Chinese for every line** (still a draft), and a way to report a translation.
 - **Install the game as an app** and play offline after the first visit.
+- **A new phone:** it stands at the screen's edge with the Petronas Towers at dusk as its wallpaper and colour app icons, and longer apps open beside it.
 - **Accessibility:** do any hold with one press, a high-contrast HUD, and menus that work with a controller alone.
 - The in-game phone is now held in your hand on screen.
 
