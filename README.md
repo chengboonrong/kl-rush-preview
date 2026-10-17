@@ -43,7 +43,7 @@
 | ![Monorail at dusk](media/screens/monorail-dusk.jpg) | ![Rainy night drive](media/screens/rain-night-drive.jpg) |
 | ![Old town at night](media/screens/oldtown-night-drive.jpg) | ![Police chase](media/screens/police-chase-hud.jpg) |
 
-The map zoomed out to Malaysia and the trailer's map shot show Sentinel-2 cloudless 2016 by EOX IT Services GmbH (contains modified Copernicus Sentinel data 2016), under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) licence.
+The map zoomed out to Malaysia shows Sentinel-2 cloudless 2016 by EOX IT Services GmbH (contains modified Copernicus Sentinel data 2016), under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) licence.
 
 ## Feedback
 
