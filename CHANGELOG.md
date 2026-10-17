@@ -2,6 +2,11 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.5.8 Beta (17 October 2026)
+
+- **Easter eggs (彩蛋).** Eleven rare moments now hide around KL, each only in its own weather, hour and place: a rainbow after the rain, fireworks over KLCC at midnight (every night on New Year, Merdeka and Malaysia Day), shooting stars on clear nights, wau over Dataran Merdeka and the Lake Gardens, a pontianak under a banana tree in Kampung Baru, a woman in white hitching a ride on an empty road at night, a toyol on a five-foot way, an empty ghost monorail at 3 a.m., a biawak crossing at a river bridge that traffic stops for, monkeys on the Bukit Nanas path, and a UFO over the Twin Towers. Nothing to collect and nothing saved; in free roam you might meet one an hour.
+- Kampung Baru has banana trees.
+
 ## 0.5.7 Beta (16 October 2026)
 
 - **Ride the underground trains.** After you board, you watch the train pull out, follow it down the tunnel past the stops in between, and step off at your station to walk out through the gates. Skip still jumps to the end.
