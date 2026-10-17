@@ -2,6 +2,25 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.6 Beta (17 October 2026)
+
+The end of the story and a city half again as wide. Your save carries over.
+
+- **Arc 3, Kota Kita: missions 15 to 22.** Faiz, Inspector Nadia and Suresh take down Bos Tunda's clamp-and-tow racket, and the arc ends with the credits.
+- **Three new side jobs:** Tunda (tow broken-down and illegally parked cars), Tarik Kereta (find and bring back 12 cars on a credit company's list) and monorail driver. A completion screen on the phone counts everything you've done.
+- **A bigger KL.** The map grows from 9 × 9 to 13 × 13 blocks, with seven new districts: Titiwangsa, Setapak, Ampang, Mid Valley, Bangsar South, Bangsar and the Federal Highway.
+- **Malaysian streets:** JKR-style road signs, street names at every junction, black-and-white kerbs, monsoon drains a wheel can drop into, footbridges, bus stops and motorcycle lanes.
+- **AKLEH**, the elevated highway over Jalan Ampang, two more flyovers and a south interchange.
+- **Chain shops:** 38 parody shopfronts (99 Siput Mart, 6-Twelve, FamilyMat, MR BUAT, Watsup and Jagaan) that open and close on the game clock.
+- **A new look for the city:** rainforest hills on the horizon, rain trees, new lamps, traffic lights and bus shelters, and new facades for condos, flats, offices and link houses.
+- **Screenshots and photo mode.** Press K or use the phone's Camera app; the Gallery keeps your last 30 on your device. Photo mode freezes the game so you can frame the shot.
+- **Controllers and mice:** remap any button, button pictures that match your controller, rumble, and a left-handed preset.
+- **Voices** for mission 1, with a voice volume setting and subtitles.
+- **Chinese for every line** (still a draft), and a way to report a translation.
+- **Install the game as an app** and play offline after the first visit.
+- **Accessibility:** do any hold with one press, a high-contrast HUD, and menus that work with a controller alone.
+- The in-game phone is now held in your hand on screen.
+
 ## 0.5.8 Beta (17 October 2026)
 
 - **Easter eggs (彩蛋).** Eleven rare moments now hide around KL, each only in its own weather, hour and place: a rainbow after the rain, fireworks over KLCC at midnight (every night on New Year, Merdeka and Malaysia Day), shooting stars on clear nights, wau over Dataran Merdeka and the Lake Gardens, a pontianak under a banana tree in Kampung Baru, a woman in white hitching a ride on an empty road at night, a toyol on a five-foot way, an empty ghost monorail at 3 a.m., a biawak crossing at a river bridge that traffic stops for, monkeys on the Bukit Nanas path, and a UFO over the Twin Towers. Nothing to collect and nothing saved; in free roam you might meet one an hour.
