@@ -36,6 +36,10 @@ The game disables Sentry's default personal-data collection and sends no user id
 - **Share in Feedback** opens GitHub's feedback form with the displayed result filled in. GitHub receives that prefilled text when the form opens, but an issue becomes public only if you submit it. This is a separate action from sending a result to Sentry.
 - **Copy result** copies the displayed result to your clipboard.
 
+## Screenshots (from version 0.6)
+
+Screenshots you take with K, the phone's Camera app or photo mode stay on your device. The Gallery keeps your last 30 in your browser's storage for this site, and nothing is uploaded. **Download** saves a file, and **Share** and **Copy** hand the picture to your device's own share sheet or clipboard, only when you choose them. Clearing the site's data deletes the Gallery.
+
 ## Data on your device
 
 Your progress and settings are saved in your browser's local storage on your device, as is your choice of graphics engine (Settings → Graphics engine). Saved progress stays on your device. Diagnostic reports include the settings described above. **Export backup** in Settings creates a file only when you choose to. Clearing your browser's site data deletes your progress.
@@ -44,9 +48,10 @@ Your progress and settings are saved in your browser's local storage on your dev
 
 - The **Feedback** button opens a form on GitHub. Anything you post there is public and covered by [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 - The **Support** button opens Ko-fi. If you donate, Ko-fi and its payment providers handle that under their own policies. The game itself receives nothing from them.
+- **Settings → Report a translation** opens a form on GitHub filled in with your language, the game version and the keys of the lines you were looking at. Like any GitHub issue, it becomes public only if you submit it.
 
 ## Questions
 
 Open an issue on this repository. Please don't include personal details, because issues are public.
 
-_Last updated: 12 October 2026 (cookie-free visit counts)._
+_Last updated: 17 October 2026 (screenshots and translation reports in 0.6)._
