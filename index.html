@@ -235,6 +235,9 @@ img, video { display: block; max-width: 100%; height: auto; }
 .you h3 small { display: block; font: 400 1rem/1.5 var(--f-body); text-transform: none; color: var(--chalk-2); margin-top: 10px; }
 .looks { font-size: clamp(1.125rem, 2vw, 1.375rem); line-height: 1.55; color: var(--chalk-2); }
 .looks b { font: 800 1.15em/1 var(--f-display); text-transform: uppercase; color: var(--chalk); letter-spacing: 0.02em; }
+.you figure { margin: 28px 0 0; display: grid; gap: 8px; max-width: 44rem; }
+.you figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.you figcaption { font: 400 0.8125rem/1.4 var(--f-mono); color: var(--chalk-2); }
 
 .voices { margin-top: clamp(56px, 8vw, 96px); }
 .voices h3 { font: 800 clamp(2rem, 4vw, 2.75rem)/0.95 var(--f-display); text-transform: uppercase; margin-bottom: 8px; }
@@ -434,7 +437,7 @@ img, video { display: block; max-width: 100%; height: auto; }
       <div class="stop-text">
         <h3 id="t4">Petaling Street lights up</h3>
         <p>The pasar malam runs until about 23:30 under the long roof and its sixty-four red lanterns. Off to the side, the new graffiti lane: original wall art, preset stamps to leave your mark, and the sixteenth stray cat.</p>
-        <p>After six, Jalan Alor has satay smoke and plastic stools, and a durian stall that serves an opened fruit for RM 6.</p>
+        <p>After six, Jalan Alor has satay smoke and plastic stools, and a durian stall that serves an opened fruit for RM 6. Every dish the stalls serve can be turned and zoomed in 3D from the phone's Food journal.</p>
         <p>Around KL, 38 shopfronts from six parody chains open and close on the game clock; the Shops layer and GPS find the ones that are open.</p>
         <p>Press K or use the phone's Camera app for a screenshot. Photo mode freezes the game so you can frame it, change the look and hide the player.</p>
       </div>
@@ -465,7 +468,7 @@ img, video { display: block; max-width: 100%; height: auto; }
           <li><span>Police motorbikes and a helicopter</span><b>★★★★</b></li>
           <li><span>An armoured truck and a squad of four</span><b>★★★★★</b></li>
         </ul>
-        <p>Get under a roof and the searchlight loses you.</p>
+        <p>Once no one has you in sight, the police search where they last saw you, so getting out of sight and away loses them. Get under a roof and the searchlight loses you too.</p>
       </div>
       <figure><img src="shots/checkpoint.jpg" alt="Traffic cones channelling cars into a police roadside check at dusk" width="1600" height="900" loading="lazy"><figcaption>A police roadside check</figcaption></figure>
     </div>
@@ -482,7 +485,7 @@ img, video { display: block; max-width: 100%; height: auto; }
     </div>
   </article>
 
-  <article class="stop s-0500 bare band" aria-labelledby="t8">
+  <article class="stop s-0500 band" aria-labelledby="t8">
     <div class="wrap">
       <time datetime="05:00">05:00<small>Back to work</small></time>
       <div class="stop-text">
@@ -502,6 +505,7 @@ img, video { display: block; max-width: 100%; height: auto; }
           <li><span>Holds, HUD contrast and pad-only menus</span><b>accessibility</b></li>
         </ul>
       </div>
+      <figure><img src="shots/bengkel-faiz.jpg" alt="Bengkel Faiz, the cousin's workshop, with its yellow sign, tyre rack and a car in the bay" width="1600" height="900" loading="lazy"><figcaption>Bengkel Faiz in Kampung Baru, rebuilt in 0.6.1</figcaption></figure>
     </div>
   </article>
 </section>
@@ -618,7 +622,8 @@ img, video { display: block; max-width: 100%; height: auto; }
 
     <div class="you">
       <h3>And you<small>Faiz's cousin, back from overseas. Pick a look.</small></h3>
-      <p class="looks"><b>Amir</b>, a street courier who knows every lorong. <b>Mei Ling</b>, a parkour-mad architecture student. <b>Aisyah</b>, a food-stall heiress with a fast scooter. <b>Ravi</b>, banker by day, getaway driver by night. <b>Tok Mat</b>, a retired silat master, still undefeated. <b>Jess</b>, a backpacker who missed her flight home.</p>
+      <div><p class="looks"><b>Amir</b>, a street courier who knows every lorong, now in anime style. <b>Mei Ling</b>, a parkour-mad architecture student. <b>Aisyah</b>, a food-stall heiress with a fast scooter. <b>Ravi</b>, banker by day, getaway driver by night. <b>Tok Mat</b>, a retired silat master, still undefeated. <b>Jess</b>, a backpacker who missed her flight home.</p>
+      <figure><img src="shots/amir-anime.jpg" alt="Amir, the player character in anime style with a red hoodie, standing on Jalan Alor at dusk" width="1600" height="900" loading="lazy"><figcaption>Amir in anime style on Jalan Alor, new in 0.6.1</figcaption></figure></div>
     </div>
 
     <div class="voices">
