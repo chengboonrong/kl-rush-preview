@@ -2,6 +2,10 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.6.9 Beta (19 October 2026)
+
+A small fix to a feature still being tested; nothing changes in normal play. Your save carries over.
+
 ## 0.6.8 Beta (19 October 2026)
 
 The people of KL, closer up. Your save carries over.
