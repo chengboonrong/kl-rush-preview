@@ -2,6 +2,14 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.6.8 Beta (19 October 2026)
+
+The people of KL, closer up. Your save carries over.
+
+- **Detailed people near you.** The few people nearest you on the street are now detailed anime-style 3D characters, in nine everyday looks: a banker carrying his helmet, a cafe owner in a denim apron, an office uncle with grey hair and glasses, a schoolboy in uniform, a student with a tote, a sound technician with headphones and a tool belt, a producer with a crossbody bag, an aunty in a tudung and baju kurung, and a schoolgirl in a white tudung. Everyone further off keeps a simpler look in the same clothes, so someone walking closer gains detail without changing who they are.
+  - They're our own, made from the sample models "AvatarSample_C" by VRoid Project and "VRM1_Constraint_Twist_Sample" by pixiv Inc., and credited in the game.
+- **Faiz, Uncle Basheer and Inspector Nadia, dressed anew.** Faiz in an olive work shirt and cargo trousers; Uncle Basheer older, with grey hair and beard, a light-blue shirt and a dark apron; Inspector Nadia in a dusty-pink tudung, a navy overshirt and her ID card on a lanyard.
+
 ## 0.6.7 Beta (18 October 2026)
 
 Steadier loading just after the title, and two rare faults fixed. Your save carries over.
