@@ -12,10 +12,11 @@ KL Rush grows in small public steps. Each version ships when it is ready, not on
 | **0.6 Beta** (now) | The end of the story, a bigger city | Done: Arc 3 (missions 15 to 22), three side jobs and a completion screen, a 13 × 13 map with Malaysian street details, AKLEH and chain shops, screenshots and photo mode, controllers and mice, mission 1 voiced, Chinese for every line, install as an app, more accessibility |
 | 0.7 Beta (next) | KLIA and Subang | Planes over KL, KLIA Terminal 1 and 2 and Subang with airport jobs, expressways out of KL with tolls and an R&R, walk-in shops, Bomba and ambulance jobs, more stranger encounters, Malay and Manglish voices |
 | 0.8 Beta | Sepang | Formula racing and a race weekend at Sepang, a tunnel that closes in heavy rain, the last stranger encounters, Cantonese voices |
-| 0.9 Beta / 1.0 RC | Final testing | Bug fixing only |
+| 0.9 Beta | Genting | Genting Highlands, with its mountain road and cable car |
+| 1.0 RC | Final testing | Bug fixing only |
 | **1.0** | Launch | All 22 story missions, free on the web. After 1.0: free updates with fixes and new content |
 | 1.1 | Utara | Penang, Alor Setar and Langkawi |
-| 1.2 | Selatan | Melaka, Johor Bahru and Genting |
+| 1.2 | Selatan | Melaka and Johor Bahru |
 | 1.3 and 1.4 | Borneo | Kuching (Sarawak), then Kota Kinabalu (Sabah) |
 | 1.5 | Sayap | Fly the plane yourself |
 | Later | Online | Private rooms for up to 8 friends. On hold for now |
