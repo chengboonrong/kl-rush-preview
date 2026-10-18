@@ -2,6 +2,18 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.6.6 Beta (18 October 2026)
+
+A graphics fix for iPhone. Your save carries over.
+
+- **One graphics reset no longer slows your iPhone down for good.** Safari on iPhone sometimes resets the game's graphics while the city loads ("Your browser reset the game's graphics"). The game used to switch that phone to the compatible graphics mode for good after one reset, and on an iPhone that mode runs at about half the frame rate. Now the first reset only offers a reload; a second within a day still switches, and Settings → Graphics engine switches back. If your iPhone already uses the compatible mode, choose Auto there.
+
+## 0.6.5 Beta (18 October 2026)
+
+A loading fix for iPhone. Your save carries over.
+
+- **iPhone loads no longer stop at 91%.** On some iPhones the loading screen stopped at 91% with "Something went wrong while loading: popErrorScope failed". It now carries on.
+
 ## 0.6.4 Beta (18 October 2026)
 
 The story cast in anime style. Your save carries over.
