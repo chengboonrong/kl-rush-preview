@@ -2,6 +2,12 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.6.2 Beta (18 October 2026)
+
+The police have to find you. Your save carries over.
+
+- **The police search for you.** The police used to know where you were even when no one could see you. Now, once no officer, patrol car or helicopter has you in sight, they go to where you were last seen and search there: patrol cars drive there, officers on foot run there, and the helicopter circles over it. No new roadblocks appear on your route until they spot you again. Getting out of sight and away now loses them.
+
 ## 0.6.1 Beta (18 October 2026)
 
 Amir in anime style, the dishes in 3D and Faiz's workshop rebuilt. Your save carries over.
