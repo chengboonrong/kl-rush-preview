@@ -29,12 +29,14 @@
 
 | | |
 | --- | --- |
+| ![Amir, the player character in anime style with a red hoodie, standing on Jalan Alor at dusk](media/screens/amir-anime-jalan-alor.jpg) | ![The Food journal's 3D close-up of a plate of nasi lemak on a banana leaf](media/screens/food-3d-nasi-lemak.jpg) |
+| ![Bengkel Faiz, the cousin's workshop, with its yellow sign, tyre rack and a car in the bay](media/screens/bengkel-faiz.jpg) | ![The police headquarters, Ibu Pejabat Polis, a pale concrete block with sun louvres over its car park](media/screens/police-hq.jpg) |
+| ![The backs of a row of old shophouses, with weathered walls, back doors, drainpipes, air-conditioner units and laundry](media/screens/shophouse-back-lane.jpg) | ![The in-game phone showing the completion screen](media/screens/phone-completion.jpg) |
 | ![The AKLEH elevated highway at night, seen from the road below, its piers and deck lamps lit](media/screens/akleh-night-piers.jpg) | ![The AKLEH elevated highway along Jalan Ampang by day, leading to the Petronas Twin Towers](media/screens/akleh-day-jalan-ampang.jpg) |
 | ![A corner of Jalan Ampang with a blue street-name sign, black-and-white kerbs and the AKLEH deck beyond](media/screens/street-corner-jalan-ampang.jpg) | ![A footbridge over a street of colourful shophouses](media/screens/footbridge-crossing.jpg) |
 | ![A 99 Siput Mart convenience store lit up at night](media/screens/siput-mart-night.jpg) | ![A kapcai rider racing a monorail train along Jalan Ampang in Arc 3](media/screens/arc3-kejar-monorel.jpg) |
 | ![A yellow tow lorry towing a broken-down car](media/screens/tunda-tow-lorry.jpg) | ![Tasik Titiwangsa at dusk with the Kuala Lumpur skyline beyond the lake](media/screens/titiwangsa-lake.jpg) |
 | ![KL Tower and the Petronas Twin Towers against green rainforest hills at golden hour](media/screens/towers-hills-golden-hour.jpg) | ![Photo mode on Jalan Alor at dusk with the Warm look and the photo controls on screen](media/screens/photo-mode-jalan-alor.jpg) |
-| ![The in-game phone showing the completion screen](media/screens/phone-completion.jpg) |  |
 | ![Merdeka station entrance at night with its lit name banner](media/screens/entrance-merdeka-night.jpg) | ![Kampung Baru station entrance pavilion by day](media/screens/entrance-kampung-baru-day.jpg) |
 | ![Pasar Seni station entrance at night](media/screens/entrance-pasar-seni-night.jpg) | ![An underground train in the tunnel between stations](media/screens/underground-tunnel-ride.jpg) |
 | ![The full map over Kuala Lumpur](media/screens/satellite-map-kl.jpg) | ![The full map zoomed out to all of Malaysia](media/screens/satellite-map-malaysia.jpg) |
