@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>KL Rush · Jom Pecut di KL</title>
-<meta name="description" content="KL Rush 0.5 Beta: a free open-world Kuala Lumpur you can drive, ride and walk in your browser. One day in the city, the story line, and the people on it.">
+<meta name="description" content="KL Rush 0.6 Beta: a free open-world Kuala Lumpur you can drive, ride and walk in your browser. One day in the city, the story line, and the people on it.">
 <link rel="canonical" href="https://chengboonrong.github.io/kl-rush-preview/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://chengboonrong.github.io/kl-rush-preview/">
 <meta property="og:title" content="KL Rush · Jom Pecut di KL">
-<meta property="og:description" content="KL Rush 0.5 Beta: a free open-world Kuala Lumpur you can drive, ride and walk in your browser. One day in the city, the story line, and the people on it.">
+<meta property="og:description" content="KL Rush 0.6 Beta: a free open-world Kuala Lumpur you can drive, ride and walk in your browser. One day in the city, the story line, and the people on it.">
 <meta property="og:image" content="https://chengboonrong.github.io/kl-rush-preview/og.png">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="640">
@@ -41,7 +41,7 @@
   --sticker: #f2c443;
   --line-bk: #d7263d;   /* Arc 1 line */
   --line-cm: #0b7a44;   /* Arc 2 line */
-  --line-kk: #9a9aa0;   /* Arc 3, under construction */
+  --line-kk: #1964b7;   /* Arc 3 line */
   --amber: #ffb23e;
   --signboard-blue: #1f4fa3;
   --signboard-green: #0b6b3d;
@@ -198,9 +198,6 @@ img, video { display: block; max-width: 100%; height: auto; }
 .change .swap { width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 5px solid var(--ink); background: linear-gradient(90deg, var(--line-bk) 50%, var(--line-cm) 50%); }
 .change p { font: 600 1rem/1.4 var(--f-body); }
 .change p span { display: block; font-weight: 400; color: var(--ink-2); font-size: 0.9375rem; }
-.line.kk .st::before { background: repeating-linear-gradient(var(--line) 0 12px, transparent 12px 20px); }
-.line.kk .st .dot { border-color: var(--line); }
-.line.kk .st h4 { color: #6c6d73; }
 .kk-note { margin: 0 0 18px calc(4.25rem + 18px); padding: 10px 14px; background: repeating-linear-gradient(-45deg, var(--sticker) 0 12px, #1a1a1a 12px 24px); display: inline-block; }
 .kk-note span { background: var(--sticker); color: var(--ink); font: 800 1rem/1 var(--f-display); letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 10px 4px; display: inline-block; }
 .rules { margin-top: clamp(48px, 7vw, 80px); display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 0; border-top: 3px solid var(--ink); }
@@ -333,35 +330,34 @@ img, video { display: block; max-width: 100%; height: auto; }
 <section class="hero band" aria-labelledby="title">
   <div class="wrap">
     <div class="hero-text">
-      <h1 id="title"><img src="img/logo.svg" alt="KL Rush: Jom Pecut" width="1040" height="316"><span class="beta">0.5 BETA</span></h1>
+      <h1 id="title"><img src="img/logo.svg" alt="KL Rush: Jom Pecut" width="1040" height="316"><span class="beta">0.6 BETA</span></h1>
       <p class="tagline">Balik KL.<span>Jom pecut.</span></p>
       <p class="hero-sub">An open-world Kuala Lumpur you can drive, ride and walk, free in your browser. Come home, get pulled into your cousin's car jobs, then help Uncle Basheer's street stand up to a tow-lorry racket.</p>
       <div class="ctas">
         <a class="go" href="https://kl-rush.vercel.app" target="_blank" rel="noopener"><span class="checker" aria-hidden="true"></span>Main percuma</a>
         <a class="quiet-link" href="#treler">Tonton treler · 50 s</a>
       </div>
-      <p class="hero-fine">Chrome, Edge or Safari · computer or phone · keyboard, controller or touch<br>English · Bahasa Melayu · 简体中文 (preview)</p>
+      <p class="hero-fine">Chrome, Edge or Safari · computer or phone · keyboard and mouse, controller or touch · installs as an app<br>English · Bahasa Melayu · 简体中文 (preview)</p>
     </div>
 
-    <article class="receipt" aria-label="What's new in 0.5 Beta">
+    <article class="receipt" aria-label="What's new in 0.6 Beta">
       <header><b>KEDAI 24 JAM</b><span>RESIT · 0.6 BETA</span><span class="tnum">17/10/2026 · NO. 0.6.0-BETA</span></header>
       <ul class="tnum">
-        <li><span>MISI ARC 2 "CARI MAKAN"</span><span>×8</span></li>
-        <li><span>LIGA MALAM, NIGHT RACES</span><span>×8</span></li>
-        <li><span>MOTORBIKE PHYSICS</span><span>×1</span></li>
-        <li><span>PETROL STATIONS</span><span>×3</span></li>
-        <li><span>RAIL LINES TO RIDE</span><span>×3</span></li>
-        <li><span>RAIL STATIONS REBUILT</span><span>×11</span></li>
-        <li><span>JEREBU HAZE DAYS</span><span>ON/OFF</span></li>
+        <li><span>MISI ARC 3 "KOTA KITA"</span><span>×8</span></li>
+        <li><span>NEW JOBS: TUNDA, TARIK KERETA, MONORAIL</span><span>×3</span></li>
+        <li><span>COMPLETION SCREEN</span><span>100%</span></li>
+        <li><span>13 × 13 MAP / NEW DISTRICTS</span><span>×7</span></li>
+        <li><span>AKLEH + FLYOVERS</span><span>1+2</span></li>
+        <li><span>CHAIN SHOPS</span><span>×38</span></li>
+        <li><span>STREET SIGNS, KERBS, DRAINS</span><span>NEW</span></li>
+        <li><span>GALLERY SCREENSHOTS</span><span>×30</span></li>
+        <li><span>PHOTO MODE LOOKS</span><span>×5</span></li>
+        <li><span>CONTROLLER + MOUSE REMAP</span><span>ON</span></li>
+        <li><span>MISSION 1 VOICES</span><span>×2</span></li>
+        <li><span>CHINESE FOR EVERY LINE</span><span>ALL</span></li>
+        <li><span>INSTALL AS AN APP</span><span>ON</span></li>
+        <li><span>HOLDS + HIGH-CONTRAST HUD</span><span>ON</span></li>
         <li><span>RARE EASTER EGGS</span><span>×11</span></li>
-        <li><span>KEDAI 24 JAM STORES</span><span>×3</span></li>
-        <li><span>LICENCE CLASSES E, PSV</span><span>+2</span></li>
-        <li><span>JOB RANKS: TAXI, FOOD, BUS</span><span>×3</span></li>
-        <li><span>MEKANIK BERGERAK SHIFTS</span><span>∞</span></li>
-        <li><span>LANDMARK PHOTOS</span><span>×12</span></li>
-        <li><span>FLYOVER + DIAGONAL ST.</span><span>1+2</span></li>
-        <li><span>GRAFFITI LANE + CAT NO. 16</span><span>×1</span></li>
-        <li><span>WISMA SENJA ROOFTOP</span><span>×1</span></li>
       </ul>
       <div class="total tnum"><span>JUMLAH</span><span>RM 0.00</span></div>
       <footer><span>Free. No ads. No account.</span><span>Saves always carry over from now on.</span><span>TERIMA KASIH, DATANG LAGI</span><div class="barcode" aria-hidden="true"></div></footer>
@@ -375,7 +371,7 @@ img, video { display: block; max-width: 100%; height: auto; }
   <div class="day-intro band">
     <div class="wrap">
       <h2 id="hari-h" class="day-title">Sehari di KL<small>One day in the city, by the game clock</small></h2>
-      <p class="day-lede">The game is <b>real Kuala Lumpur at phone size</b>: real landmarks and streets, simple shapes, muted walls and roads, and strong colour only where KL has it. A day here takes <b>24 real minutes</b>, one game minute every second. This is what that day looks like in 0.5.</p>
+      <p class="day-lede">The game is <b>real Kuala Lumpur at phone size</b>: real landmarks and streets, a new look made in Blender, muted walls and roads, and strong colour only where KL has it. A day here takes <b>24 real minutes</b>, one game minute every second. This is what that day looks like in 0.6.</p>
     </div>
   </div>
 
@@ -384,8 +380,8 @@ img, video { display: block; max-width: 100%; height: auto; }
       <time datetime="16:30">16:30<small>A new game starts</small></time>
       <div class="stop-text">
         <h3 id="t1">You land at Pasar Seni</h3>
-        <p>No rain until your first mission is done. In front of you is a 9 × 9 grid of city blocks across 19 districts, from Kampung Baru's wooden houses to KL Sentral, with the Sungai Klang running through and left-hand traffic on every road.</p>
-        <p>New in 0.5: the Jalan P. Ramlee flyover and two diagonal streets in the old town, both on the map and in the GPS. Traffic lights change now, and cars queue behind you at a red.</p>
+        <p>No rain until your first mission is done. In front of you is a 13 × 13 grid of city blocks, with new districts in Titiwangsa, Setapak, Ampang, Mid Valley, Bangsar South, Bangsar and along the Federal Highway. The Sungai Klang runs through it, with left-hand traffic on every road.</p>
+        <p>Jalan P. Ramlee, Jalan Kuching and Jalan Bukit Bintang have flyovers, and AKLEH runs over Jalan Ampang. Malaysian road signs, blue street names, black-and-white kerbs, monsoon drains, footbridges, bus stops and a motorcycle lane make the streets read like KL.</p>
       </div>
       <figure><img src="shots/flyover.jpg" alt="A red car on the Jalan P. Ramlee flyover at dusk" width="1600" height="900" loading="lazy"><figcaption>Jalan P. Ramlee flyover</figcaption></figure>
     </div>
@@ -433,6 +429,8 @@ img, video { display: block; max-width: 100%; height: auto; }
         <h3 id="t4">Petaling Street lights up</h3>
         <p>The pasar malam runs until about 23:30 under the long roof and its sixty-four red lanterns. Off to the side, the new graffiti lane: original wall art, preset stamps to leave your mark, and the sixteenth stray cat.</p>
         <p>After six, Jalan Alor has satay smoke and plastic stools, and a durian stall that serves an opened fruit for RM 6.</p>
+        <p>Around KL, 38 shopfronts from six parody chains open and close on the game clock; the Shops layer and GPS find the ones that are open.</p>
+        <p>Press K or use the phone's Camera app for a screenshot. Photo mode freezes the game so you can frame it, change the look and hide the player.</p>
       </div>
       <figure><img src="shots/graffiti.jpg" alt="A narrow lane of colourful wall art with a ginger cat sitting in it" width="1600" height="900" loading="lazy"><figcaption>The graffiti lane off Petaling Street, and cat no. 16</figcaption></figure>
     </div>
@@ -483,13 +481,19 @@ img, video { display: block; max-width: 100%; height: auto; }
       <time datetime="05:00">05:00<small>Back to work</small></time>
       <div class="stop-text">
         <h3 id="t8">Cari makan</h3>
-        <p>The story teaches each job before it opens. Taxi, food delivery and Bas Kota now have ranks, each with a reward you get once.</p>
+        <p>The story teaches each job before it opens. Taxi, food delivery and Bas Kota have ranks, and 0.6 adds Tunda, Tarik Kereta and monorail driver. The phone's completion screen counts your story, jobs, collections and photos.</p>
         <ul class="facts cols">
           <li><span>Rank rewards: gold taxi paint, a bus horn, destination signs</span><b>once each</b></li>
           <li><span>Mekanik Bergerak breakdown shifts</span><b>repeatable</b></li>
           <li><span>Parcels by train</span><b>courier</b></li>
           <li><span>Landmarks for the photo album</span><b>12</b></li>
           <li><span>Stray cats hiding in the city</span><b>16</b></li>
+          <li><span>Tunda: tow broken-down and illegally parked cars</span><b>new job</b></li>
+          <li><span>Tarik Kereta: bring back 12 listed cars</span><b>new job</b></li>
+          <li><span>Monorail driver: stop at each platform</span><b>new job</b></li>
+          <li><span>Completion screen on the phone</span><b>100%</b></li>
+          <li><span>Install as an app and start offline</span><b>after first visit</b></li>
+          <li><span>Holds, HUD contrast and pad-only menus</span><b>accessibility</b></li>
         </ul>
       </div>
     </div>
@@ -503,7 +507,7 @@ img, video { display: block; max-width: 100%; height: auto; }
       <h2 id="cerita-h" class="story-title">Laluan cerita<small>The story, stop by stop</small></h2>
       <div class="story-copy">
         <p>You come home to KL after years away. Your cousin <b>Faiz</b> has car jobs for you, the kind where you don't ask questions. When those go wrong you lie low at <b>Uncle Basheer</b>'s, and find <b>Bos Tunda</b>'s tow crew squeezing every shop on Jalan Tun Perak.</p>
-        <p><b>14 of 22 stops are open.</b> The last line is still being built.</p>
+        <p><b>22 of 22 stops are open.</b> Arc 3 ends with the credits.</p>
         <div class="greeting"><q>Weh, sepupu! Lama gila tak jumpa. Selamat balik ke KL!</q><span>Oi, cousin! Ages since I last saw you. Welcome back to KL! · Faiz, BK1</span></div>
       </div>
     </div>
@@ -511,7 +515,7 @@ img, video { display: block; max-width: 100%; height: auto; }
     <div class="line bk" aria-labelledby="bk-h">
       <div class="line-head"><span class="roundel">BK</span><h3 id="bk-h">Back in KL</h3><span class="state">Arc 1 · open</span></div>
       <ol class="stations">
-        <li class="st" id="bk1"><span class="code">BK1</span><span class="dot"></span><h4>Back in KL</h4><div class="what"><p>Faiz walks you from Pasar Seni past Masjid Jamek and the River of Life, then teaches your first ride and, new in 0.5, your first drive.</p><div class="tags"><span class="tag on">Faiz · Basheer board</span></div></div></li>
+        <li class="st" id="bk1"><span class="code">BK1</span><span class="dot"></span><h4>Back in KL</h4><div class="what"><p>Faiz walks you from Pasar Seni past Masjid Jamek and the River of Life, then teaches your first ride and your first drive.</p><div class="tags"><span class="tag on">Faiz · Basheer board</span></div></div></li>
         <li class="st"><span class="code">BK2</span><span class="dot"></span><h4>Delivery Rookie</h4><div class="what"><p>Three hot orders for Uncle Basheer: Dataran Merdeka, KL Tower and the Twin Towers.</p><div class="tags"><span class="tag">Roadside checks begin after this stop</span></div></div></li>
         <li class="st"><span class="code">BK3</span><span class="dot"></span><h4>Durian Run</h4><div class="what"><p>A lorry of Musang King to Jalan Alor. Drive gently: every bump costs money.</p></div></li>
         <li class="st"><span class="code">BK4</span><span class="dot"></span><h4>Midnight Rempit</h4><div class="what"><p>A kapcai race round the old town and the Golden Triangle, now on bike physics against rivals who stick to the road.</p></div></li>
@@ -532,22 +536,21 @@ img, video { display: block; max-width: 100%; height: auto; }
         <li class="st"><span class="code">CM11</span><span class="dot"></span><h4>Lorong Api<small>Fire lane</small></h4><div class="what"><p>Shove the lorries out of the back lane so the volunteer fire engine gets through, then take the hose.</p></div></li>
         <li class="st" id="cm12"><span class="code">CM12</span><span class="dot"></span><h4>Gambar Bukti<small>Evidence</small></h4><div class="what"><p>A night job. Tail Bos Tunda and photograph three pay-offs without being seen.</p><div class="tags"><span class="tag on">Inspector Nadia boards</span><span class="tag">Opens the photo album</span></div></div></li>
         <li class="st"><span class="code">CM13</span><span class="dot"></span><h4>Malam Bola<small>Football night</small></h4><div class="what"><p>The whole street is watching the match at the restaurant when the crew grabs the cash box.</p></div><img class="thumb" src="shots/mamak.jpg" alt="People cheering at a football screen outside a mamak restaurant at night" width="1600" height="900" loading="lazy"></li>
-        <li class="st end"><span class="code">CM14</span><span class="dot"></span><h4>Cepat, Uncle!<small>Hurry, Uncle!</small></h4><div class="what"><p>Clear the road for an ambulance racing to Hospital KL.</p><div class="tags"><span class="tag">End of the line in 0.5</span></div></div><img class="thumb" src="shots/ambulance.jpg" alt="An ambulance driving down a wide road past a mosque" width="1600" height="900" loading="lazy"></li>
+        <li class="st end"><span class="code">CM14</span><span class="dot"></span><h4>Cepat, Uncle!<small>Hurry, Uncle!</small></h4><div class="what"><p>Clear the road for an ambulance racing to Hospital KL.</p><div class="tags"><span class="tag">End of Arc 2</span></div></div><img class="thumb" src="shots/ambulance.jpg" alt="An ambulance driving down a wide road past a mosque" width="1600" height="900" loading="lazy"></li>
       </ol>
     </div>
 
     <div class="line kk" aria-labelledby="kk-h">
       <div class="line-head"><span class="roundel">KK</span><h3 id="kk-h">Kota Kita</h3><span class="meaning">our city</span><span class="state">Arc 3 · new in 0.6</span></div>
-      <p class="kk-note"><span>Dalam pembinaan · Under construction</span></p>
       <ol class="stations">
-        <li class="st"><span class="code">KK15</span><span class="dot"></span><h4>Kereta Hilang</h4></li>
-        <li class="st"><span class="code">KK16</span><span class="dot"></span><h4>Gotong-royong</h4></li>
-        <li class="st" id="kk17"><span class="code">KK17</span><span class="dot"></span><h4>Kejar Monorel</h4></li>
-        <li class="st"><span class="code">KK18</span><span class="dot"></span><h4>Saksi</h4></li>
-        <li class="st"><span class="code">KK19</span><span class="dot"></span><h4>Tarik Balik</h4></li>
-        <li class="st"><span class="code">KK20</span><span class="dot"></span><h4>Tapak Tunda</h4></li>
-        <li class="st"><span class="code">KK21</span><span class="dot"></span><h4>Jejambat</h4></li>
-        <li class="st"><span class="code">KK22</span><span class="dot"></span><h4>Jom Pecut</h4><div class="what"><p>Working titles. The line ends at KL Sentral.</p></div></li>
+        <li class="st"><span class="code">KK15</span><span class="dot"></span><h4>Kereta Hilang</h4><div class="what"><p>Search circles on the map for stolen cars before a 06:00 inspection.</p></div></li>
+        <li class="st"><span class="code">KK16</span><span class="dot"></span><h4>Gotong-royong</h4><div class="what"><p>At dawn, open the crew's fake clamps with keys from their yard and tow the last car away.</p></div></li>
+        <li class="st" id="kk17"><span class="code">KK17</span><span class="dot"></span><h4>Kejar Monorel</h4><div class="what"><p>Keep pace with a monorail on a kapcai, then catch its passenger on foot.</p></div></li>
+        <li class="st"><span class="code">KK18</span><span class="dot"></span><h4>Saksi</h4><div class="what"><p>Protect a witness from cars that ram you.</p></div></li>
+        <li class="st"><span class="code">KK19</span><span class="dot"></span><h4>Tarik Balik</h4><div class="what"><p>Take back three of Bos Tunda's unpaid cars while his people give chase.</p></div></li>
+        <li class="st"><span class="code">KK20</span><span class="dot"></span><h4>Tapak Tunda</h4><div class="what"><p>Get into the crew's tow yard at night and copy the racket's records without fighting the guards.</p></div></li>
+        <li class="st"><span class="code">KK21</span><span class="dot"></span><h4>Jejambat</h4><div class="what"><p>Ram a tow lorry to a stop on a closed flyover.</p></div></li>
+        <li class="st"><span class="code">KK22</span><span class="dot"></span><h4>Jom Pecut</h4><div class="what"><p>Stop Bos Tunda before he leaves the city from KL Sentral. Then the credits roll.</p></div></li>
       </ol>
     </div>
 
@@ -603,7 +606,7 @@ img, video { display: block; max-width: 100%; height: auto; }
       <div class="who"><span class="signboard sb-suresh">Buku akaun</span><h3>Suresh</h3><span class="role">The crew's bookkeeper</span></div>
       <div class="about">
         <p>Keeps the racket's books. He arrives with Arc 3.</p>
-        <div class="boards">Boards at <a class="kk" href="#kk17">KK17</a> · in 0.6</div>
+        <div class="boards">Boards at <a class="kk" href="#kk17">KK17</a> · Arc 3</div>
       </div>
     </article>
 
@@ -633,7 +636,7 @@ img, video { display: block; max-width: 100%; height: auto; }
         <li><b>Lim</b><q>Young man, your motorbike broke down? Come, I fix it for you.</q><span>Motorbike workshop, Jalan Pudu · Hokkien, Malay</span></li>
         <li><b>Priya</b><q>Hold tight ah, we go through Brickfields!</q><span>Pickup point, KL Sentral · Manglish, Malay</span></li>
       </ul>
-      <p class="fine">Voices are AI-generated and marked that way in Settings. More Malay, Manglish and Cantonese story voices are planned before 1.0.</p>
+      <p class="fine">Voices are AI-generated and marked that way in Settings. Mission 1 now has two more Malay takes, with voice volume and subtitles in Settings. Chinese text is available for every line as 中文（预览）. More Malay, Manglish and Cantonese story voices are planned before 1.0.</p>
     </div>
   </div>
 </section>
