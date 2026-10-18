@@ -2,6 +2,14 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.6.4 Beta (18 October 2026)
+
+The story cast in anime style. Your save carries over.
+
+- **The story cast in anime style.** Faiz, Uncle Basheer, Inspector Nadia, Suresh and Bos Tunda are now anime-style 3D characters, each dressed for their part: Faiz the mechanic in a workshop-green hoodie with a "BENGKEL FAIZ" patch and a red rag in his back pocket; Uncle Basheer in a short-sleeved shirt with a pen in the pocket and a mamak apron; Inspector Nadia in a tudung and a blue jacket with her badge; Suresh the clerk in a waistcoat; and Bos Tunda in a black jacket with the TUNDA logo, a company-yellow shirt, a gold watch, keys and a walkie-talkie. They load after the title screen or when their part of the story opens; until then, they keep their earlier look.
+  - Basheer and Nadia are our own, made from VRoid Project's and pixiv's sample models. Faiz, Suresh and Bos Tunda are from VRoid Hub: "Messy Haired Boy" by Dyzium, "Bearded Trial" by Benji and "黒スーツの大男" by 陽気婢. All are credited in the game.
+- **Everyone else in anime style.** Pedestrians, drivers, police and the other people in missions get toon shading, anime eyes, pointed fringes, rounder limbs and slightly larger heads.
+
 ## 0.6.3 Beta (18 October 2026)
 
 The police headquarters and the shophouse back lanes, rebuilt. Your save carries over.
