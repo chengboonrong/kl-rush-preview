@@ -8,7 +8,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.6 Beta.** The story ends with Arc 3, KL grows to 13 × 13 blocks with AKLEH, Malaysian street details and chain shops, and you can take screenshots, use a controller, install the game as an app and hear mission 1 voiced. 0.5.8 hid eleven easter eggs (彩蛋) around KL. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
+**Version 0.6.1 Beta.** Amir is now an anime-style 3D character, every dish has a 3D close-up in the Food journal, and Bengkel Faiz is rebuilt. 0.6 ended the story with Arc 3, KL grows to 13 × 13 blocks with AKLEH, Malaysian street details and chain shops, and you can take screenshots, use a controller, install the game as an app and hear mission 1 voiced. 0.5.8 hid eleven easter eggs (彩蛋) around KL. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
 
 🎬 [Watch the 50-second trailer](media/kl-rush-trailer-720p.mp4)
 

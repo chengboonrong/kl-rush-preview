@@ -2,6 +2,17 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.6.1 Beta (18 October 2026)
+
+Amir in anime style, the dishes in 3D and Faiz's workshop rebuilt. Your save carries over.
+
+- **Amir in anime style.** Amir is now an anime-style 3D character: dark layered hair, a red oversized hoodie, black cargo pants and white trainers. He has his own idle, walk, run, jump and punch animations, his hair and hood move as he does, and he blinks. He keeps the look everywhere: driving, on a bike, carrying a tray, eating at a stall, knocked down and getting up. He loads after the title screen (about 2 MB); until then, Amir keeps his earlier look.
+  - The model is "Red hoodie" (Ake) by Akemenos, from VRoid Hub, used under its conditions of use. The animations are from Quaternius's Universal Animation Library (CC0). Both are credited in the game.
+- **Dishes in 3D.** In the Food journal, each of the 17 dishes has a View in 3D button: the dish close up on a marble kopitiam table, to turn and zoom. The stalls serve the same models, on the table or in your hands.
+- **Bengkel Faiz rebuilt.** Faiz's workshop in Kampung Baru is now a real bengkel, with a zinc roof, a car lift, a workbench, tyre stacks and an engine crane. Cars still drive straight in.
+- **Fried bee hoon.** The Petaling Street stall's "Mee Hoor" was a typo; it is now Fried bee hoon (Bihun goreng, 炒米粉).
+- **Fixes:** no empty dark pill in the middle of a phone screen before the first subtitle; walking into a wall stands still instead of running in place; in a five-foot way, the camera stays in front of the arcade columns.
+
 ## 0.6 Beta (17 October 2026)
 
 The end of the story and a city half again as wide. Your save carries over.
