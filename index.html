@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>KL Rush · Jom Pecut di KL</title>
-<meta name="description" content="KL Rush 0.6 Beta: a free open-world Kuala Lumpur you can drive, ride and walk in your browser. One day in the city, the story line, and the people on it.">
+<meta name="description" content="KL Rush 0.6 Beta: a free open-world Kuala Lumpur you can drive, ride and walk in your browser. One day in the city, seventeen dishes, the story line, the people on it, and what you might see after midnight.">
 <link rel="canonical" href="https://chengboonrong.github.io/kl-rush-preview/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://chengboonrong.github.io/kl-rush-preview/">
 <meta property="og:title" content="KL Rush · Jom Pecut di KL">
-<meta property="og:description" content="KL Rush 0.6 Beta: a free open-world Kuala Lumpur you can drive, ride and walk in your browser. One day in the city, the story line, and the people on it.">
+<meta property="og:description" content="KL Rush 0.6 Beta: a free open-world Kuala Lumpur you can drive, ride and walk in your browser. One day in the city, seventeen dishes, the story line, the people on it, and what you might see after midnight.">
 <meta property="og:image" content="https://chengboonrong.github.io/kl-rush-preview/og.png">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="640">
@@ -204,11 +204,54 @@ img, video { display: block; max-width: 100%; height: auto; }
 .rules p { padding: 16px 20px 16px 0; font-size: 0.9375rem; color: #2c2e33; }
 .rules b { display: block; font: 800 1.25rem/1.1 var(--f-display); text-transform: uppercase; color: var(--ink); margin-bottom: 4px; }
 
+/* ---------- food ---------- */
+/* kopitiam wall tiles behind hawker lightbox menus: one board per place, priced as the game prices them */
+.makan { background-color: #0e3b2b; background-image: linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 30px 30px; color: var(--chalk); padding-block: clamp(64px, 10vw, 120px); }
+.makan-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px clamp(24px, 5vw, 72px); align-items: end; margin-bottom: clamp(36px, 6vw, 64px); }
+.makan-title { font: 800 clamp(3rem, 10vw, 7.5rem)/0.84 var(--f-display); text-transform: uppercase; letter-spacing: -0.01em; }
+.makan-title small { display: block; font: italic 600 clamp(1.25rem, 2.6vw, 1.75rem)/1.2 var(--f-display); text-transform: none; color: #b9d3c4; margin-top: 14px; }
+.makan-copy { display: grid; gap: 12px; font-size: 1.0625rem; color: #d7e6dc; max-width: 36rem; }
+.makan-copy b { color: #fff; }
+.stalls { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 22px; align-items: start; }
+.stall { --sh: #b3121b; grid-column: span 12; background: #fbfaf4; color: var(--ink); border-radius: 3px; overflow: hidden; outline: 6px solid #15161a; outline-offset: 0; }
+.stall.mamak { --sh: #0b6b3d; grid-column: span 8; }
+.stall.cendol { --sh: #3c7d2c; grid-column: span 4; }
+.stall.alor { --sh: #b3121b; }
+.stall.petaling { --sh: #8a1420; }
+.stall > header { background: var(--sh); color: #fff; padding: 11px 14px 9px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 14px; }
+.stall > header b { font: 800 clamp(1.25rem, 2.4vw, 1.625rem)/1 var(--f-display); letter-spacing: 0.06em; text-transform: uppercase; }
+.stall > header span { font: 600 0.75rem/1.2 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.88); }
+.petaling > header b { color: #f2c443; }
+.dishes { --n: 3; display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 1px; background: #fbfaf4; }
+.cendol .dishes { --n: 1; }
+.alor .dishes { --n: 7; }
+.petaling .dishes { --n: 6; }
+.dish { background: #fbfaf4; display: grid; align-content: start; box-shadow: 0 0 0 1px #dedbd0; }
+.dish img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; background: #e4e2dc; }
+.dish p { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 3px 8px; align-items: baseline; padding: 9px 10px 11px; }
+.dish .no { font: 600 0.6875rem/1 var(--f-mono); background: var(--sh); color: #fff; padding: 4px 5px 2px; border-radius: 2px; }
+.dish b { font: 800 1.0625rem/1.02 var(--f-display); text-transform: uppercase; letter-spacing: 0.02em; }
+.dish .rm { font: 600 0.8125rem/1 var(--f-mono); white-space: nowrap; }
+.dish small { grid-column: 2 / -1; font-size: 0.8125rem; line-height: 1.35; color: var(--ink-2); }
+.also { padding: 10px 14px; display: grid; gap: 4px; border-top: 1px solid #dedbd0; }
+.also li { display: flex; align-items: baseline; gap: 8px; font-size: 0.9375rem; }
+.also li i { flex: 1; border-bottom: 2px dotted #b9b6aa; transform: translateY(-4px); min-width: 1rem; }
+.also li span:last-child { font: 600 0.8125rem/1 var(--f-mono); white-space: nowrap; }
+.stall > footer { padding: 10px 14px 12px; font-size: 0.8125rem; color: var(--ink-2); border-top: 1px dashed #c9c5b8; }
+
 /* ---------- cast ---------- */
 .cast { background: var(--asphalt); padding-block: clamp(64px, 10vw, 120px); }
-.cast-title { font: 800 clamp(3rem, 10vw, 7.5rem)/0.84 var(--f-display); text-transform: uppercase; letter-spacing: -0.01em; margin-bottom: clamp(36px, 6vw, 64px); }
+.cast-title { font: 800 clamp(3rem, 10vw, 7.5rem)/0.84 var(--f-display); text-transform: uppercase; letter-spacing: -0.01em; margin-bottom: 18px; }
 .cast-title small { display: block; font: italic 600 clamp(1.25rem, 2.6vw, 1.75rem)/1.2 var(--f-display); text-transform: none; color: var(--chalk-2); margin-top: 14px; }
-.person { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 16px clamp(24px, 5vw, 72px); padding-block: 32px; border-top: 1px solid var(--rule-dark); align-items: start; }
+.cast-lede { max-width: 40rem; color: var(--chalk-2); margin-bottom: clamp(36px, 6vw, 64px); }
+.cast-lede b { color: var(--chalk); }
+.person { display: grid; grid-template-columns: clamp(7rem, 15vw, 12.5rem) minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 16px clamp(24px, 4vw, 56px); padding-block: 32px; border-top: 1px solid var(--rule-dark); align-items: start; }
+/* each one stands on a black-and-white kerb in front of a wall the colour of their place */
+.cut { --wall: #d9d4c7; margin: 0; position: relative; aspect-ratio: 2 / 3; background: linear-gradient(var(--wall) 0 calc(100% - 26px), #8d8a84 calc(100% - 26px) calc(100% - 14px), transparent 0); display: flex; align-items: flex-end; justify-content: center; overflow: hidden; border-radius: 2px; }
+.cut::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 14px; background: repeating-linear-gradient(90deg, #111 0 16px, #f2f2ec 16px 32px); }
+.cut img { position: relative; z-index: 1; height: 93%; width: auto; max-width: none; margin-bottom: 10px; }
+.fit { font: 400 0.8125rem/1.5 var(--f-mono); color: var(--chalk-2); }
+.fit b { color: var(--chalk); font-weight: 600; }
 .person:last-of-type { border-bottom: 1px solid var(--rule-dark); }
 .who { display: grid; gap: 12px; justify-items: start; }
 .signboard { font: 800 0.9375rem/1 var(--f-display); letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 12px 6px; border-radius: 2px; }
@@ -254,6 +297,36 @@ img, video { display: block; max-width: 100%; height: auto; }
 .callers span { font: 400 0.75rem/1.4 var(--f-mono); color: var(--chalk-2); }
 .fine { margin-top: 28px; font-size: 0.8125rem; color: var(--chalk-2); max-width: 46rem; }
 
+/* ---------- easter eggs ---------- */
+/* a late-night tabloid: the eleven rare sightings, with the hour and place each one keeps */
+.khabar { background: #ebe5d5; color: #151412; padding-block: clamp(56px, 9vw, 104px); }
+.masthead { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 24px; align-items: end; border-top: 8px double #151412; padding-top: 14px; }
+.masthead h2 { font: 800 clamp(3.5rem, 13vw, 9.5rem)/0.8 var(--f-display); letter-spacing: -0.02em; text-transform: uppercase; color: #c0182a; }
+.masthead h2 small { display: block; font: italic 600 clamp(1.125rem, 2.4vw, 1.5rem)/1.2 var(--f-display); letter-spacing: 0; text-transform: none; color: #151412; margin-top: 12px; }
+.masthead .price { font: 800 1.125rem/1 var(--f-display); letter-spacing: 0.06em; text-transform: uppercase; border: 3px solid #151412; padding: 8px 10px 6px; transform: rotate(-3deg); background: #f2c443; }
+.dateline { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 18px; margin-top: 14px; padding-block: 7px; border-block: 1px solid #151412; font: 600 0.75rem/1.3 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; }
+.front { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr); gap: 28px clamp(24px, 4vw, 44px); padding-top: 26px; }
+.front figure { margin: 0; display: grid; gap: 6px; }
+.front figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.front figcaption { font: 400 0.75rem/1.4 var(--f-mono); color: #4a463e; }
+.lead { display: grid; gap: 14px; align-content: start; }
+.lead h3 { font: 800 clamp(2.25rem, 6vw, 4.5rem)/0.88 var(--f-display); text-transform: uppercase; letter-spacing: -0.01em; }
+.lead p { font-size: 1.0625rem; max-width: 40rem; }
+.seen { display: inline-block; font: 600 0.75rem/1 var(--f-mono); letter-spacing: 0.06em; text-transform: uppercase; background: #151412; color: #ebe5d5; padding: 5px 7px 3px; }
+.side { display: grid; gap: 22px; align-content: start; border-left: 1px solid #151412; padding-left: clamp(16px, 3vw, 32px); }
+.item { display: grid; gap: 8px; align-content: start; }
+.item h4 { font: 800 clamp(1.375rem, 2.4vw, 1.75rem)/0.95 var(--f-display); text-transform: uppercase; }
+.item p { font-size: 0.9375rem; }
+.side .item + .item { border-top: 1px solid #151412; padding-top: 18px; }
+.lower { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px clamp(24px, 4vw, 44px); border-top: 3px solid #151412; padding-top: 22px; }
+.briefs { grid-column: 1 / -1; border-top: 3px solid #151412; padding-top: 14px; }
+.briefs h4 { font: 800 1.125rem/1 var(--f-display); letter-spacing: 0.12em; text-transform: uppercase; color: #c0182a; margin-bottom: 10px; }
+.briefs ul { columns: 3 15rem; column-gap: 32px; column-rule: 1px solid #b8b09c; }
+.briefs li { break-inside: avoid; padding-bottom: 12px; font-size: 0.9375rem; }
+.briefs li b { font: 800 1.125rem/1 var(--f-display); text-transform: uppercase; display: block; }
+.briefs li span { font: 600 0.75rem/1.5 var(--f-mono); color: #8a1420; display: block; margin-bottom: 2px; }
+.khabar .small-print { margin-top: 18px; padding-top: 10px; border-top: 1px solid #151412; font: 400 0.8125rem/1.5 var(--f-mono); color: #4a463e; }
+
 /* ---------- trailer ---------- */
 .reel { background: #000; padding-block: clamp(40px, 6vw, 72px); }
 .reel .wrap { display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr); gap: 24px clamp(24px, 4vw, 48px); align-items: end; }
@@ -295,15 +368,35 @@ img, video { display: block; max-width: 100%; height: auto; }
   .st { grid-template-columns: 4.25rem 2.5rem minmax(0, 1fr); }
   .st .what { grid-column: 3; }
   .st .thumb { grid-column: 3; max-width: 22rem; margin-top: 10px; }
+  .alor .dishes { --n: 4; }
+  .petaling .dishes { --n: 3; }
 }
 @media (max-width: 860px) {
-  .hero .wrap, .day-intro .wrap, .story-top, .person, .you, .reel .wrap { grid-template-columns: minmax(0, 1fr); }
+  .hero .wrap, .day-intro .wrap, .story-top, .makan-top, .you, .reel .wrap, .front { grid-template-columns: minmax(0, 1fr); }
+  .person { grid-template-columns: 7rem minmax(0, 1fr); }
+  .person .about { grid-column: 1 / -1; }
+  .stall.mamak, .stall.cendol { grid-column: span 12; }
+  .cendol .dish { grid-template-columns: minmax(0, 14rem) minmax(0, 1fr); align-items: center; }
+  .side { border-left: 0; padding-left: 0; border-top: 3px solid #151412; padding-top: 18px; }
   .receipt { justify-self: start; transform: rotate(-1deg); }
   .stop .wrap, .stop.flip .wrap, .stop.bare .wrap { grid-template-columns: minmax(0, 1fr); }
   .stop.flip figure, .stop.flip .stop-text { grid-column: auto; grid-row: auto; }
   .stop.flip figure { order: 3; }
 }
+@media (max-width: 700px) {
+  .strip .wrap { flex-wrap: nowrap; }
+  .strip nav { flex-wrap: nowrap; overflow-x: auto; min-width: 0; scrollbar-width: none; }
+  .strip nav::-webkit-scrollbar { display: none; }
+  .strip nav a { white-space: nowrap; }
+  .clock { flex: none; }
+}
 @media (max-width: 560px) {
+  .alor .dishes, .petaling .dishes, .mamak .dishes { --n: 2; }
+  .dishes > .dish:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .dishes > .dish:last-child:nth-child(odd) img { aspect-ratio: 2 / 1; }
+  .cendol .dish { grid-template-columns: minmax(0, 1fr); }
+  .lower { grid-template-columns: minmax(0, 1fr); }
+  .masthead { grid-template-columns: minmax(0, 1fr); justify-items: start; }
   .st { grid-template-columns: 3.75rem 2rem minmax(0, 1fr); gap: 0 12px; }
   .st::before { left: calc(3.75rem + 12px + 1rem - 5px); }
   .st.end::after { left: calc(3.75rem + 12px + 1rem - 16px); }
@@ -322,8 +415,10 @@ img, video { display: block; max-width: 100%; height: auto; }
   <div class="wrap">
     <nav aria-label="Sections">
       <a href="#hari">Sehari di KL</a>
+      <a href="#makan">Jom makan</a>
       <a href="#cerita">Laluan cerita</a>
       <a href="#watak">Watak</a>
+      <a href="#khabar">Khabar angin</a>
       <a href="#berlepas">Berlepas</a>
     </nav>
     <span class="clock" title="Game time: one game minute per real second">KL <output id="clock" class="tnum">16:30</output></span>
@@ -440,7 +535,7 @@ img, video { display: block; max-width: 100%; height: auto; }
       <div class="stop-text">
         <h3 id="t4">Petaling Street lights up</h3>
         <p>The pasar malam runs until about 23:30 under the long roof and its sixty-four red lanterns. Off to the side, the new graffiti lane: original wall art, preset stamps to leave your mark, and the sixteenth stray cat.</p>
-        <p>After six, Jalan Alor has satay smoke and plastic stools, and a durian stall that serves an opened fruit for RM 6. Every dish the stalls serve can be turned and zoomed in 3D from the phone's Food journal.</p>
+        <p>After six, Jalan Alor has satay smoke and plastic stools, and a durian stall that serves an opened fruit for RM 6. Every dish the stalls serve can be turned and zoomed in 3D from the phone's Food journal: <a href="#makan">all seventeen are on the menu below</a>.</p>
         <p>Around KL, 38 shopfronts from six parody chains open and close on the game clock; the Shops layer and GPS find the ones that are open.</p>
         <p>Press K or use the phone's Camera app for a screenshot. Photo mode freezes the game so you can frame it, change the look and hide the player.</p>
       </div>
@@ -472,6 +567,7 @@ img, video { display: block; max-width: 100%; height: auto; }
           <li><span>An armoured truck and a squad of four</span><b>★★★★★</b></li>
         </ul>
         <p>Once no one has you in sight, the police search where they last saw you, so getting out of sight and away loses them. Get under a roof and the searchlight loses you too.</p>
+        <p>Their headquarters, rebuilt in 0.6.3, is a pale concrete government block with sun louvres, a blue-and-white chequer canopy and three flagpoles.</p>
       </div>
       <figure><img src="shots/checkpoint.jpg" alt="Traffic cones channelling cars into a police roadside check at dusk" width="1600" height="900" loading="lazy"><figcaption>A police roadside check</figcaption></figure>
     </div>
@@ -511,6 +607,65 @@ img, video { display: block; max-width: 100%; height: auto; }
       <figure><img src="shots/bengkel-faiz.jpg" alt="Bengkel Faiz, the cousin's workshop, with its yellow sign, tyre rack and a car in the bay" width="1600" height="900" loading="lazy"><figcaption>Bengkel Faiz in Kampung Baru, rebuilt in 0.6.1</figcaption></figure>
     </div>
   </article>
+</section>
+
+<!-- ================= FOOD ================= -->
+<section class="makan band" id="makan" aria-labelledby="makan-h">
+  <div class="wrap">
+    <div class="makan-top">
+      <h2 id="makan-h" class="makan-title">Jom makan<small>Seventeen dishes, every one in 3D</small></h2>
+      <div class="makan-copy">
+        <p>Every dish the stalls serve is <b>modelled in Blender</b>, at real size. Eat one to get your health back. In the phone's Food journal, View in 3D sets it on a marble kopitiam table to turn and zoom, and the stall hands you the same model, on the table or in your hands.</p>
+        <p>The prices are the game's own, in ringgit. Drinks come normal or <b>kurang manis</b>.</p>
+      </div>
+    </div>
+
+    <div class="stalls">
+      <article class="stall mamak" aria-labelledby="st-mamak">
+        <header><b id="st-mamak">Restoran Basheer Maju</b><span>Buka 24 jam · makan sini or bungkus</span></header>
+        <ul class="dishes">
+          <li class="dish"><img src="shots/makan/roti_canai.webp" alt="Roti canai with two curries in steel bowls" width="600" height="400" loading="lazy"><p><span class="no">01</span><b>Roti canai</b><span class="rm">RM 2.00</span><small>印度煎饼</small></p></li>
+          <li class="dish"><img src="shots/makan/roti_tisu.webp" alt="A tall golden cone of roti tisu" width="600" height="400" loading="lazy"><p><span class="no">02</span><b>Roti tisu</b><span class="rm">RM 4.90</span><small>纸巾饼 · makan sini only</small></p></li>
+          <li class="dish"><img src="shots/makan/teh_tarik.webp" alt="A frothy mug of teh tarik on a saucer" width="600" height="400" loading="lazy"><p><span class="no">03</span><b>Teh tarik</b><span class="rm">RM 2.50</span><small>拉茶</small></p></li>
+        </ul>
+        <ul class="also"><li><span>Nasi lemak ayam</span><i></i><span>RM 8.00</span></li></ul>
+        <footer>Reach rank 3 in food delivery and Uncle Basheer stops charging you.</footer>
+      </article>
+
+      <article class="stall cendol" aria-labelledby="st-cendol">
+        <header><b id="st-cendol">Cendol Pasar Seni</b><span>11:00–19:00</span></header>
+        <ul class="dishes">
+          <li class="dish"><img src="shots/makan/cendol.webp" alt="A bowl of cendol with green jelly, red beans and gula melaka" width="600" height="400" loading="lazy"><p><span class="no">04</span><b>Cendol</b><span class="rm">RM 4.50</span><small>煎蕊 · bungkus</small></p></li>
+        </ul>
+      </article>
+
+      <article class="stall alor" aria-labelledby="st-alor">
+        <header><b id="st-alor">Jalan Alor</b><span>Under the lanterns · plastic stools</span></header>
+        <ul class="dishes">
+          <li class="dish"><img src="shots/makan/satay.webp" alt="Satay sticks with peanut sauce, ketupat, cucumber and onion" width="600" height="400" loading="lazy"><p><span class="no">05</span><b>Satay</b><span class="rm">RM 6.00</span><small>沙爹</small></p></li>
+          <li class="dish"><img src="shots/makan/char_kway_teow.webp" alt="Char kway teow with prawns and cockles on a banana leaf" width="600" height="400" loading="lazy"><p><span class="no">06</span><b>Char kway teow</b><span class="rm">RM 6.00</span><small>炒粿条</small></p></li>
+          <li class="dish"><img src="shots/makan/ais_batu_campur.webp" alt="A shaved-ice mountain of ABC in red syrup with corn and beans" width="600" height="400" loading="lazy"><p><span class="no">07</span><b>ABC</b><span class="rm">RM 6.00</span><small>杂冰 · the sign says Ais kacang</small></p></li>
+          <li class="dish"><img src="shots/makan/durian.webp" alt="An opened durian on newspaper with its yellow flesh showing" width="600" height="400" loading="lazy"><p><span class="no">08</span><b>Durian</b><span class="rm">RM 6.00</span><small>榴梿 · opened for you</small></p></li>
+          <li class="dish"><img src="shots/makan/bbq_sotong.webp" alt="A whole grilled squid on a stick" width="600" height="400" loading="lazy"><p><span class="no">09</span><b>BBQ sotong</b><span class="rm">RM 6.00</span><small>烧烤鱿鱼</small></p></li>
+          <li class="dish"><img src="shots/makan/wantan_mee.webp" alt="Wantan mee with char siu and a bowl of wonton soup" width="600" height="400" loading="lazy"><p><span class="no">10</span><b>Wantan mee</b><span class="rm">RM 6.00</span><small>云吞面</small></p></li>
+          <li class="dish"><img src="shots/makan/nasi_lemak.webp" alt="Nasi lemak on a banana leaf with sambal, egg, cucumber and ikan bilis" width="600" height="400" loading="lazy"><p><span class="no">11</span><b>Nasi lemak</b><span class="rm">RM 6.00</span><small>椰浆饭 · bungkus, 18:30–02:00</small></p></li>
+        </ul>
+        <ul class="also"><li><span>Roti canai, at the stall too</span><i></i><span>RM 2.00</span></li></ul>
+      </article>
+
+      <article class="stall petaling" aria-labelledby="st-petaling">
+        <header><b id="st-petaling">Petaling Street</b><span>Under the long roof · 茨厂街</span></header>
+        <ul class="dishes">
+          <li class="dish"><img src="shots/makan/air_mata_kucing.webp" alt="A tall iced glass of air mata kucing with longan" width="600" height="400" loading="lazy"><p><span class="no">12</span><b>Air mata kucing</b><span class="rm">RM 6.00</span><small>罗汉果龙眼水</small></p></li>
+          <li class="dish"><img src="shots/makan/chestnut.webp" alt="Roasted chestnuts spilling from a paper bag" width="600" height="400" loading="lazy"><p><span class="no">13</span><b>Chestnut</b><span class="rm">RM 6.00</span><small>栗子</small></p></li>
+          <li class="dish"><img src="shots/makan/bak_kwa.webp" alt="Sheets of bak kwa on paper" width="600" height="400" loading="lazy"><p><span class="no">14</span><b>Bak kwa</b><span class="rm">RM 6.00</span><small>肉干</small></p></li>
+          <li class="dish"><img src="shots/makan/dim_sum.webp" alt="Siu mai and har gow in a bamboo steamer" width="600" height="400" loading="lazy"><p><span class="no">15</span><b>Dim sum</b><span class="rm">RM 6.00</span><small>点心</small></p></li>
+          <li class="dish"><img src="shots/makan/popiah.webp" alt="A popiah roll cut into pieces with sweet sauce" width="600" height="400" loading="lazy"><p><span class="no">16</span><b>Popiah</b><span class="rm">RM 6.00</span><small>薄饼</small></p></li>
+          <li class="dish"><img src="shots/makan/bee_hoon.webp" alt="A plate of fried bee hoon with vegetables" width="600" height="400" loading="lazy"><p><span class="no">17</span><b>Fried bee hoon</b><span class="rm">RM 6.00</span><small>炒米粉 · Bihun goreng</small></p></li>
+        </ul>
+      </article>
+    </div>
+  </div>
 </section>
 
 <!-- ================= STORY LINE ================= -->
@@ -580,45 +735,56 @@ img, video { display: block; max-width: 100%; height: auto; }
 <section class="cast band" id="watak" aria-labelledby="watak-h">
   <div class="wrap">
     <h2 id="watak-h" class="cast-title">Watak<small>Who you'll meet on Jalan Tun Perak</small></h2>
+    <p class="cast-lede"><b>New in 0.6.4:</b> the five of them in anime style, each dressed for their part. Faiz and Uncle Basheer load after the title screen, and the others when their part of the story opens. Everyone else in KL got toon shading and anime eyes too.</p>
 
     <article class="person">
+      <figure class="cut" style="--wall:#d3dbe2"><img src="shots/cast-faiz.webp" alt="Faiz in anime style: messy brown hair, a green hoodie with a Bengkel Faiz patch, jeans and trainers" width="307" height="900" loading="lazy"></figure>
       <div class="who"><span class="signboard sb-faiz">Bengkel Faiz</span><h3>Faiz</h3><span class="role">Your cousin · mechanic</span></div>
       <div class="about">
         <p>Warm, cheeky and always hustling. He meets you at Pasar Seni, teaches you to ride, and hands you jobs with one rule: don't ask questions. By Arc 2 he's finding out that clean work pays too.</p>
         <blockquote>“Honest work still counts here.”<cite>Faiz, after Rebut Kerja</cite></blockquote>
+        <p class="fit"><b>Wears</b> a workshop-green hoodie with a BENGKEL FAIZ patch, and a red rag in his back pocket.</p>
         <div class="boards">Boards at <a class="bk" href="#bk1">BK1</a> · voiced in Malay</div>
       </div>
     </article>
 
     <article class="person">
+      <figure class="cut" style="--wall:#efe7d6"><img src="shots/cast-basheer.webp" alt="Uncle Basheer in anime style: a moustache, a white short-sleeved shirt with a pen in the pocket and a navy mamak apron" width="327" height="900" loading="lazy"></figure>
       <div class="who"><span class="signboard sb-basheer">Restoran Basheer Maju</span><h3>Uncle Basheer</h3><span class="role">Owner of the mamak restaurant</span></div>
       <div class="about">
         <p>Hospitable, bossy and caring. He feeds half the street and gives you your first honest deliveries. When the tow crew starts on his neighbours, he asks the street to stand together.</p>
         <blockquote>“That crew wants every shop on this street to pay them. We need to help each other.”<cite>Uncle Basheer, Arc 2</cite></blockquote>
+        <p class="fit"><b>Wears</b> a short-sleeved shirt with a pen in the pocket, and his mamak apron.</p>
         <div class="boards">Boards at <a class="bk" href="#bk1">BK1</a> · voiced in Malay and Manglish</div>
       </div>
     </article>
 
     <article class="person small">
+      <figure class="cut" style="--wall:#dfe5ee"><img src="shots/cast-nadia.webp" alt="Inspector Nadia in anime style: a black tudung, a pale blue jacket with a gold badge, black trousers and trainers" width="290" height="900" loading="lazy"></figure>
       <div class="who"><span class="signboard sb-nadia">Inspektor</span><h3>Inspector Nadia</h3><span class="role">Honest police officer</span></div>
       <div class="about">
         <p>On the tow-crew case. She needs evidence, and you have a phone camera and a talent for not being seen. She leads Arc 3.</p>
+        <p class="fit"><b>Wears</b> a tudung and a blue jacket with her badge.</p>
         <div class="boards">Boards at <a class="cm" href="#cm12">CM12</a></div>
       </div>
     </article>
 
     <article class="person small">
+      <figure class="cut" style="--wall:#e8dcae"><img src="shots/cast-bostunda.webp" alt="Bos Tunda in anime style: bald, sunglasses and a moustache, a black jacket over a yellow shirt" width="331" height="900" loading="lazy"></figure>
       <div class="who"><span class="signboard sb-tunda"><span>Tapak Tunda</span></span><h3>Bos Tunda</h3><span class="role">The tow boss</span></div>
       <div class="about">
         <p>Runs a clamp-and-tow protection racket from his yard: clamped customers, scared-off suppliers, a blocked back lane. <i>Tunda</i> means tow. It also means postpone, which is what he does to everyone's business.</p>
+        <p class="fit"><b>Wears</b> a black jacket with the TUNDA logo over a company-yellow shirt, a gold watch, keys and a walkie-talkie.</p>
         <div class="boards">His crew boards at <a class="cm" href="#cm7">CM7</a></div>
       </div>
     </article>
 
     <article class="person small">
+      <figure class="cut" style="--wall:#e2e0da"><img src="shots/cast-suresh.webp" alt="Suresh in anime style: a beard, a white shirt under a navy waistcoat and dark trousers" width="296" height="900" loading="lazy"></figure>
       <div class="who"><span class="signboard sb-suresh">Buku akaun</span><h3>Suresh</h3><span class="role">The crew's bookkeeper</span></div>
       <div class="about">
-        <p>Keeps the racket's books. He arrives with Arc 3.</p>
+        <p>Keeps the racket's books, and boards the monorail at Chow Kit with its ledger. He arrives with Arc 3.</p>
+        <p class="fit"><b>Wears</b> a clerk's waistcoat.</p>
         <div class="boards">Boards at <a class="kk" href="#kk17">KK17</a> · Arc 3</div>
       </div>
     </article>
@@ -652,6 +818,69 @@ img, video { display: block; max-width: 100%; height: auto; }
       </ul>
       <p class="fine">Voices are AI-generated and marked that way in Settings. Mission 1 now has two more Malay takes, with voice volume and subtitles in Settings. Chinese text is available for every line as 中文（预览）. More Malay, Manglish and Cantonese story voices are planned before 1.0.</p>
     </div>
+  </div>
+</section>
+
+<!-- ================= EASTER EGGS ================= -->
+<section class="khabar band" id="khabar" aria-labelledby="khabar-h">
+  <div class="wrap">
+    <div class="masthead">
+      <h2 id="khabar-h">Khabar angin<small>Rumours: eleven rare things to see in KL, new in 0.5.8</small></h2>
+      <span class="price">Percuma</span>
+    </div>
+    <p class="dateline"><span>Edisi lewat malam</span><span>Percaya atau tidak</span><span>Times are KL game time</span></p>
+
+    <div class="front">
+      <article class="lead" aria-labelledby="k-pontianak">
+        <span class="seen">00:00–03:00 · Kampung Baru</span>
+        <h3 id="k-pontianak">Pontianak di bawah pokok pisang</h3>
+        <figure><img src="shots/egg-pontianak.jpg" alt="A woman in white with long black hair stands with her back turned under a banana clump beside a kampung house at night" width="1280" height="720" loading="lazy"><figcaption>Kampung Baru grew banana trees for her.</figcaption></figure>
+        <p>A woman in white with long hair stands at the edge of a banana clump beside a kampung house, her back to you. Her laugh is loud when you're far off and faint when you're close, the way the old stories tell it. Get near, or look away for two seconds, and she's gone.</p>
+      </article>
+
+      <div class="side">
+        <article class="item" aria-labelledby="k-hitch">
+          <span class="seen">23:00–04:00 · an empty outer road</span>
+          <h4 id="k-hitch">Perempuan berbaju putih minta tumpang</h4>
+          <img src="shots/egg-hitchhiker.jpg" alt="A glowing woman in white with one hand raised at the kerb of a dark road" width="800" height="450" loading="lazy">
+          <p>Drive a car down an empty road on the city's edge at night and she raises a hand at the kerb. You pass her. A few seconds later, check the back seat.</p>
+        </article>
+        <article class="item" aria-labelledby="k-toyol">
+          <span class="seen">22:00–04:00 · a five-foot way</span>
+          <h4 id="k-toyol">Toyol di kaki lima</h4>
+          <img src="shots/egg-toyol.jpg" alt="A small green bald creature running along a shophouse five-foot way at night" width="800" height="450" loading="lazy">
+          <p>Walk the shophouse arcades late and a small green bald child patters past and vanishes behind a pillar.</p>
+        </article>
+      </div>
+
+      <div class="lower">
+        <article class="item" aria-labelledby="k-biawak">
+          <span class="seen">08:00–18:00 · a river bridge</span>
+          <h4 id="k-biawak">Biawak melintas, trafik berhenti</h4>
+          <img src="shots/egg-biawak.jpg" alt="A monitor lizard crossing an empty road beside a pavement" width="800" height="450" loading="lazy">
+          <p>A metre and a half of monitor lizard walks across where the road comes off the bridge, and the traffic waits. You can't run it over: it darts off first.</p>
+        </article>
+        <article class="item" aria-labelledby="k-monyet">
+          <span class="seen">07:00–18:00 · Bukit Nanas, on foot</span>
+          <h4 id="k-monyet">Monyet ragut beg plastik</h4>
+          <img src="shots/egg-monyet.jpg" alt="Two macaques sitting on the grass of the Bukit Nanas path" width="800" height="450" loading="lazy">
+          <p>Two or three macaques sit on the path up to KL Tower. Get close and one grabs a plastic bag and runs for the trees.</p>
+        </article>
+      </div>
+
+      <div class="briefs">
+        <h4>Ringkas</h4>
+        <ul>
+          <li><b>Pelangi</b><span>07:00–18:30 · after rain</span>A rainbow when a rain spell ends and the sun is low enough. Never at midday, when KL's sun is too high, just like the real thing.</li>
+          <li><b>Bunga api</b><span>00:00 · over KLCC</span>Fireworks at midnight on some nights, and every night on New Year, Merdeka and Malaysia Day by your device's date, over Merdeka 118 too.</li>
+          <li><b>Tahi bintang</b><span>21:00–05:00 · clear nights</span>A shooting star, about a second long, high over the city.</li>
+          <li><b>Wau</b><span>16:00–18:30 · dry afternoons</span>Wau bulan on long lines over the Dataran Merdeka padang or the Lake Gardens hill.</li>
+          <li><b>Monorel hantu</b><span>02:30–03:30 · a monorail station</span>A lit, empty train glides through without stopping and without a sound. You can't board it.</li>
+          <li><b>UFO</b><span>02:45–03:15 · between the towers</span>A disc hovers between the Petronas tops, hums, then shoots straight up. The rarest of the eleven.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small-print">Nothing to collect, no counter and nothing saved. Each keeps its own hour, weather and place, and in free roam you might meet one an hour.</p>
   </div>
 </section>
 
@@ -708,6 +937,7 @@ img, video { display: block; max-width: 100%; height: auto; }
     </div>
     <div class="fine">
       <p>KL Rush is free, with no ads and no accounts. Your save lives in your browser. It is an independent game made in Malaysia, not affiliated with or endorsed by the owners of the buildings, brands and places it shows. Their names belong to their owners.</p>
+      <p>Characters: Amir is “Ake” (Red hoodie) by Akemenos, Faiz is “Messy Haired Boy” by Dyzium, Suresh is “Bearded Trial” by Benji and Bos Tunda is “黒スーツの大男” by 陽気婢, all from VRoid Hub and used under their conditions of use. Uncle Basheer is our own, made from “AvatarSample_C” by VRoid Project (pixiv), and Inspector Nadia is our own, made from “VRM1_Constraint_Twist_Sample” by pixiv Inc. under the VRM Public License 1.0. Animations: Universal Animation Library by Quaternius (CC0).</p>
       <p>Inspired by 臺北狂飆 Taipei Rush by @aicodewithme. © 2026 chengboonrong. All rights reserved.</p>
     </div>
   </div>
