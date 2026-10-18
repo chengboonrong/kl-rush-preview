@@ -2,6 +2,13 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.6.3 Beta (18 October 2026)
+
+The police headquarters and the shophouse back lanes, rebuilt. Your save carries over.
+
+- **Police headquarters rebuilt.** Ibu Pejabat Polis was a dark glass box with a sign stuck on it. It is now a government block in pale concrete with sun louvres, on a podium with a police-blue fascia, with an entrance canopy in the blue-and-white chequer, stair towers at both ends, a radio mast and three flagpoles.
+- **Shophouse back lanes.** The backs of the shophouse rows were flat colour. Every unit's back now has a door under a concrete hood, windows with sills, vents, a soil pipe and a water meter, and air-conditioners or a laundry pole, each wall weathered in its own colour.
+
 ## 0.6.2 Beta (18 October 2026)
 
 The police have to find you. Your save carries over.
