@@ -2,6 +2,14 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.6.7 Beta (18 October 2026)
+
+Steadier loading just after the title, and two rare faults fixed. Your save carries over.
+
+- **The city's extra details load one after another.** Right after the title, Amir's look, most of the Blender scenery, the story cast and the easter eggs now arrive one at a time instead of all at once, to make Safari's graphics resets on iPhone less likely. They still appear within the first seconds of play.
+- **Bus shelters and sign poles** no longer stay as plain boxes when the street kit loads after the street details.
+- **A car's detailed wheels or glossy paint** no longer fail to load in a rare case right after the title.
+
 ## 0.6.6 Beta (18 October 2026)
 
 A graphics fix for iPhone. Your save carries over.
