@@ -363,6 +363,18 @@ img, video { display: block; max-width: 100%; height: auto; }
 .foot .fine { margin-top: 0; }
 .foot .fine p + p { margin-top: 8px; }
 
+/* ---------- new in 0.7: out of KL ---------- */
+.baru { background: var(--asphalt-2); padding-block: clamp(64px, 10vw, 112px); }
+.baru-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px clamp(24px, 5vw, 72px); align-items: end; margin-bottom: clamp(32px, 5vw, 56px); }
+.baru-title { font: 800 clamp(3rem, 10vw, 7.5rem)/0.84 var(--f-display); text-transform: uppercase; letter-spacing: -0.01em; }
+.baru-title small { display: block; font: italic 600 clamp(1.25rem, 2.6vw, 1.75rem)/1.2 var(--f-display); text-transform: none; letter-spacing: 0.01em; margin-top: 14px; color: var(--sticker); }
+.baru-copy { display: grid; gap: 14px; color: var(--chalk-2); max-width: 36rem; }
+.baru-copy b { color: var(--chalk); }
+.baru-shots { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px 16px; }
+.baru-shots figure { margin: 0; display: grid; gap: 8px; }
+.baru-shots img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.baru-shots figcaption { font: 400 0.8125rem/1.4 var(--f-mono); color: var(--chalk-2); }
+
 /* ---------- narrow screens ---------- */
 @media (max-width: 1000px) {
   .st { grid-template-columns: 4.25rem 2.5rem minmax(0, 1fr); }
@@ -372,7 +384,7 @@ img, video { display: block; max-width: 100%; height: auto; }
   .petaling .dishes { --n: 3; }
 }
 @media (max-width: 860px) {
-  .hero .wrap, .day-intro .wrap, .story-top, .makan-top, .you, .reel .wrap, .front { grid-template-columns: minmax(0, 1fr); }
+  .hero .wrap, .day-intro .wrap, .baru-top, .story-top, .makan-top, .you, .reel .wrap, .front { grid-template-columns: minmax(0, 1fr); }
   .person { grid-template-columns: 7rem minmax(0, 1fr); }
   .person .about { grid-column: 1 / -1; }
   .stall.mamak, .stall.cendol { grid-column: span 12; }
@@ -382,6 +394,7 @@ img, video { display: block; max-width: 100%; height: auto; }
   .stop .wrap, .stop.flip .wrap, .stop.bare .wrap { grid-template-columns: minmax(0, 1fr); }
   .stop.flip figure, .stop.flip .stop-text { grid-column: auto; grid-row: auto; }
   .stop.flip figure { order: 3; }
+  .baru-shots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 700px) {
   .strip .wrap { flex-wrap: nowrap; }
@@ -414,6 +427,7 @@ img, video { display: block; max-width: 100%; height: auto; }
 <header class="strip band">
   <div class="wrap">
     <nav aria-label="Sections">
+      <a href="#baru">Keluar KL</a>
       <a href="#hari">Sehari di KL</a>
       <a href="#makan">Jom makan</a>
       <a href="#cerita">Laluan cerita</a>
@@ -428,7 +442,7 @@ img, video { display: block; max-width: 100%; height: auto; }
 <section class="hero band" aria-labelledby="title">
   <div class="wrap">
     <div class="hero-text">
-      <h1 id="title"><img src="img/logo.svg" alt="KL Rush: Jom Pecut" width="1040" height="316"><span class="beta">0.6 BETA</span></h1>
+      <h1 id="title"><img src="img/logo.svg" alt="KL Rush: Jom Pecut" width="1040" height="316"><span class="beta">0.7 BETA</span></h1>
       <p class="tagline">Balik KL.<span>Jom pecut.</span></p>
       <p class="hero-sub">An open-world Kuala Lumpur you can drive, ride and walk, free in your browser. Come home, get pulled into your cousin's car jobs, then help Uncle Basheer's street stand up to a tow-lorry racket.</p>
       <div class="ctas">
@@ -438,35 +452,23 @@ img, video { display: block; max-width: 100%; height: auto; }
       <p class="hero-fine">Chrome, Edge or Safari · computer or phone · keyboard and mouse, controller or touch · installs as an app<br>English · Bahasa Melayu · 简体中文 (preview)</p>
     </div>
 
-    <article class="receipt" aria-label="What's new in 0.6 Beta">
-      <header><b>KEDAI 24 JAM</b><span>RESIT · 0.6 BETA</span><span class="tnum">19/10/2026 · NO. 0.6.9-BETA</span></header>
+    <article class="receipt" aria-label="What's new in 0.7 Beta">
+      <header><b>KEDAI 24 JAM</b><span>RESIT · 0.7 BETA</span><span class="tnum">19/10/2026 · NO. 0.7.0-BETA</span></header>
       <ul class="tnum">
-        <li><span>PEOPLE NEAR YOU, IN DETAIL</span><span>×9</span></li>
-        <li><span>FAIZ, BASHEER, NADIA RESTYLED</span><span>NEW</span></li>
-        <li><span>IPHONE LOADING AND GRAPHICS FIXES</span><span>×4</span></li>
-        <li><span>STORY CAST, ANIME STYLE</span><span>×5</span></li>
-        <li><span>EVERYONE IN KL, ANIME STYLE</span><span>NEW</span></li>
-        <li><span>POLICE HQ REBUILT</span><span>NEW</span></li>
-        <li><span>SHOPHOUSE BACK LANES</span><span>NEW</span></li>
-        <li><span>POLICE SEARCH WHERE LAST SEEN</span><span>NEW</span></li>
-        <li><span>AMIR, ANIME STYLE</span><span>NEW</span></li>
-        <li><span>DISHES IN 3D</span><span>×17</span></li>
-        <li><span>BENGKEL FAIZ REBUILT</span><span>NEW</span></li>
-        <li><span>MISI ARC 3 "KOTA KITA"</span><span>×8</span></li>
-        <li><span>NEW JOBS: TUNDA, TARIK KERETA, MONORAIL</span><span>×3</span></li>
-        <li><span>COMPLETION SCREEN</span><span>100%</span></li>
-        <li><span>13 × 13 MAP / NEW DISTRICTS</span><span>×7</span></li>
-        <li><span>AKLEH + FLYOVERS</span><span>1+2</span></li>
-        <li><span>CHAIN SHOPS</span><span>×38</span></li>
-        <li><span>STREET SIGNS, KERBS, DRAINS</span><span>NEW</span></li>
-        <li><span>GALLERY SCREENSHOTS</span><span>×30</span></li>
-        <li><span>PHOTO MODE LOOKS</span><span>×5</span></li>
-        <li><span>CONTROLLER + MOUSE REMAP</span><span>ON</span></li>
-        <li><span>MISSION 1 VOICES</span><span>×2</span></li>
-        <li><span>CHINESE FOR EVERY LINE</span><span>ALL</span></li>
-        <li><span>INSTALL AS AN APP</span><span>ON</span></li>
-        <li><span>HOLDS + HIGH-CONTRAST HUD</span><span>ON</span></li>
-        <li><span>RARE EASTER EGGS</span><span>×11</span></li>
+        <li><span>KLIA EKSPRESO TO T1 + T2</span><span>×2</span></li>
+        <li><span>SOUTH EXPRESSWAY, TOLL + R&amp;R</span><span>NEW</span></li>
+        <li><span>FEDERAL HIGHWAY TO SUBANG</span><span>NEW</span></li>
+        <li><span>SKYPARK RUNWAY VIEWING SPOT</span><span>NEW</span></li>
+        <li><span>TRAVEL APP ON THE PHONE</span><span>NEW</span></li>
+        <li><span>AIRPORT JOBS AT KLIA</span><span>×4</span></li>
+        <li><span>BOMBA SUKARELA + AMBULANS</span><span>×2</span></li>
+        <li><span>WALK-IN CHAIN SHOPS</span><span>ALL</span></li>
+        <li><span>PLANES OVER KL</span><span>NEW</span></li>
+        <li><span>BUSINESSES TO BUY INTO</span><span>×2</span></li>
+        <li><span>STRANGER ENCOUNTERS</span><span>×6</span></li>
+        <li><span>TOUCH CONTROLS, PHONE + TABLET</span><span>FIT</span></li>
+        <li><span>TILT STEERING, AUTO-ACCELERATE</span><span>NEW</span></li>
+        <li><span>BASHEER'S MISSION 1 VOICE</span><span>FIXED</span></li>
       </ul>
       <div class="total tnum"><span>JUMLAH</span><span>RM 0.00</span></div>
       <footer><span>Free. No ads. No account.</span><span>Saves always carry over from now on.</span><span>TERIMA KASIH, DATANG LAGI</span><div class="barcode" aria-hidden="true"></div></footer>
@@ -475,12 +477,35 @@ img, video { display: block; max-width: 100%; height: auto; }
 </section>
 
 <main>
+<!-- ================= NEW IN 0.7 ================= -->
+<section class="baru band" id="baru" aria-labelledby="baru-h">
+  <div class="wrap">
+    <div class="baru-top">
+      <h2 id="baru-h" class="baru-title">Keluar KL<small>New in 0.7: out of the city</small></h2>
+      <div class="baru-copy">
+        <p>Open the phone's Travel app and pick a way out. The <b>KLIA Ekspreso</b> leaves KL Sentral for Terminal 1, then Terminal 2. The <b>south expressway</b> runs between oil palm estates to a toll plaza, an R&amp;R and the KLIA exit. The <b>Federal Highway</b> heads west to Subang's Skypark Terminal, where turboprops land. Your car, fuel, passengers, money and wanted level come with you.</p>
+        <p>At KLIA, an airside pass opens four jobs: baggage tug, fuel bowser, pushback and the airport limousine. Back in KL, the Bomba Sukarela and the ambulance take you on, every chain shop opens its doors (nothing is for sale), and planes cross the sky.</p>
+      </div>
+    </div>
+    <ul class="baru-shots">
+      <li><figure><img src="shots/klia-hall.jpg" alt="Inside the KLIA Terminal 1 departure hall: white tree columns under a wooden shell roof, potted palms and travellers" width="1600" height="900" loading="lazy"><figcaption>KLIA Terminal 1, the departure hall</figcaption></figure></li>
+      <li><figure><img src="shots/klia-apron.jpg" alt="The KLIA apron at the terminal pier, with parked airliners and a fuel bowser" width="1600" height="900" loading="lazy"><figcaption>The apron, where the airport jobs are</figcaption></figure></li>
+      <li><figure><img src="shots/toll-plaza.jpg" alt="Plaza Tol Selatan on the south expressway, with its canopy, booths and cars between oil palm estates" width="1600" height="900" loading="lazy"><figcaption>Plaza Tol Selatan: tap your Tolak 'n Go</figcaption></figure></li>
+      <li><figure><img src="shots/oil-palms.jpg" alt="The south expressway to KLIA running between oil palm estates" width="1600" height="900" loading="lazy"><figcaption>The south expressway through the oil palms</figcaption></figure></li>
+      <li><figure><img src="shots/highway-arch.jpg" alt="A domed arch over the Federal Highway, between office towers and flats" width="1600" height="900" loading="lazy"><figcaption>The arch on the Federal Highway</figcaption></figure></li>
+      <li><figure><img src="shots/skypark.jpg" alt="The front of Subang's Skypark Terminal, with its red-and-white sign, palms and the car park" width="1600" height="900" loading="lazy"><figcaption>Subang's Skypark Terminal</figcaption></figure></li>
+      <li><figure><img src="shots/shop-inside.jpg" alt="Inside a 6-Twelve convenience store: shelves of goods, a promotion sign, the fridges and the counter" width="1600" height="900" loading="lazy"><figcaption>Inside a 6-Twelve</figcaption></figure></li>
+      <li><figure><img src="shots/bomba-fire.jpg" alt="A Bomba Sukarela fire engine pulling up to a burning car on a KL street at night" width="1600" height="900" loading="lazy"><figcaption>Bomba Sukarela at a car fire</figcaption></figure></li>
+    </ul>
+  </div>
+</section>
+
 <!-- ================= ONE DAY ================= -->
 <section id="hari" aria-labelledby="hari-h">
   <div class="day-intro band">
     <div class="wrap">
       <h2 id="hari-h" class="day-title">Sehari di KL<small>One day in the city, by the game clock</small></h2>
-      <p class="day-lede">The game is <b>real Kuala Lumpur at phone size</b>: real landmarks and streets, a new look made in Blender, muted walls and roads, and strong colour only where KL has it. A day here takes <b>24 real minutes</b>, one game minute every second. This is what that day looks like in 0.6.</p>
+      <p class="day-lede">The game is <b>real Kuala Lumpur at phone size</b>: real landmarks and streets, a new look made in Blender, muted walls and roads, and strong colour only where KL has it. A day here takes <b>24 real minutes</b>, one game minute every second. This is what that day looks like in 0.7.</p>
     </div>
   </div>
 
@@ -538,7 +563,7 @@ img, video { display: block; max-width: 100%; height: auto; }
         <h3 id="t4">Petaling Street lights up</h3>
         <p>The pasar malam runs until about 23:30 under the long roof and its sixty-four red lanterns. Off to the side, the new graffiti lane: original wall art, preset stamps to leave your mark, and the sixteenth stray cat.</p>
         <p>After six, Jalan Alor has satay smoke and plastic stools, and a durian stall that serves an opened fruit for RM 6. Every dish the stalls serve can be turned and zoomed in 3D from the phone's Food journal: <a href="#makan">all seventeen are on the menu below</a>.</p>
-        <p>Around KL, 38 shopfronts from six parody chains open and close on the game clock; the Shops layer and GPS find the ones that are open.</p>
+        <p>Around KL, 38 shopfronts from six parody chains open and close on the game clock; the Shops layer and GPS find the ones that are open. Since 0.7 you can walk in, down the aisles, until the shutter comes down.</p>
         <p>Press K or use the phone's Camera app for a screenshot. Photo mode freezes the game so you can frame it, change the look and hide the player.</p>
       </div>
       <figure><img src="shots/graffiti.jpg" alt="A narrow lane of colourful wall art with a ginger cat sitting in it" width="1600" height="900" loading="lazy"><figcaption>The graffiti lane off Petaling Street, and cat no. 16</figcaption></figure>
@@ -591,7 +616,7 @@ img, video { display: block; max-width: 100%; height: auto; }
       <time datetime="05:00">05:00<small>Back to work</small></time>
       <div class="stop-text">
         <h3 id="t8">Cari makan</h3>
-        <p>The story teaches each job before it opens. Taxi, food delivery and Bas Kota have ranks, and 0.6 adds Tunda, Tarik Kereta and monorail driver. The phone's completion screen counts your story, jobs, collections and photos.</p>
+        <p>The story teaches each job before it opens. Taxi, food delivery and Bas Kota have ranks, 0.6 added Tunda, Tarik Kereta and monorail driver, and 0.7 adds Bomba Sukarela, Ambulans and four airport jobs at KLIA. The phone's completion screen counts your story, jobs, collections and photos.</p>
         <ul class="facts cols">
           <li><span>Rank rewards: gold taxi paint, a bus horn, destination signs</span><b>once each</b></li>
           <li><span>Mekanik Bergerak breakdown shifts</span><b>repeatable</b></li>
@@ -601,6 +626,8 @@ img, video { display: block; max-width: 100%; height: auto; }
           <li><span>Tunda: tow broken-down and illegally parked cars</span><b>new job</b></li>
           <li><span>Tarik Kereta: bring back 12 listed cars</span><b>new job</b></li>
           <li><span>Monorail driver: stop at each platform</span><b>new job</b></li>
+          <li><span>Bomba Sukarela and Ambulans, three ranks each</span><b>new jobs</b></li>
+          <li><span>Baggage tug, bowser, pushback, limousine</span><b>KLIA, airside</b></li>
           <li><span>Completion screen on the phone</span><b>100%</b></li>
           <li><span>Install as an app and start offline</span><b>after first visit</b></li>
           <li><span>Holds, HUD contrast and pad-only menus</span><b>accessibility</b></li>
@@ -703,15 +730,15 @@ img, video { display: block; max-width: 100%; height: auto; }
         <li class="st"><span class="code">CM8</span><span class="dot"></span><h4>Kenduri<small>The feast</small></h4><div class="what"><p>Nasi minyak, kari kambing, dalca and acar to a Kampung Baru wedding, through a thunderstorm, before the kompang starts.</p></div><img class="thumb" src="shots/kenduri.jpg" alt="A wedding canopy reading Selamat Pengantin Baru on a kampung lawn" width="1600" height="900" loading="lazy"></li>
         <li class="st"><span class="code">CM9</span><span class="dot"></span><h4>Bekalan Pagi<small>Morning supplies</small></h4><div class="what"><p>Flour, milk and eggs, with a crew van watching.</p><div class="tags"><span class="tag time">05:00–09:00 only</span></div></div></li>
         <li class="st"><span class="code">CM10</span><span class="dot"></span><h4>Rebut Kerja<small>Steal the job</small></h4><div class="what"><p>Beat the tow lorries to three stranded cars and fix them yourself.</p><div class="tags"><span class="tag">Opens Mekanik Bergerak</span></div></div></li>
-        <li class="st"><span class="code">CM11</span><span class="dot"></span><h4>Lorong Api<small>Fire lane</small></h4><div class="what"><p>Shove the lorries out of the back lane so the volunteer fire engine gets through, then take the hose.</p></div></li>
+        <li class="st"><span class="code">CM11</span><span class="dot"></span><h4>Lorong Api<small>Fire lane</small></h4><div class="what"><p>Shove the lorries out of the back lane so the volunteer fire engine gets through, then take the hose.</p><div class="tags"><span class="tag">Opens Bomba Sukarela</span></div></div></li>
         <li class="st" id="cm12"><span class="code">CM12</span><span class="dot"></span><h4>Gambar Bukti<small>Evidence</small></h4><div class="what"><p>A night job. Tail Bos Tunda and photograph three pay-offs without being seen.</p><div class="tags"><span class="tag on">Inspector Nadia boards</span><span class="tag">Opens the photo album</span></div></div></li>
         <li class="st"><span class="code">CM13</span><span class="dot"></span><h4>Malam Bola<small>Football night</small></h4><div class="what"><p>The whole street is watching the match at the restaurant when the crew grabs the cash box.</p></div><img class="thumb" src="shots/mamak.jpg" alt="People cheering at a football screen outside a mamak restaurant at night" width="1600" height="900" loading="lazy"></li>
-        <li class="st end"><span class="code">CM14</span><span class="dot"></span><h4>Cepat, Uncle!<small>Hurry, Uncle!</small></h4><div class="what"><p>Clear the road for an ambulance racing to Hospital KL.</p><div class="tags"><span class="tag">End of Arc 2</span></div></div><img class="thumb" src="shots/ambulance.jpg" alt="An ambulance driving down a wide road past a mosque" width="1600" height="900" loading="lazy"></li>
+        <li class="st end"><span class="code">CM14</span><span class="dot"></span><h4>Cepat, Uncle!<small>Hurry, Uncle!</small></h4><div class="what"><p>Clear the road for an ambulance racing to Hospital KL.</p><div class="tags"><span class="tag">End of Arc 2</span><span class="tag">Opens Ambulans</span></div></div><img class="thumb" src="shots/ambulance.jpg" alt="An ambulance driving down a wide road past a mosque" width="1600" height="900" loading="lazy"></li>
       </ol>
     </div>
 
     <div class="line kk" aria-labelledby="kk-h">
-      <div class="line-head"><span class="roundel">KK</span><h3 id="kk-h">Kota Kita</h3><span class="meaning">our city</span><span class="state">Arc 3 · new in 0.6</span></div>
+      <div class="line-head"><span class="roundel">KK</span><h3 id="kk-h">Kota Kita</h3><span class="meaning">our city</span><span class="state">Arc 3 · open</span></div>
       <ol class="stations">
         <li class="st"><span class="code">KK15</span><span class="dot"></span><h4>Kereta Hilang</h4><div class="what"><p>Search circles on the map for stolen cars before a 06:00 inspection.</p></div></li>
         <li class="st"><span class="code">KK16</span><span class="dot"></span><h4>Gotong-royong</h4><div class="what"><p>At dawn, open the crew's fake clamps with keys from their yard and tow the last car away.</p></div></li>
@@ -720,7 +747,7 @@ img, video { display: block; max-width: 100%; height: auto; }
         <li class="st"><span class="code">KK19</span><span class="dot"></span><h4>Tarik Balik</h4><div class="what"><p>Take back three of Bos Tunda's unpaid cars while his people give chase.</p></div></li>
         <li class="st"><span class="code">KK20</span><span class="dot"></span><h4>Tapak Tunda</h4><div class="what"><p>Get into the crew's tow yard at night and copy the racket's records without fighting the guards.</p></div></li>
         <li class="st"><span class="code">KK21</span><span class="dot"></span><h4>Jejambat</h4><div class="what"><p>Ram a tow lorry to a stop on a closed flyover.</p></div></li>
-        <li class="st"><span class="code">KK22</span><span class="dot"></span><h4>Jom Pecut</h4><div class="what"><p>Stop Bos Tunda before he leaves the city from KL Sentral. Then the credits roll.</p></div></li>
+        <li class="st"><span class="code">KK22</span><span class="dot"></span><h4>Jom Pecut</h4><div class="what"><p>Stop Bos Tunda before he leaves the city from KL Sentral. Then the credits roll.</p><div class="tags"><span class="tag">Opens two businesses to buy into</span></div></div></li>
       </ol>
     </div>
 
@@ -818,7 +845,7 @@ img, video { display: block; max-width: 100%; height: auto; }
         <li><b>Lim</b><q>Young man, your motorbike broke down? Come, I fix it for you.</q><span>Motorbike workshop, Jalan Pudu · Hokkien, Malay</span></li>
         <li><b>Priya</b><q>Hold tight ah, we go through Brickfields!</q><span>Pickup point, KL Sentral · Manglish, Malay</span></li>
       </ul>
-      <p class="fine">Voices are AI-generated and marked that way in Settings. Mission 1 now has two more Malay takes, with voice volume and subtitles in Settings. Chinese text is available for every line as 中文（预览）. More Malay, Manglish and Cantonese story voices are planned before 1.0.</p>
+      <p class="fine">Voices are AI-generated and marked that way in Settings. Mission 1 now has two more Malay takes, with voice volume and subtitles in Settings. Chinese text is available for every line as 中文（预览）. Malay and Manglish story voices come next, in 0.7.1, and Cantonese in 0.8.</p>
     </div>
   </div>
 </section>
@@ -906,8 +933,9 @@ img, video { display: block; max-width: 100%; height: auto; }
         <thead><tr><th scope="col">VERSI</th><th scope="col">DESTINASI</th><th scope="col">MELALUI</th><th scope="col">STATUS</th></tr></thead>
         <tbody>
           <tr><td>0.5β</td><td>KUALA LUMPUR</td><td>Arc 2 · Liga Malam · fuel · licences · rail · easter eggs</td><td>TIBA</td></tr>
-          <tr class="now"><td>0.6β</td><td>KOTA KITA</td><td>Arc 3 · 13×13 map · AKLEH · street details · chain shops · photo mode · install as an app</td><td><a href="https://kl-rush.vercel.app" target="_blank" rel="noopener">SEDIA ▸ MAIN</a></td></tr>
-          <tr class="next"><td>0.7</td><td>KLIA · SUBANG</td><td>planes and airport jobs · expressways, tolls, R&amp;R · walk-in shops · Bomba and ambulance · Malay and Manglish voices</td><td>BERIKUT</td></tr>
+          <tr><td>0.6β</td><td>KOTA KITA</td><td>Arc 3 · 13×13 map · AKLEH · street details · chain shops · photo mode · install as an app</td><td>TIBA</td></tr>
+          <tr class="now"><td>0.7β</td><td>KLIA · SUBANG</td><td>KLIA Ekspreso · expressways, tolls, R&amp;R · Skypark · airport jobs · Bomba and ambulance · walk-in shops · planes</td><td><a href="https://kl-rush.vercel.app" target="_blank" rel="noopener">SEDIA ▸ MAIN</a></td></tr>
+          <tr class="next"><td>0.7.1</td><td>SUARA</td><td>Malay and Manglish story voices</td><td>BERIKUT</td></tr>
           <tr><td>0.8</td><td>SEPANG</td><td>formula racing · race weekend · a tunnel · Cantonese voices</td><td>DIJADUAL</td></tr>
           <tr><td>0.9</td><td>GENTING</td><td>the mountain road · the cable car</td><td>DIJADUAL</td></tr>
           <tr><td>1.0</td><td>KL PENUH</td><td>all 22 missions · free on the web</td><td>DIJADUAL</td></tr>
