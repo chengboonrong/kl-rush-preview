@@ -2,6 +2,25 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.7 Beta (19 October 2026)
+
+Leave the city: take the train to KLIA, drive the south expressway through a toll plaza, or take the Federal Highway west to Subang. Your save carries over and opens in KL.
+
+- **Beyond KL.** Each place outside the city loads when you go there. Your car, its fuel, your passengers, your money and your wanted level come with you. The phone's new Travel app lists KLIA Terminal 1, KLIA Terminal 2 and Subang, each with the way there and the fare. No flights are on sale.
+- **KLIA.** The KLIA Ekspreso (cash or card) runs from KL Sentral to Terminal 1, then Terminal 2. Walk Terminal 1's departure hall and contact pier, cross Terminal 2's skybridge and watch planes taxi under it. Departure boards list the flights, and stalls sell food.
+- **The south expressway to KLIA**, between oil palm estates: a toll plaza where you tap your Tolak 'n Go card (short of balance, top it up at the kiosk), a speed camera, an R&R with petrol and teh tarik, and the KLIA exit to the terminal car park. The Sepang exit is signed but closed until the circuit opens.
+- **The Federal Highway to Subang**, past motorcyclists in their own lane and under the flyovers, to the Skypark Terminal: nasi lemak inside, and a viewing spot at the runway end where turboprops land. After 22:00 the runway is quiet.
+- **Airport jobs** at KLIA, with an airside pass: tow baggage carts to a departing jet before its doors close, giving way to taxiing planes; refuel the parked aircraft in order with the bowser; push an airliner back from its gate on time; and drive the airport limousine to KL (a D licence).
+- **Bomba Sukarela and Ambulans.** After Lorong Api, join the volunteer fire crew and put out bin, stall and parked-car fires with the engine's hose. After Cepat, Uncle!, drive the ambulance and bring patients to Hospital KL quickly and smoothly. Each job has three ranks with rewards.
+- **Walk into every shop.** The chain shops open their doors: walk the aisles past the fridges and the counter, look out at the rain, and leave. At closing time you're asked to leave before the shutter comes down. Nothing is for sale.
+- **Planes over KL.** Turboprops drift low towards Subang and jets cross high towards KLIA, with blinking lights at night.
+- **Businesses and six encounters.** After the finale, buy into Uncle Basheer's second branch and Faiz's breakdown business; each pays a small income every game midnight. "?" marks on the map lead to six short encounters with strangers, from a teh tarik contest to leading a wedding convoy. The completion screen counts them.
+- **Touch controls that fit.** The stick and buttons scale to your screen, tablets get their own layout, and a keyboard attached to a tablet hides them. Settings → Controls → Touch adds auto-accelerate and tilt steering (it asks for motion access; nothing it reads is saved).
+- **Built like the city.** KLIA's terminals, apron, aircraft and train, the expressways, Subang and the shop interiors are built in Blender, with people and traffic, the way KL's streets are.
+- In the first mission, Uncle Basheer's lines now all sound like the same man.
+
+Not yet: pay, fares and business prices may still change; the places outside KL have no satellite view on the map yet; the cashiers greet you in text for now; and the Malay and Manglish story voices come next, in 0.7.1.
+
 ## 0.6.9 Beta (19 October 2026)
 
 A small fix to a feature still being tested; nothing changes in normal play. Your save carries over.

@@ -8,7 +8,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.6.9 Beta** fixes a feature still being tested; nothing changes in normal play. 0.6.8: the few people nearest you on the street are detailed anime-style characters in nine everyday looks, and Faiz, Uncle Basheer and Inspector Nadia are dressed anew. 0.6.7: the city's extra details load one after another just after the title, to make iPhone graphics resets less likely, and two rare faults are fixed. 0.6.6 stopped one graphics reset from moving an iPhone to the slower compatible mode for good, and 0.6.5 stopped iPhone loads from stalling at 91%. 0.6.4 made the story cast anime style: Faiz, Uncle Basheer, Inspector Nadia, Suresh and Bos Tunda, each dressed for their part, and everyone else in KL gets an anime look to match. 0.6.3 rebuilt the police headquarters and the shophouse back lanes in Blender. 0.6.2 made the police search where they last saw you, so getting out of sight loses them. 0.6.1 made Amir an anime-style 3D character, gave every dish a 3D close-up in the Food journal and rebuilt Bengkel Faiz. 0.6 ended the story with Arc 3, KL grows to 13 × 13 blocks with AKLEH, Malaysian street details and chain shops, and you can take screenshots, use a controller, install the game as an app and hear mission 1 voiced. 0.5.8 hid eleven easter eggs (彩蛋) around KL. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
+**Version 0.7 Beta** takes you out of KL. Ride the KLIA Ekspreso to both airport terminals, drive the south expressway through a toll plaza and an R&R, or take the Federal Highway west to Subang's Skypark Terminal. Work the apron as a baggage tug, bowser, pushback or limousine driver, join the Bomba Sukarela or drive the ambulance, walk into every chain shop and buy into two businesses, while planes cross the sky over KL. 0.6 ended the story with Arc 3, grew KL to 13 × 13 blocks with AKLEH and chain shops, and made the story cast and the crowd anime style. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
 
 🎬 [Watch the 50-second trailer](media/kl-rush-trailer-720p.mp4)
 
@@ -17,8 +17,9 @@
 - **Drive and ride through KL**:
   - Kapcai, cars, buses and a sports car, on left-hand roads with traffic lights, monorail trains overhead and traffic that overtakes and filters.
   - Pass the Petronas Twin Towers, KL Tower, Merdeka 118, the Sultan Abdul Samad Building, Masjid Jamek, Central Market, Petaling Street and the Jalan Alor night market.
+- **Leave the city**: KLIA's two terminals by train, the south expressway through a toll plaza and an R&R, and the Federal Highway to Subang, with airport, Bomba and ambulance jobs on the way.
 - **Day, night and tropical rain**: golden-hour skylines, neon and lanterns after dark, afternoon storms that leave the roads shining.
-- **Six story missions** with medals, replays, and checkpoints to retry from if you fail. Side jobs open as the story teaches them: taxi, delivery, city bus route and street races.
+- **22 story missions** with medals, replays, and checkpoints to retry from if you fail. Side jobs open as the story teaches them: taxi, delivery, city bus route and street races.
 - **Voices and food.** Malay story voices and chatty passers-by in many accents, mamak tables, a Food journal of Malaysian dishes, and a Jom Makan badge.
 - **Police chases** with five wanted levels, plus an impound lot and a car wash to clear your name.
 - **Petaling Street under its red roof**, eight local car bodies, and a detailed Rimba.
@@ -29,6 +30,10 @@
 
 | | |
 | --- | --- |
+| ![Inside the KLIA Terminal 1 departure hall: white tree columns under a wooden shell roof, potted palms and travellers](media/screens/klia-departure-hall.jpg) | ![The KLIA apron at the terminal pier, with parked airliners and a fuel bowser](media/screens/klia-apron.jpg) |
+| ![Plaza Tol Selatan, the toll plaza on the south expressway, with its canopy, booths and cars between oil palm estates](media/screens/plaza-tol-selatan.jpg) | ![The south expressway to KLIA running between oil palm estates](media/screens/south-expressway-oil-palms.jpg) |
+| ![A domed arch over the Federal Highway, between office towers and flats, on the way to Subang](media/screens/federal-highway-arch.jpg) | ![The front of Subang's Skypark Terminal, with its red-and-white sign, palms and the car park](media/screens/subang-skypark-terminal.jpg) |
+| ![Inside a 6-Twelve convenience store: shelves of goods, a promotion sign, the fridges and the counter](media/screens/six-twelve-inside.jpg) | ![A Bomba Sukarela fire engine pulling up to a burning car on a KL street at night](media/screens/bomba-car-fire.jpg) |
 | ![Amir, the player character in anime style with a red hoodie, standing on Jalan Alor at dusk](media/screens/amir-anime-jalan-alor.jpg) | ![The Food journal's 3D close-up of a plate of nasi lemak on a banana leaf](media/screens/food-3d-nasi-lemak.jpg) |
 | ![Bengkel Faiz, the cousin's workshop, with its yellow sign, tyre rack and a car in the bay](media/screens/bengkel-faiz.jpg) | ![The police headquarters, Ibu Pejabat Polis, a pale concrete block with sun louvres over its car park](media/screens/police-hq.jpg) |
 | ![The backs of a row of old shophouses, with weathered walls, back doors, drainpipes, air-conditioner units and laundry](media/screens/shophouse-back-lane.jpg) | ![The in-game phone showing the completion screen](media/screens/phone-completion.jpg) |
