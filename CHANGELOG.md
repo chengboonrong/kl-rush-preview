@@ -2,6 +2,30 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.8 Beta (23 October 2026)
+
+A tunnel under the city that closes in heavy rain, and five more strangers who need a hand. Your save carries over.
+
+- **The SMART Tunnel.** A tunnel modelled on KL's runs under the city from Jalan Syed Putra to Jalan Jelatek: one tube, two lanes each way, 10 m down. Cars and taxis use it, as in the real one, and the signs at the portals bar motorcycles and lorries.
+- **Closed for flooding.** In heavy rain the tunnel closes. The phone, the radio and the signs warn you, the gates shut five game minutes later once nobody is inside (an empty car is towed out first), and it reopens 30 game minutes after the rain stops.
+- **Five more encounters.** New "?" marks open as the story goes on, and the completion screen now counts eleven:
+  - **Illegal Tow:** a crew with no council markings is hauling a tourist's rental car away from Jalan Bukit Bintang. Take her friend's car, ram the tow lorry until the car comes off its lift, and drive it back.
+  - **Late for the Exam:** a student at the Lake Gardens missed her bus. Ride her to the exam hall on her brother's kapcai before 08:00 (she waits between 06:00 and 07:00).
+  - **Kapcai Thief:** a man tried to ride off on a stallholder's kapcai at Petaling Street. Chase him into the market and catch him on foot.
+  - **The Busker's Gear:** a man drove off with a busker's amplifier on Bintang Walk. Ram his car to a stop in the band's van, take the amp from the boot and carry it back.
+  - **Lost Cat:** Uncle Raj's cat Oyen ran off at the Lake Gardens. Follow her meow round the lake and carry her back. It opens once you have found five cats.
+- The encounters' "?" marks no longer show at KL's spots while you are at KLIA, on the expressways or at Subang.
+- A story character whose model fails to load no longer stops the next one from loading.
+
+Not yet: formula racing and a race weekend at Sepang are built and stay off until their checks are done; the Cantonese voices come later; and the five new encounters are text only.
+
+## 0.7.1 Beta (19 October 2026)
+
+The story speaks. Your save carries over.
+
+- **Malay and Manglish voices.** Every voiced line of the story, across Arcs 1 to 3, is now spoken, each character in a voice of their own: Faiz, Uncle Basheer, Inspector Nadia, Suresh and Bos Tunda. People on the street, drivers and the police call out too, in a man's or a woman's voice to match who is speaking. The voices are AI-generated and were chosen take by take; native speakers review them before 1.0.
+- **The cashiers greet you** when you walk into a chain shop.
+
 ## 0.7 Beta (19 October 2026)
 
 Leave the city: take the train to KLIA, drive the south expressway through a toll plaza, or take the Federal Highway west to Subang. Your save carries over and opens in KL.
