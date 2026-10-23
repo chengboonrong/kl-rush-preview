@@ -2,6 +2,19 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.8.1 Beta (23 October 2026)
+
+The story and the street speak Cantonese, the SMART Tunnel's tube is rebuilt, and a round of fixes. Your save carries over.
+
+- **Cantonese voices (广东话).** The story's voiced lines, the street call-outs and the cashiers' greetings are spoken in KL Cantonese. Settings → Voice now appears: Auto gives Simplified Chinese players Cantonese, with Chinese captions, and everyone else Malay and Manglish; either can be picked in any language. A few call-outs with no Cantonese take keep their Malay ones. The voices are AI-generated and not yet reviewed by native speakers.
+- **The SMART Tunnel's tube, rebuilt** to look like a real road tunnel: panelled walls with road grime at their foot, a drain and kerb, a cable tray, lamps in housings, a dark ceiling with jet fans on frames, and a lit KELUAR KECEMASAN emergency exit every 125 m. The open cuttings at each end have precast panels too.
+- **Kapcai Thief:** you now catch him with a tackle. He goes down, then kneels with his hands up. It isn't a crime: no report, no wanted stars.
+- **Late for the Exam:** Nurul waits at the bus stop by the Lake Gardens gate on Jalan Kuching and rides pillion on her brother's kapcai.
+- **Passengers ride with you.** A passenger who got into your car, in five encounters and mission 18, used to stay at the kerb until you were 90 m away. Passengers now ride inside a car, and pillion on a motorbike.
+- **The stars** are points across the whole sky. They used to draw as short streaks, and the northern half of the sky had none.
+- **More number plates**, so two cars in view rarely share one.
+- The tunnel's bend no longer has a notch in its wall, its fans no longer have dark halos on High, and no dotted shadow runs down the cuttings' lanes.
+
 ## 0.8 Beta (23 October 2026)
 
 A tunnel under the city that closes in heavy rain, and five more strangers who need a hand. Your save carries over.

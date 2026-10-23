@@ -8,7 +8,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.8 Beta** goes under the city: drive the SMART Tunnel, 10 m down from Jalan Syed Putra to Jalan Jelatek, and see it close for flooding in heavy rain. Five more strangers need a hand, from a tourist's rental car being towed off Bukit Bintang to a busker's stolen amplifier and Uncle Raj's lost cat. 0.7.1 voiced the whole story in Malay and Manglish, and 0.7 took you out of KL to KLIA, the expressways and Subang. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
+**Version 0.8 Beta** goes under the city: drive the SMART Tunnel, 10 m down from Jalan Syed Putra to Jalan Jelatek, and see it close for flooding in heavy rain. Five more strangers need a hand, from a tourist's rental car being towed off Bukit Bintang to a busker's stolen amplifier and Uncle Raj's lost cat. 0.8.1 adds Cantonese voices and rebuilds the tunnel's tube. 0.7.1 voiced the whole story in Malay and Manglish, and 0.7 took you out of KL to KLIA, the expressways and Subang. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
 
 🎬 [Watch the 50-second trailer](media/kl-rush-trailer-720p.mp4)
 
@@ -21,7 +21,7 @@
 - **Leave the city**: KLIA's two terminals by train, the south expressway through a toll plaza and an R&R, and the Federal Highway to Subang, with airport, Bomba and ambulance jobs on the way.
 - **Day, night and tropical rain**: golden-hour skylines, neon and lanterns after dark, afternoon storms that leave the roads shining.
 - **22 story missions** with medals, replays, and checkpoints to retry from if you fail. Side jobs open as the story teaches them: taxi, delivery, city bus route and street races.
-- **Voices and food.** The whole story spoken in Malay and Manglish, chatty passers-by in many accents, mamak tables, a Food journal of Malaysian dishes, and a Jom Makan badge.
+- **Voices and food.** The whole story spoken in Malay and Manglish or in Cantonese, chatty passers-by in many accents, mamak tables, a Food journal of Malaysian dishes, and a Jom Makan badge.
 - **Police chases** with five wanted levels, plus an impound lot and a car wash to clear your name.
 - **Petaling Street under its red roof**, eight local car bodies, and a detailed Rimba.
 - **Garage**: buy vehicles and upgrade engine, tyres, armour and nitro. Change the paint.
@@ -31,10 +31,10 @@
 
 | | |
 | --- | --- |
-| ![The SMART Tunnel's west portal: the road runs down a cutting toward the lit tunnel mouth under the TEROWONG SMART sign](media/screens/smart-tunnel-west-portal.jpg) | ![A taxi coming up out of the SMART Tunnel's south-east portal into daylight](media/screens/smart-tunnel-south-east-portal.jpg) |
-| ![KL at dusk over the SMART Tunnel's west portal, cars going in and out between lit shophouses and flats](media/screens/smart-tunnel-portal-dusk.jpg) | ![The SMART Tunnel closed for flooding: red lane signals and the flood gates shut across the mouth](media/screens/smart-tunnel-flood-gates.jpg) |
-| ![Illegal Tow: chasing an unmarked tow lorry down Jalan Bukit Bintang](media/screens/encounter-illegal-tow.jpg) | ![Kapcai Thief: running after the thief down Petaling Street's covered market at night, under red lanterns](media/screens/encounter-kapcai-thief.jpg) |
-| ![The Busker's Gear: the band's van closing on the car with the stolen amplifier on Bintang Walk](media/screens/encounter-buskers-gear.jpg) | ![Lost Cat: Oyen, a ginger cat, on the grass by the lake in the Lake Gardens](media/screens/encounter-lost-cat.jpg) |
+| ![The SMART Tunnel's west portal: the road runs down a cutting toward the lit tunnel mouth under the TEROWONG SMART sign](media/screens/smart-tunnel-west-portal.jpg) | ![Inside the SMART Tunnel's tube, 10 m down: panelled walls, lamps under a dark ceiling, jet fans and a taxi ahead](media/screens/smart-tunnel-tube.jpg) |
+| ![KL at dusk over the SMART Tunnel's west portal, cars going in and out between lit shophouses and flats](media/screens/smart-tunnel-portal-dusk.jpg) | ![The SMART Tunnel closed for flooding in the rain: the TUNNEL CLOSED: FLOODING board, red lane signals and the flood gates shut across the mouth](media/screens/smart-tunnel-flood-gates.jpg) |
+| ![Illegal Tow: ramming the unmarked tow lorry on Jalan Bukit Bintang to free a tourist's pink car from its lift](media/screens/encounter-illegal-tow.jpg) | ![Kapcai Thief: running after the thief down Petaling Street's covered market at night, under red lanterns](media/screens/encounter-kapcai-thief.jpg) |
+| ![The Busker's Gear: the band's van ramming the car with the stolen amplifier on Bintang Walk](media/screens/encounter-buskers-gear.jpg) | ![Lost Cat: Oyen, a ginger cat, on the grass by the lake in the Lake Gardens](media/screens/encounter-lost-cat.jpg) |
 | ![Inside the KLIA Terminal 1 departure hall: white tree columns under a wooden shell roof, potted palms and travellers](media/screens/klia-departure-hall.jpg) | ![The KLIA apron at the terminal pier, with parked airliners and a fuel bowser](media/screens/klia-apron.jpg) |
 | ![Plaza Tol Selatan, the toll plaza on the south expressway, with its canopy, booths and cars between oil palm estates](media/screens/plaza-tol-selatan.jpg) | ![The south expressway to KLIA running between oil palm estates](media/screens/south-expressway-oil-palms.jpg) |
 | ![A domed arch over the Federal Highway, between office towers and flats, on the way to Subang](media/screens/federal-highway-arch.jpg) | ![The front of Subang's Skypark Terminal, with its red-and-white sign, palms and the car park](media/screens/subang-skypark-terminal.jpg) |
