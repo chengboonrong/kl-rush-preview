@@ -2,6 +2,50 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9 Beta (24 October 2026)
+
+Genting Highlands is built and being checked behind the scenes: the mountain road, Awana and its cable car, and the hilltop resort. It opens in a later update. This release brings a small music fix. Your save carries over.
+
+- The KL Rush theme no longer plays twice over itself when it stops and starts again within two seconds, and quitting to the title stops it until your next tap there.
+
+## 0.8.6 Beta (23 October 2026)
+
+Music of the game's own. Your save carries over.
+
+- **The KL Rush theme**, the tune from the trailers, now plays as the game opens, from your first tap on the title into the first seconds of play, and again while a place outside KL loads.
+- **Ride music:** the same tune in its own arrangement on monorail and underground rides (Rhodes, soft pads and a light kompang) and on the KLIA Ekspreso (a steady train pulse and airy synths). It fades in as you board and out as you step off.
+- The music follows the Music slider, dips under story lines, and never plays over the car radio: turn the radio on and the theme fades out.
+
+## 0.8.5 Beta (23 October 2026)
+
+A fix for iPhones on the compatible graphics mode. Your save carries over.
+
+- **The title screen no longer freezes for seconds** on WebGL2, the graphics mode iPhones switch to after a graphics reset, while the characters' graphics are prepared, and Play answers at once. Where the browser can prepare graphics in the background, it now does. Something that has just come into view can appear a few frames late.
+
+## 0.8.4 Beta (23 October 2026)
+
+Follow-ups to 0.8.3's fixes, and a traffic fix for KL's two-level roads. Your save carries over.
+
+- **Out of breath, Amir runs** instead of walking, until the bar is a third full or you let go of sprint, so holding sprint is about as fast as before and still ahead of police on foot at one star.
+- **Menus turn down only the rain and the street sounds.** The radio and music keep their level, so the phone's Radio app plays as before.
+- **iPhone:** while the game is muted or its volume is at zero, your own music or podcast keeps playing.
+- A crash on AKLEH or in the SMART Tunnel no longer stops the traffic on the street below or above it, and an ambulance or fire engine up on the deck no longer makes the junctions underneath give way.
+
+## 0.8.3 Beta (23 October 2026)
+
+Three fixes from your reports. Your save carries over.
+
+- **Stamina:** an empty bar leaves Amir out of breath, so he can't keep sprinting in short bursts.
+- **Quiet menus:** every menu that pauses the game stops your engine, horn and sirens and turns the rain and street sounds down. Before, the engine kept running behind some of them.
+- **iPhone sound in silent mode:** on Safari 17 and later the game plays its sound with the silent switch on. Nothing plays while the page is hidden.
+
+## 0.8.2 Beta (23 October 2026)
+
+Fewer stutters the first time you see a place. Your save carries over.
+
+- **Graphics prepared before you see them.** Petaling Street, the graffiti lane, the SMART Tunnel and the planes overhead prepare their graphics in the background as you approach, and a place you travel to (KLIA, the expressways, Subang) prepares behind its loading card, so its first frames no longer stall.
+- The SMART Tunnel's bend now stops a car and the camera where its walls are drawn.
+
 ## 0.8.1 Beta (23 October 2026)
 
 The story and the street speak Cantonese, the SMART Tunnel's tube is rebuilt, and a round of fixes. Your save carries over.

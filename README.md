@@ -8,7 +8,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.8 Beta** goes under the city: drive the SMART Tunnel, 10 m down from Jalan Syed Putra to Jalan Jelatek, and see it close for flooding in heavy rain. Five more strangers need a hand, from a tourist's rental car being towed off Bukit Bintang to a busker's stolen amplifier and Uncle Raj's lost cat. 0.8.1 adds Cantonese voices and rebuilds the tunnel's tube. 0.7.1 voiced the whole story in Malay and Manglish, and 0.7 took you out of KL to KLIA, the expressways and Subang. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
+**Version 0.9 Beta** is out, with Genting Highlands built and being checked behind the scenes; it opens in a later update. Since 0.8 went under the city with the SMART Tunnel and five more strangers to help, the game has gained music of its own (the KL Rush theme as it opens, and on train rides), Cantonese voices, fewer stutters the first time you see a place, and fixes from your reports: out of breath on an empty stamina bar, quiet menus, and iPhone sound with the silent switch on. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
 
 🎬 [Watch the 50-second trailer](media/kl-rush-trailer-720p.mp4)
 
