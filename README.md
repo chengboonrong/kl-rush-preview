@@ -27,6 +27,15 @@
 - **Garage**: buy vehicles and upgrade engine, tyres, armour and nitro. Change the paint.
 - **English, Bahasa Melayu and Simplified Chinese (preview).** Keyboard and mouse, gamepad or touch, with a zoomable city map.
 
+## How to leave KL
+
+KLIA and Subang are open from the start. To buy a ticket you need to be on foot, with fewer than two wanted stars and no mission or job running.
+
+- **KLIA by train (RM55):** open the phone (Tab, D-pad left on a gamepad, or the phone button on touch), then **Travel** → **KLIA Ekspreso from KL Sentral**. The GPS takes you to the counter at KL Sentral. Walk up to it, press E (interact) and pay by cash or Tolak 'n Go card. To come back, buy a ticket at a KLIA platform.
+- **By taxi:** in **Travel**, pick **Taxi** under KLIA Terminal 1, KLIA Terminal 2 or Subang. The ride starts from where you stand, and the app shows the fare.
+- **Drive to KLIA:** leave the map by its south edge onto the south expressway. Tap your Tolak 'n Go card at the toll plaza (RM6, card only; top it up at the Tambah Nilai kiosk beside the plaza), stop at R&R Dengkil to save, and keep under 110 km/h past the speed cameras. KLIA is at the end of the road.
+- **Drive to Subang:** leave the map by its west edge onto the Federal Highway.
+
 ## Screenshots
 
 | | |
