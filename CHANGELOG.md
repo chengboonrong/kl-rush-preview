@@ -2,6 +2,19 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9.4 Beta (25 October 2026)
+
+KL Rush as a desktop app, and fixes to the full map, the SMART Tunnel and touch screens. Your save carries over.
+
+- **A desktop app for Windows, macOS and Linux.** [Download it](https://github.com/chengboonrong/kl-rush-preview/releases/latest) next to playing in the browser. It carries the whole game, so it plays offline, and opens links in your browser. It starts full screen (F11 switches) and keeps its own save: move your progress across with Settings → Export backup in the browser and Import backup in the app. The [README](README.md#desktop-app) explains opening it the first time. The Windows and Linux apps are new and not yet tried on real machines; on Linux systems that block user namespaces (Ubuntu 23.10 and later), it may not start.
+- **The full map inside KLIA and Subang** shows the place you're in, with the game's own photo of KLIA and Subang's Skypark, and you can set a waypoint anywhere there. KLIA and Subang no longer carry a "coming soon" stamp.
+- The full map's Layers panel shows every switch at once on every screen. Its last row was cut off on landscape phones.
+- **SMART Tunnel:** police never set up a roadblock in the tunnel or on its ramps, and your own car, left in the tunnel as it closes in the rain, goes to the impound with a message instead of staying in the closed tube.
+- At Subang's Skypark, the planes no longer cause graphics errors once they finish loading.
+- On touch screens, a mission's countdown and the speed and fuel panel no longer cover the objective, and tips and money appear under it.
+- A train or monorail ride always ends with you on foot and in view.
+- Menus and buttons show one focus ring everywhere, small close buttons are easier to tap, and the mission card fits the screen.
+
 ## 0.9 Beta (24 October 2026)
 
 Genting Highlands is built and being checked behind the scenes: the mountain road, Awana and its cable car, and the hilltop resort. It opens in a later update. This release brings a small music fix. Your save carries over.

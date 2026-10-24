@@ -2,15 +2,27 @@
 
 # KL Rush · Jom Pecut di KL
 
-**An open-world Kuala Lumpur you can drive, right in your browser.** No download, works on desktop and phone.
+**An open-world Kuala Lumpur you can drive, right in your browser**, on a computer or a phone, or as an app for Windows, macOS and Linux.
 
 ### ▶ [Play the preview at kl-rush.vercel.app](https://kl-rush.vercel.app)
 
+### ⬇ Download the app: [Windows](https://github.com/chengboonrong/kl-rush-preview/releases/latest/download/KL-Rush-win.zip) · [macOS](https://github.com/chengboonrong/kl-rush-preview/releases/latest/download/KL-Rush-mac.zip) · [Linux](https://github.com/chengboonrong/kl-rush-preview/releases/latest/download/KL-Rush-linux.tar.gz) ([how to open it](#desktop-app))
+
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.9 Beta** is out, with Genting Highlands built and being checked behind the scenes; it opens in a later update. Since 0.8 went under the city with the SMART Tunnel and five more strangers to help, the game has gained music of its own (the KL Rush theme as it opens, and on train rides), Cantonese voices, fewer stutters the first time you see a place, and fixes from your reports: out of breath on an empty stamina bar, quiet menus, and iPhone sound with the silent switch on. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
+**Version 0.9.4 Beta** brings KL Rush as a desktop app for Windows, macOS and Linux, and makes the full map work inside KLIA and Subang. Genting Highlands is built and being checked behind the scenes; it opens in a later update. Since 0.8 went under the city with the SMART Tunnel and five more strangers to help, the game has gained music of its own (the KL Rush theme as it opens, and on train rides), Cantonese voices, fewer stutters the first time you see a place, and fixes from your reports: out of breath on an empty stamina bar, quiet menus, and iPhone sound with the silent switch on. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
 
 🎬 [Watch the 50-second trailer](media/kl-rush-trailer-720p.mp4)
+
+## Desktop app
+
+Download the file for your computer, unzip it and open KL Rush. The apps aren't signed by Apple or Microsoft, so the first time takes one extra step:
+
+- **Windows** ([KL-Rush-win.zip](https://github.com/chengboonrong/kl-rush-preview/releases/latest/download/KL-Rush-win.zip)): open `KL Rush.exe`. If SmartScreen says "Windows protected your PC", choose **More info → Run anyway**.
+- **macOS**, Apple Silicon and Intel ([KL-Rush-mac.zip](https://github.com/chengboonrong/kl-rush-preview/releases/latest/download/KL-Rush-mac.zip)): open **KL Rush**. macOS says it can't verify the app; open **System Settings → Privacy & Security** and choose **Open Anyway**.
+- **Linux** ([KL-Rush-linux.tar.gz](https://github.com/chengboonrong/kl-rush-preview/releases/latest/download/KL-Rush-linux.tar.gz)): extract it and run `kl-rush`.
+
+The app plays offline and keeps its own save. To bring your progress over from the browser, use **Settings → Export backup** there and **Import backup** in the app. It doesn't update itself: download it again for a new version. The Windows and Linux apps are new and not yet tried on real machines, so please [tell us](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) if anything goes wrong.
 
 ## What you can do
 
