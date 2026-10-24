@@ -2,6 +2,17 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9.6 Beta (25 October 2026)
+
+Phones and tablets run cooler, the city draws far fewer triangles, and the desktop app moves to this version. Your save carries over.
+
+- **Phones and tablets run cooler.** On touch screens the game draws 30 frames a second (add `?fps=60` to the address to lift the limit) and stops redrawing behind the pause menu, the phone and other paused screens. On an iPhone on the Low setting, where phones start, it uses about half the power it did. High and Ultra on phones draw at a slightly lower resolution with a lighter bloom; every effect stays.
+- **Far fewer triangles:** far trees use a simpler shape and street lamps out of view aren't drawn, so phones and older computers run cooler and smoother.
+- After your first mission, a tip points to the phone's Travel app and the expressways out of KL, to KLIA and Subang.
+- Chinese says 德士 for taxi everywhere, as Malaysians do.
+- **The desktop app** for Windows, macOS and Linux is now this version. It doesn't update itself, so [download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to get 0.9.6.
+- On a phone, High and Medium still run warm: they stay near 30 frames a second either way, so the limit saves little there.
+
 ## 0.9.4 Beta (25 October 2026)
 
 KL Rush as a desktop app, and fixes to the full map, the SMART Tunnel and touch screens. Your save carries over.
