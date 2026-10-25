@@ -10,7 +10,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.9.6 Beta** makes phones and tablets run cooler and the city lighter to draw. Since 0.9.4 Beta, KL Rush also comes as a desktop app for Windows, macOS and Linux, and the full map works inside KLIA and Subang. Genting Highlands is built and being checked behind the scenes; it opens in a later update. Since 0.8 went under the city with the SMART Tunnel and five more strangers to help, the game has gained music of its own (the KL Rush theme as it opens, and on train rides), Cantonese voices, fewer stutters the first time you see a place, and fixes from your reports: out of breath on an empty stamina bar, quiet menus, and iPhone sound with the silent switch on. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
+**Version 0.9.7 Beta** opens Genting Highlands: drive up the mountain road from the city's north-east corner, through the forest to Awana and the hilltop resort, or ride the cable car from Awana. Cars also show their true paint, with working brake, reverse and indicator lamps, and Classic driving grips and steers more like a real car. Since 0.9.4 Beta, KL Rush also comes as a desktop app for Windows, macOS and Linux, and phones and tablets run cooler. Since 0.8 went under the city with the SMART Tunnel and five more strangers to help, the game has gained music of its own (the KL Rush theme as it opens, and on train rides), Cantonese voices, fewer stutters the first time you see a place, and fixes from your reports: out of breath on an empty stamina bar, quiet menus, and iPhone sound with the silent switch on. Since 0.5.0, the first beta, your saves always carry over, and more story and places still arrive before 1.0. [What's new](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Report a bug or suggest an idea](https://github.com/chengboonrong/kl-rush-preview/issues/new?template=feedback.yml) · [☕ Support on Ko-fi](https://ko-fi.com/chrischeng9297)
 
 🎬 [Watch the 50-second trailer](media/kl-rush-trailer-720p.mp4)
 
@@ -30,7 +30,7 @@ The app plays offline and keeps its own save. To bring your progress over from t
   - Kapcai, cars, buses and a sports car, on left-hand roads with traffic lights, monorail trains overhead and traffic that overtakes and filters.
   - Take the SMART Tunnel under the city, until heavy rain closes it.
   - Pass the Petronas Twin Towers, KL Tower, Merdeka 118, the Sultan Abdul Samad Building, Masjid Jamek, Central Market, Petaling Street and the Jalan Alor night market.
-- **Leave the city**: KLIA's two terminals by train, the south expressway through a toll plaza and an R&R, and the Federal Highway to Subang, with airport, Bomba and ambulance jobs on the way.
+- **Leave the city**: KLIA's two terminals by train, the south expressway through a toll plaza and an R&R, the Federal Highway to Subang, and the mountain road to Genting Highlands and its cable car, with airport, Bomba and ambulance jobs on the way.
 - **Day, night and tropical rain**: golden-hour skylines, neon and lanterns after dark, afternoon storms that leave the roads shining.
 - **22 story missions** with medals, replays, and checkpoints to retry from if you fail. Side jobs open as the story teaches them: taxi, delivery, city bus route and street races.
 - **Voices and food.** The whole story spoken in Malay and Manglish or in Cantonese, chatty passers-by in many accents, mamak tables, a Food journal of Malaysian dishes, and a Jom Makan badge.
@@ -41,12 +41,13 @@ The app plays offline and keeps its own save. To bring your progress over from t
 
 ## How to leave KL
 
-KLIA and Subang are open from the start. To buy a ticket you need to be on foot, with fewer than two wanted stars and no mission or job running.
+KLIA, Subang and Genting Highlands are open from the start. To buy a ticket you need to be on foot, with fewer than two wanted stars and no mission or job running.
 
 - **KLIA by train (RM55):** open the phone (Tab, D-pad left on a gamepad, or the phone button on touch), then **Travel** → **KLIA Ekspreso from KL Sentral**. The GPS takes you to the counter at KL Sentral. Walk up to it, press E (interact) and pay by cash or Tolak 'n Go card. To come back, buy a ticket at a KLIA platform.
 - **By taxi:** in **Travel**, pick **Taxi** under KLIA Terminal 1, KLIA Terminal 2 or Subang. The ride starts from where you stand, and the app shows the fare.
 - **Drive to KLIA:** leave the map by its south edge onto the south expressway. Tap your Tolak 'n Go card at the toll plaza (RM6, card only; top it up at the Tambah Nilai kiosk beside the plaza), stop at R&R Dengkil to save, and keep under 110 km/h past the speed cameras. KLIA is at the end of the road.
 - **Drive to Subang:** leave the map by its west edge onto the Federal Highway.
+- **Drive to Genting Highlands:** leave the map by its north edge, near the north-east corner, onto the Karak Highway link. The mountain road climbs about 4 km through the forest. Turn off at Awana, about a third of the way up, for the cable car to the hilltop (RM11), or keep driving to the top.
 
 ## Screenshots
 

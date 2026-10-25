@@ -2,6 +2,20 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9.7 Beta (25 October 2026)
+
+Genting Highlands opens, and cars look and drive more like real ones. Your save carries over.
+
+- **Genting Highlands is open.** Drive off the map's north edge near its north-east corner onto the Karak Highway link, and climb about 4 km of mountain road through the forest. Awana's station and car park are on the way up, and the cable car (RM11) runs from Awana to the hilltop resort, with its hotels, mall, food court, theme park gate, viewing deck, cool air and mist.
+- **The mountain road** has retaining walls and cut slopes where the hill rises over it, 50 km/h limits, and green signs to Awana, Genting Highlands and Kuala Lumpur. Tall trees and tree ferns stand all the way up.
+- **At night** the Awana station, the hotels and the hilltop's lamps light up. The hilltop is busy with visitors in jackets and cardigans, since it's cool up there.
+- **Cars show their true paint** and dark tinted windows. The pale blue tint that made red taxis look purple is gone. Brake lights stay on in a queue, reverse lights come on, and cars signal for turns and overtakes.
+- **Classic driving** grips at up to about 2.5 g instead of turning almost on the spot, and a held turn keeps its speed. Buses and lorries brake and steer more slowly, and police, race rivals and mission drivers slow for corners.
+- The Perdua MaiVi, the city's most common car, is now a detailed model, and the Potong Xtra 50 is easier to see at night.
+- Roadside police checks set out real traffic cones, and Mission 21's works closure has concrete barriers.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+- Genting has no taxi or train in the phone's Travel app yet: you drive there.
+
 ## 0.9.6 Beta (25 October 2026)
 
 Phones and tablets run cooler, the city draws far fewer triangles, and the desktop app moves to this version. Your save carries over.
