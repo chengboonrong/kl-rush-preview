@@ -2,6 +2,17 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9.8 Beta (25 October 2026)
+
+Fixes to Genting Highlands, found while filming its trailer. Your save carries over.
+
+- **Forest under the cable car.** The cabins crossed bare slopes; now they pass over the forest, which is planted as thickly on the hillsides by the line as along the road.
+- **Awana has visitors.** The station's forecourt was empty; now people in jackets and cardigans walk there, queue at the gates and stand by the kiosks.
+- **The night mist stays dark.** From above at night the hilltop looked snowy in the mist; now the mist is a dark haze, and the lit towers stand out.
+- **The roads out of KL** to KLIA, Subang and Genting have lane markings, the Genting sign is full size, and traffic no longer piles up at their ends.
+- **New trailer:** [Genting Highlands in 50 seconds](media/kl-rush-trailer-720p.mp4).
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
 ## 0.9.7 Beta (25 October 2026)
 
 Genting Highlands opens, and cars look and drive more like real ones. Your save carries over.
