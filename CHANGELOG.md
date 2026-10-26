@@ -2,6 +2,25 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9.10 Beta (26 October 2026)
+
+Safari on iPhones and iPads stops zooming the page, and tips get a new look. Your save carries over.
+
+- **No more double-tap zoom.** On iPhones and iPads, a quick double-tap on the loading screen, the title, a menu or a scrolling panel zoomed the whole page. 0.4.24 Preview's fix never worked in Safari. Now double-taps don't zoom anywhere, and quick taps on buttons still count.
+- **No more zoom after a reload.** A Safari tab that had been zoomed once could come back zoomed in after you rotated the phone and reloaded. Now the game reloads itself once, to start at normal size.
+- **Tips and toasts** have a new look, with a title and an icon. On touch screens, toasts sit under your money and stars, the objective wraps to two lines, and the district banner steps aside while a timer or an objective is showing.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
+## 0.9.9 Beta (25 October 2026)
+
+Story cutscenes, Genting's streets dressed for people, and a guide to playing on a TV. Your save carries over.
+
+- **Story cutscenes.** Every story mission opens with a short letterboxed scene. After the shot of where you're headed, you step up to whoever has the job for you, and they say their lines to you on camera. Merdeka and the last mission end with a scene too. Interact or a tap shows the next line, and Jump or Skip ends the scene.
+- **Genting's streets** have kerbed pavements with benches, zebra crossings with dropped kerbs, tactile paving and bollards, OKU bays and a bus stop at Awana, and a lift beside the cable car's hilltop ticket counter.
+- **Play on a TV.** Settings → Play on TV shows how to put the game on a TV: cast it from a computer or an Android phone or tablet, or use AirPlay from an iPhone or iPad. A TV's own browser plays in TV mode, with Low graphics, 30 frames a second and no touch controls, and the remote's Back button pauses.
+- **iPhone graphics at the title.** On Low, iPhone Safari could lose the game's graphics a few seconds after the title. That's fixed; on Low, building and street textures now look a little softer.
+- **Pause** now works during the shot that opens a mission.
+
 ## 0.9.8 Beta (25 October 2026)
 
 Fixes to Genting Highlands, found while filming its trailer. Your save carries over.
