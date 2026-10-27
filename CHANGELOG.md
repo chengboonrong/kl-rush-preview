@@ -2,6 +2,22 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9.11 Beta (27 October 2026)
+
+Zombie Night opens to everyone, from a button on the title screen. Your story save carries over, and Zombie Night never touches it.
+
+- **Zombie Night.** Tap **Zombie Night** on the title screen. Every night from 8 pm to 6 am, survive waves of zombies in an empty KL with scarce ammo and ammo drops. Faiz radios for help from near Chow Kit: get him to Bengkel Faiz before dawn, and his workshop fixes your car for free every night after. Dying costs nothing, and your best night is kept. **Story Mode** on its title takes you back.
+- **Weapons for the night.** A handgun, then a shotgun and mercun lures from police-car caches, Faiz's parang, and a magic wand with Fira once you reach wave 6. With a weapon out, Jump becomes a dodge roll.
+- **Five KL zombies**, one new type a wave from wave 2:
+  - **Durian:** shoot the durian before it smashes it on you.
+  - **Mat Rempit:** revs, then charges; roll out of the way.
+  - **Teh Tarik:** flings hot tea where you stand; step out of the ring.
+  - **Pasar Malam Cart:** blocks shots from the front; flank it, or tip it over for its snacks.
+  - **Kopitiam Stool:** throws plastic stools; shoot them or roll.
+- **A zombie almanac.** The first time you meet a type, a card tells you its trick, and the pause menu's Zombies page keeps every one you've met, in 3D.
+- **Creepy music** plays from nightfall to dawn. The zombies are creepier too: glowing eyes, torn clothes, a limping lurch, and groans you hear before you see them. No blood or gore.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
 ## 0.9.10 Beta (26 October 2026)
 
 Safari on iPhones and iPads stops zooming the page, and tips get a new look. Your save carries over.
