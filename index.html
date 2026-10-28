@@ -88,6 +88,9 @@ img, video { display: block; max-width: 100%; height: auto; }
 .strip nav a { font: 600 1rem/1 var(--f-display); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; color: var(--chalk-2); padding-block: 6px; }
 .strip nav a:hover { color: var(--chalk); }
 .clock { font: 600 0.8125rem/1 var(--f-mono); color: var(--chalk-2); display: flex; gap: 8px; align-items: baseline; }
+.clock .arc { width: 44px; height: 24px; align-self: center; overflow: visible; }
+.clock .arc path { fill: none; stroke: var(--rule-dark); stroke-width: 1.5; stroke-dasharray: 2 3; }
+.clock .arc line { stroke: var(--rule-dark); stroke-width: 1.5; }
 .clock output { color: var(--sticker); font-size: 1rem; }
 
 /* ---------- hero ---------- */
@@ -113,7 +116,18 @@ img, video { display: block; max-width: 100%; height: auto; }
 .hero-dl a { color: inherit; text-underline-offset: 4px; }
 
 /* receipt */
-.receipt { background: #fbfbf7; color: #1a1a1a; font: 400 0.8125rem/1.45 var(--f-mono); padding: 22px 20px 26px; transform: rotate(1.6deg); box-shadow: 0 18px 40px rgba(0,0,0,0.45); position: relative; width: 100%; max-width: 20rem; justify-self: end;
+.till { --tilt: 1.6deg; justify-self: end; width: 100%; max-width: 20rem; }
+.feed { clip-path: inset(-100vh -100vw 0 -100vw); margin-bottom: -4px; }
+.printer { display: block; width: calc(100% + 20px); margin-left: -10px; height: 18px; border-radius: 2px 2px 5px 5px; background: linear-gradient(var(--rule-dark), #1d1e23); position: relative; z-index: 2; box-shadow: 0 8px 14px rgba(0,0,0,0.5); }
+.printer::after { content: ""; position: absolute; left: 14px; right: 14px; top: 3px; height: 2px; background: #050506; }
+.receipt { animation: receipt-print 2.1s 250ms backwards; }
+@keyframes receipt-print {
+  0% { transform: translateY(100%); animation-timing-function: steps(16, end); }
+  72% { transform: translateY(0); animation-timing-function: cubic-bezier(0.3, 0, 0.6, 1); }
+  80% { transform: translateY(3px) rotate(-0.8deg); animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+  100% { transform: translateY(-16px) rotate(var(--tilt)); }
+}
+.receipt { background: #fbfbf7; color: #1a1a1a; font: 400 0.8125rem/1.45 var(--f-mono); padding: 22px 20px 26px; transform: translateY(-16px) rotate(var(--tilt)); transform-origin: 50% 100%; box-shadow: 0 18px 40px rgba(0,0,0,0.45); position: relative; width: 100%; max-width: 20rem;
   -webkit-mask: linear-gradient(#000 0 0) top / 100% calc(100% - 10px) no-repeat, conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / 14px 10px repeat-x;
           mask: linear-gradient(#000 0 0) top / 100% calc(100% - 10px) no-repeat, conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / 14px 10px repeat-x; }
 .receipt header { text-align: center; display: grid; gap: 2px; padding-bottom: 12px; border-bottom: 1px dashed #888; }
@@ -164,6 +178,12 @@ img, video { display: block; max-width: 100%; height: auto; }
 
 /* ---------- story line ---------- */
 .story { background: var(--paper); color: var(--ink); padding-block: clamp(64px, 10vw, 120px); }
+.story > .wrap { position: relative; }
+.train { position: absolute; left: 0; top: 0; width: 26px; height: 46px; z-index: 2; pointer-events: none; opacity: 0; transition: opacity 200ms cubic-bezier(0.16, 1, 0.3, 1); filter: drop-shadow(0 3px 3px rgba(0,0,0,0.3)); }
+.train .body { fill: var(--line); stroke: var(--ink); stroke-width: 2; }
+.st .dot, .st .code { transition: background-color 250ms, color 250ms; }
+.st.passed .dot { background: var(--ink); }
+.st.here .code { background: var(--line); color: #fff; }
 .story-top { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 28px clamp(28px, 6vw, 88px); align-items: end; margin-bottom: clamp(48px, 7vw, 84px); }
 .story-title { font: 800 clamp(3rem, 10vw, 7.5rem)/0.84 var(--f-display); text-transform: uppercase; letter-spacing: -0.01em; }
 .story-title small { display: block; font: italic 600 clamp(1.25rem, 2.6vw, 1.75rem)/1.2 var(--f-display); text-transform: none; color: var(--ink-2); margin-top: 14px; }
@@ -241,6 +261,32 @@ img, video { display: block; max-width: 100%; height: auto; }
 .also li span:last-child { font: 600 0.8125rem/1 var(--f-mono); white-space: nowrap; }
 .stall > footer { padding: 10px 14px 12px; font-size: 0.8125rem; color: var(--ink-2); border-top: 1px dashed #c9c5b8; }
 
+.dish > .dish-pick { display: grid; align-content: start; width: 100%; }
+.dish-pick { appearance: none; border: 0; margin: 0; padding: 0; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; min-width: 0; }
+.dish-pick:focus-visible { outline-offset: -3px; }
+.dish-pick[aria-disabled="true"] { opacity: 0.5; cursor: default; }
+.also li > .dish-pick { display: flex; align-items: baseline; gap: 8px; width: 100%; min-height: 44px; }
+.dish-pick.lit { animation: sign-on 150ms linear; }
+@keyframes sign-on { 50% { filter: brightness(1.4); } }
+.order-hint { font: 400 0.8125rem/1.5 var(--f-mono); }
+.service { display: flex; gap: 8px; }
+.service button { font: 600 1.125rem/1 var(--f-display); border: 2px solid var(--chalk); background: transparent; color: var(--chalk); padding: 12px 16px 10px; cursor: pointer; }
+.service button[aria-pressed="true"] { background: var(--sticker); border-color: var(--sticker); color: var(--ink); }
+.order { position: fixed; z-index: 6; right: max(16px, env(safe-area-inset-right, 0px)); bottom: 12px; width: 22rem; max-width: calc(100% - 32px); max-height: 55vh; overflow-y: auto; overscroll-behavior: contain; background: #fbfbf7; color: var(--ink); padding: 14px 16px 22px; font: 400 0.8125rem/1.45 var(--f-mono); box-shadow: 0 8px 28px #0006;
+  -webkit-mask: linear-gradient(#000 0 0) top / 100% calc(100% - 8px) no-repeat, conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / 12px 8px repeat-x;
+          mask: linear-gradient(#000 0 0) top / 100% calc(100% - 8px) no-repeat, conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / 12px 8px repeat-x; }
+.order header { text-align: center; border-bottom: 1px dashed #888; padding-bottom: 10px; font-weight: 600; }
+.order ul { padding-block: 8px; border-bottom: 1px dashed #888; }
+.order li { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 8px; }
+.order li.new { animation: order-line 200ms cubic-bezier(0.16, 1, 0.3, 1); }
+@keyframes order-line { from { transform: translateX(12px); opacity: 0; } }
+.order button { font: 600 1.125rem/1 var(--f-display); color: var(--ink); background: transparent; border: 1px solid #888; padding: 10px; min-height: 44px; cursor: pointer; }
+.order .remove { border: 0; }
+.order svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; }
+.order-total { margin-block: 10px; font-weight: 600; }
+.order footer { font-size: 0.6875rem; margin-top: 10px; }
+.order .order-summary { display: none; }
+
 /* ---------- cast ---------- */
 .cast { background: var(--asphalt); padding-block: clamp(64px, 10vw, 120px); }
 .cast-title { font: 800 clamp(3rem, 10vw, 7.5rem)/0.84 var(--f-display); text-transform: uppercase; letter-spacing: -0.01em; margin-bottom: 18px; }
@@ -310,6 +356,15 @@ img, video { display: block; max-width: 100%; height: auto; }
 .front { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr); gap: 28px clamp(24px, 4vw, 44px); padding-top: 26px; }
 .front figure { margin: 0; display: grid; gap: 6px; }
 .front figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.haunt { display: block; width: 100%; border: 0; padding: 0; background: #000; cursor: pointer; }
+.haunt img { transition: filter 900ms; }
+.haunt.dark img { filter: brightness(0.08) blur(1px); transition: none; animation: lamp-fail 500ms linear; }
+@keyframes lamp-fail {
+  0%, 30% { filter: brightness(1); }
+  15%, 48% { filter: brightness(0.2); }
+  65% { filter: brightness(0.65); }
+  100% { filter: brightness(0.08) blur(1px); }
+}
 .front figcaption { font: 400 0.75rem/1.4 var(--f-mono); color: #4a463e; }
 .lead { display: grid; gap: 14px; align-content: start; }
 .lead h3 { font: 800 clamp(2.25rem, 6vw, 4.5rem)/0.88 var(--f-display); text-transform: uppercase; letter-spacing: -0.01em; }
@@ -352,6 +407,9 @@ img, video { display: block; max-width: 100%; height: auto; }
 .board tr.now td:last-child a { color: #111; background: var(--amber); text-shadow: none; text-decoration: none; padding: 3px 8px 1px; }
 .board tr.next td:last-child { animation: blink 1.2s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0.25; } }
+.board .scramble { display: inline-block; white-space: pre; }
+.board .via-settle { animation: via-in 500ms cubic-bezier(0.16, 1, 0.3, 1) backwards; }
+@keyframes via-in { from { opacity: 0; } }
 .board-note { margin-top: 14px; font: 400 0.8125rem/1.5 var(--f-mono); color: var(--chalk-2); }
 
 /* ---------- footer ---------- */
@@ -378,11 +436,31 @@ img, video { display: block; max-width: 100%; height: auto; }
 .baru-shots figcaption { font: 400 0.8125rem/1.4 var(--f-mono); color: var(--chalk-2); }
 .baru.lama { background: var(--asphalt); }
 
+/* ---------- screenshot viewer ---------- */
+.enlarge { display: block; width: 100%; min-width: 0; border: 0; padding: 0; margin: 0; background: transparent; color: inherit; cursor: zoom-in; }
+.st .enlarge { width: 100%; }
+.st .enlarge .thumb { margin-top: 0; max-width: none; }
+.viewer { width: 100vw; max-width: none; height: 100dvh; max-height: none; margin: 0; padding: 16px 3vw; border: 0; background: rgba(5,5,6,0.97); color: var(--chalk); overflow: auto; overscroll-behavior: contain; opacity: 0; transition: opacity 160ms; }
+.viewer[open] { display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+.viewer::backdrop { background: #050506; }
+.viewer.ready { opacity: 1; transition-duration: 220ms; transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+.viewer figure { margin: 0; min-height: 0; }
+.viewer img { margin: auto; max-width: 94vw; max-height: 80vh; max-height: 76dvh; width: auto; object-fit: contain; transform: scale(0.96); transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), opacity 100ms; }
+.viewer.ready img { transform: scale(1); }
+.viewer:not(.ready) img { transition-duration: 160ms; }
+.viewer.changing img { opacity: 0; }
+.viewer figcaption { margin-top: 10px; text-align: center; color: var(--chalk-2); font: 400 0.8125rem/1.4 var(--f-mono); }
+.viewer-controls { display: flex; justify-content: center; align-items: center; gap: 12px; }
+.viewer button { color: var(--chalk); background: var(--asphalt-2); border: 1px solid var(--rule-dark); padding: 10px 16px; min-height: 44px; font: 600 1.125rem/1 var(--f-display); cursor: pointer; }
+.viewer svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; }
+.viewer-count { font: 400 0.8125rem/1 var(--f-mono); }
+body.viewing { position: fixed; left: 0; right: 0; overflow: hidden; }
+
 /* ---------- narrow screens ---------- */
 @media (max-width: 1000px) {
   .st { grid-template-columns: 4.25rem 2.5rem minmax(0, 1fr); }
   .st .what { grid-column: 3; }
-  .st .thumb { grid-column: 3; max-width: 22rem; margin-top: 10px; }
+  .st .thumb, .st .enlarge { grid-column: 3; max-width: 22rem; margin-top: 10px; }
   .alor .dishes { --n: 4; }
   .petaling .dishes { --n: 3; }
 }
@@ -391,9 +469,9 @@ img, video { display: block; max-width: 100%; height: auto; }
   .person { grid-template-columns: 7rem minmax(0, 1fr); }
   .person .about { grid-column: 1 / -1; }
   .stall.mamak, .stall.cendol { grid-column: span 12; }
-  .cendol .dish { grid-template-columns: minmax(0, 14rem) minmax(0, 1fr); align-items: center; }
+  .cendol .dish > .dish-pick, .cendol .dish:not(:has(.dish-pick)) { grid-template-columns: minmax(0, 14rem) minmax(0, 1fr); align-items: center; }
   .side { border-left: 0; padding-left: 0; border-top: 3px solid #151412; padding-top: 18px; }
-  .receipt { justify-self: start; transform: rotate(-1deg); }
+  .till { justify-self: start; --tilt: -1deg; }
   .stop .wrap, .stop.flip .wrap, .stop.bare .wrap { grid-template-columns: minmax(0, 1fr); }
   .stop.flip figure, .stop.flip .stop-text { grid-column: auto; grid-row: auto; }
   .stop.flip figure { order: 3; }
@@ -407,10 +485,17 @@ img, video { display: block; max-width: 100%; height: auto; }
   .clock { flex: none; }
 }
 @media (max-width: 560px) {
+  .order { left: 12px; right: 12px; width: auto; max-width: none; max-height: 45vh; max-height: 45dvh; padding: 0 12px 8px; }
+  .order .order-summary { display: flex; justify-content: space-between; align-items: center; width: 100%; border: 0; gap: 8px; }
+  .order .order-summary svg { transition: transform 200ms; }
+  .order.expanded .order-summary svg { transform: rotate(180deg); }
+  .order:not(.expanded) .order-detail { display: none; }
+  .order .order-detail { padding-bottom: 10px; }
+
   .alor .dishes, .petaling .dishes, .mamak .dishes { --n: 2; }
   .dishes > .dish:last-child:nth-child(odd) { grid-column: 1 / -1; }
   .dishes > .dish:last-child:nth-child(odd) img { aspect-ratio: 2 / 1; }
-  .cendol .dish { grid-template-columns: minmax(0, 1fr); }
+  .cendol .dish > .dish-pick, .cendol .dish:not(:has(.dish-pick)) { grid-template-columns: minmax(0, 1fr); }
   .lower { grid-template-columns: minmax(0, 1fr); }
   .masthead { grid-template-columns: minmax(0, 1fr); justify-items: start; }
   .st { grid-template-columns: 3.75rem 2rem minmax(0, 1fr); gap: 0 12px; }
@@ -423,6 +508,15 @@ img, video { display: block; max-width: 100%; height: auto; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .board tr.next td:last-child { animation: none; }
+  .receipt { animation: none; }
+  /* The clock and station classes still show the current reading state. */
+  .train { display: none; }
+  .st .dot, .st .code { transition: none; }
+  .viewer img, .viewer.ready img { transform: none; }
+  .board .via-settle { animation: none; }
+  .haunt.dark img { animation: none; transition: filter 500ms; }
+  .dish-pick.lit, .order li.new { animation: none; }
+  .order .order-summary svg { transition: none; }
 }
 </style>
 </head>
@@ -439,7 +533,7 @@ img, video { display: block; max-width: 100%; height: auto; }
       <a href="#khabar">Khabar angin</a>
       <a href="#berlepas">Berlepas</a>
     </nav>
-    <span class="clock" title="Game time: one game minute per real second">KL <output id="clock" class="tnum">16:30</output></span>
+    <span class="clock" title="Game time: one game minute per real second">KL <svg class="arc" viewBox="0 0 44 24" aria-hidden="true"><line x1="0" y1="22" x2="44" y2="22"/><path d="M4 22 A18 18 0 0 1 40 22"/><circle id="orb" cx="35.4" cy="10" r="4" fill="var(--sticker)"/></svg><output id="clock" class="tnum">16:30</output></span>
   </div>
 </header>
 
@@ -457,23 +551,28 @@ img, video { display: block; max-width: 100%; height: auto; }
       <p class="hero-fine">Chrome, Edge or Safari · computer or phone · keyboard and mouse, controller or touch · installs as an app<br>English · Bahasa Melayu · 简体中文 (preview)</p>
     </div>
 
-    <article class="receipt" aria-label="What's new in 0.9 Beta">
-      <header><b>KEDAI 24 JAM</b><span>RESIT · 0.9 BETA</span><span class="tnum">27/10/2026 · NO. 0.9.11-BETA</span></header>
-      <ul class="tnum">
-        <li><span>ZOMBIE NIGHT (TITLE SCREEN)</span><span>NEW</span></li>
-        <li><span>5 KL ZOMBIES + ALMANAC</span><span>NEW</span></li>
-        <li><span>GENTING HIGHLANDS</span><span>OPEN</span></li>
-        <li><span>STORY CUTSCENES</span><span>NEW</span></li>
-        <li><span>DOUBLE-TAP ZOOM (SAFARI)</span><span>FIXED</span></li>
-        <li><span>PLAY ON TV</span><span>NEW</span></li>
-        <li><span>GENTING STREETS + OKU BAYS</span><span>NEW</span></li>
-        <li><span>IPHONE GRAPHICS ON LOW</span><span>FIXED</span></li>
-        <li><span>CARS: TRUE PAINT + LAMPS</span><span>NEW</span></li>
-        <li><span>DESKTOP APP: WIN · MAC · LINUX</span><span>NEW</span></li>
-      </ul>
-      <div class="total tnum"><span>JUMLAH</span><span>RM 0.00</span></div>
-      <footer><span>Free. No ads. No account.</span><span>Saves always carry over from now on.</span><span>TERIMA KASIH, DATANG LAGI</span><div class="barcode" aria-hidden="true"></div></footer>
-    </article>
+    <div class="till">
+      <div class="feed">
+        <article class="receipt" aria-label="What's new in 0.9 Beta">
+          <header><b>KEDAI 24 JAM</b><span>RESIT · 0.9 BETA</span><span class="tnum">27/10/2026 · NO. 0.9.11-BETA</span></header>
+          <ul class="tnum">
+            <li><span>ZOMBIE NIGHT (TITLE SCREEN)</span><span>NEW</span></li>
+            <li><span>5 KL ZOMBIES + ALMANAC</span><span>NEW</span></li>
+            <li><span>GENTING HIGHLANDS</span><span>OPEN</span></li>
+            <li><span>STORY CUTSCENES</span><span>NEW</span></li>
+            <li><span>DOUBLE-TAP ZOOM (SAFARI)</span><span>FIXED</span></li>
+            <li><span>PLAY ON TV</span><span>NEW</span></li>
+            <li><span>GENTING STREETS + OKU BAYS</span><span>NEW</span></li>
+            <li><span>IPHONE GRAPHICS ON LOW</span><span>FIXED</span></li>
+            <li><span>CARS: TRUE PAINT + LAMPS</span><span>NEW</span></li>
+            <li><span>DESKTOP APP: WIN · MAC · LINUX</span><span>NEW</span></li>
+          </ul>
+          <div class="total tnum"><span>JUMLAH</span><span>RM 0.00</span></div>
+          <footer><span>Free. No ads. No account.</span><span>Saves always carry over from now on.</span><span>TERIMA KASIH, DATANG LAGI</span><div class="barcode" aria-hidden="true"></div></footer>
+        </article>
+      </div>
+      <span class="printer" aria-hidden="true"></span>
+    </div>
   </div>
 </section>
 
@@ -724,6 +823,12 @@ img, video { display: block; max-width: 100%; height: auto; }
 <!-- ================= STORY LINE ================= -->
 <section class="story band" id="cerita" aria-labelledby="cerita-h">
   <div class="wrap">
+    <svg class="train" viewBox="0 0 26 46" aria-hidden="true">
+      <rect class="body" x="1" y="1" width="24" height="44" rx="10"/>
+      <rect x="6" y="7" width="14" height="8" rx="3" fill="#fff"/>
+      <rect x="7" y="20" width="12" height="6" rx="1.5" fill="#fff"/>
+      <rect x="7" y="30" width="12" height="6" rx="1.5" fill="#fff"/>
+    </svg>
     <div class="story-top">
       <h2 id="cerita-h" class="story-title">Laluan cerita<small>The story, stop by stop</small></h2>
       <div class="story-copy">
@@ -997,13 +1102,465 @@ img, video { display: block; max-width: 100%; height: auto; }
   </div>
 </footer>
 
+<dialog class="viewer" aria-label="Screenshot viewer" aria-describedby="viewer-caption">
+  <figure><figcaption id="viewer-caption"></figcaption></figure>
+  <div class="viewer-controls">
+    <button type="button" class="viewer-prev" aria-label="Previous screenshot"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M13 3 6 10l7 7"/></svg></button>
+    <span class="viewer-count" aria-live="polite"></span>
+    <button type="button" class="viewer-next" aria-label="Next screenshot"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 3 7 7-7 7"/></svg></button>
+    <button type="button" class="viewer-close">Tutup</button>
+  </div>
+</dialog>
+
 <script>
+// Every scroll feature measures before any of them writes.
+var pageScroll = (function () {
+  var readers = [], pending = false;
+  function frame() {
+    pending = false;
+    var writes = readers.map(function (read) { return read(window.innerHeight); });
+    writes.forEach(function (write) { if (write) write(); });
+  }
+  function request() {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(frame);
+  }
+  window.addEventListener('scroll', request, { passive: true });
+  window.addEventListener('resize', request);
+  window.addEventListener('load', request);
+  if (document.fonts) document.fonts.ready.then(request);
+  return {
+    add: function (read) { readers.push(read); request(); },
+    request: request
+  };
+})();
+
 (function () {
-  var out = document.getElementById('clock');
-  if (!out) return;
-  var m = 16 * 60 + 30; // a new game starts at 16:30
+  var out = document.getElementById('clock'), orb = document.getElementById('orb');
+  var stops = Array.prototype.slice.call(document.querySelectorAll('#hari .stop'));
+  var T = [990, 1035, 1080, 1110, 1140, 1290, 1500, 1740];
+  var m = T[0], reading = false, previous = -1;
   function pad(v) { return (v < 10 ? '0' : '') + v; }
-  setInterval(function () { m = (m + 1) % 1440; out.textContent = pad(Math.floor(m / 60)) + ':' + pad(m % 60); }, 1000);
+  function show() {
+    var minute = Math.round(m) % 1440;
+    if (minute === previous) return;
+    previous = minute;
+    out.textContent = pad(Math.floor(minute / 60)) + ':' + pad(minute % 60);
+    var rise = 430, set = 1160, day = minute >= rise && minute < set, a;
+    if (day) a = (minute - rise) / (set - rise) * Math.PI;
+    else a = (((minute - set) + 1440) % 1440) / (1440 - (set - rise)) * Math.PI;
+    orb.setAttribute('cx', (22 - 18 * Math.cos(a)).toFixed(1));
+    orb.setAttribute('cy', (22 - 18 * Math.sin(a)).toFixed(1));
+    orb.setAttribute('fill', day ? 'var(--sticker)' : 'var(--chalk)');
+    orb.setAttribute('r', day ? 4 : 3);
+  }
+  pageScroll.add(function (height) {
+    var rects = stops.map(function (stop) { return stop.getBoundingClientRect(); });
+    var read = height * 0.4, next = null;
+    rects.forEach(function (r, i) {
+      if (read >= r.top && read < r.bottom) {
+        next = T[i] + ((T[i + 1] || T[i]) - T[i]) * (read - r.top) / r.height;
+      }
+    });
+    // A fast scroll can cross the boundary without a frame inside the last stop.
+    if (reading && next === null) next = read < rects[0].top ? T[0] : T[T.length - 1];
+    var inside = read >= rects[0].top && read < rects[rects.length - 1].bottom;
+    return function () {
+      reading = inside;
+      if (next !== null) { m = next; show(); }
+    };
+  });
+  setInterval(function () {
+    if (reading || document.hidden) return;
+    m = (Math.round(m) + 1) % 1440;
+    show();
+  }, 1000);
+  show();
+})();
+
+(function () {
+  var inner = document.querySelector('.story > .wrap');
+  var train = inner.querySelector('.train');
+  var lines = Array.prototype.slice.call(inner.querySelectorAll('.line'));
+  pageScroll.add(function (height) {
+    var base = inner.getBoundingClientRect(), read = height * 0.45;
+    var active = null, here = null, states = [];
+    lines.forEach(function (line) {
+      var stations = Array.prototype.slice.call(line.querySelectorAll('.st'));
+      var bounds = line.querySelector('.stations').getBoundingClientRect();
+      var dots = stations.map(function (station) {
+        var rect = station.querySelector('.dot').getBoundingClientRect();
+        return { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
+      });
+      var y = Math.max(dots[0].y, Math.min(dots[dots.length - 1].y, read));
+      var onLine = read >= bounds.top && read <= bounds.bottom;
+      var position = onLine ? y : read;
+      stations.forEach(function (station, i) {
+        states.push({ station: station, passed: dots[i].y < position });
+        if (dots[i].y <= position) here = station;
+      });
+      if (onLine) {
+        active = { x: dots[0].x - base.left - 13, y: y - base.top - 23,
+          colour: getComputedStyle(line).getPropertyValue('--line') };
+      }
+    });
+    return function () {
+      states.forEach(function (state) {
+        state.station.classList.toggle('passed', state.passed);
+        state.station.classList.toggle('here', state.station === here);
+      });
+      train.style.opacity = active ? '1' : '0';
+      if (active) {
+        train.style.setProperty('--line', active.colour);
+        train.style.transform = 'translate(' + active.x + 'px,' + active.y + 'px)';
+      }
+    };
+  });
+})();
+
+(function () {
+  var viewer = document.querySelector('.viewer');
+  if (!viewer.showModal) return;
+  var photo, caption = viewer.querySelector('figcaption');
+  var count = viewer.querySelector('.viewer-count'), opener, group = [], index = 0;
+  var changeTimer, closeTimer, scrollY = 0, touchX = null, touchY = null;
+  var images = document.querySelectorAll('.baru-shots img, .stop figure img, .st .thumb, .you figure img, .khabar .item img');
+  function display() {
+    var image = group[index], figure = image.closest('figure');
+    var text = figure && figure.querySelector('figcaption');
+    if (!photo) photo = document.createElement('img');
+    photo.src = image.getAttribute('src');
+    photo.alt = image.alt;
+    if (!photo.parentNode) caption.parentNode.insertBefore(photo, caption);
+    caption.textContent = text ? text.textContent : image.alt;
+    count.textContent = (index + 1) + ' / ' + group.length;
+  }
+  function move(step) {
+    if (closeTimer) return;
+    clearTimeout(changeTimer);
+    index = (index + step + group.length) % group.length;
+    viewer.classList.add('changing');
+    changeTimer = setTimeout(function () {
+      display();
+      viewer.classList.remove('changing');
+    }, 100);
+  }
+  function close() {
+    if (closeTimer) return;
+    clearTimeout(changeTimer);
+    viewer.classList.remove('ready', 'changing');
+    closeTimer = setTimeout(function () { viewer.close(); }, 160);
+  }
+  Array.prototype.forEach.call(images, function (image) {
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'enlarge';
+    button.setAttribute('aria-label', 'Enlarge: ' + image.alt);
+    image.parentNode.insertBefore(button, image);
+    button.appendChild(image);
+    button.addEventListener('click', function () {
+      opener = button;
+      group = Array.prototype.slice.call(image.closest('section').querySelectorAll('.enlarge img'));
+      index = group.indexOf(image);
+      display();
+      scrollY = window.scrollY;
+      document.body.style.top = -scrollY + 'px';
+      document.body.classList.add('viewing');
+      viewer.showModal();
+      viewer.querySelector('.viewer-close').focus();
+      requestAnimationFrame(function () { viewer.classList.add('ready'); });
+    });
+  });
+  viewer.querySelector('.viewer-prev').addEventListener('click', function () { move(-1); });
+  viewer.querySelector('.viewer-next').addEventListener('click', function () { move(1); });
+  viewer.querySelector('.viewer-close').addEventListener('click', close);
+  viewer.addEventListener('cancel', function (event) { event.preventDefault(); close(); });
+  viewer.addEventListener('close', function () {
+    clearTimeout(closeTimer);
+    closeTimer = null;
+    document.body.classList.remove('viewing');
+    document.body.style.top = '';
+    var smooth = document.documentElement.style.scrollBehavior;
+    document.documentElement.style.scrollBehavior = 'auto';
+    window.scrollTo(0, scrollY);
+    document.documentElement.style.scrollBehavior = smooth;
+    opener.focus({ preventScroll: true });
+    pageScroll.request();
+  });
+  viewer.addEventListener('click', function (event) {
+    if (event.target === viewer || event.target === photo.parentNode) close();
+  });
+  viewer.addEventListener('keydown', function (event) {
+    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+    event.preventDefault();
+    move(event.key === 'ArrowLeft' ? -1 : 1);
+  });
+  viewer.addEventListener('touchstart', function (event) {
+    if (event.touches.length !== 1) { touchX = null; return; }
+    touchX = event.touches[0].clientX;
+    touchY = event.touches[0].clientY;
+  }, { passive: true });
+  viewer.addEventListener('touchend', function (event) {
+    if (touchX === null) return;
+    var dx = event.changedTouches[0].clientX - touchX;
+    var dy = event.changedTouches[0].clientY - touchY;
+    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.5) move(dx < 0 ? 1 : -1);
+    touchX = null;
+  }, { passive: true });
+})();
+
+(function () {
+  var board = document.querySelector('.board'), wrap = document.querySelector('.board-wrap');
+  if (!window.IntersectionObserver) return;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var rows = Array.prototype.slice.call(board.tBodies[0].rows), cells = [];
+  var started = false, done = false, visible = false, frame = 0, elapsed = 0, last = 0;
+  var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  function finish() {
+    cells.forEach(function (cell) {
+      while (cell.real.firstChild) cell.real.parentNode.insertBefore(cell.real.firstChild, cell.real);
+      cell.real.remove();
+      cell.fake.remove();
+      cell.td.style.width = cell.width;
+    });
+    rows.forEach(function (row) {
+      row.cells[2].classList.remove('via-settle');
+      row.cells[2].style.animationDelay = '';
+      row.cells[2].style.animationPlayState = '';
+    });
+    board.style.tableLayout = '';
+    done = true;
+    observer.disconnect();
+  }
+  function tick(now) {
+    frame = 0;
+    if (!visible || done) return;
+    if (reduce.matches) { finish(); return; }
+    elapsed += last ? now - last : 0;
+    last = now;
+    cells.forEach(function (cell) {
+      if (elapsed < cell.row * 60) return;
+      var progress = Math.max(0, Math.min(1, (elapsed - cell.row * 60) / 600));
+      var settled = Math.floor(progress * cell.text.length);
+      cell.fake.textContent = cell.text.split('').map(function (letter, i) {
+        return i < settled || !/[A-Za-z0-9]/.test(letter) ? letter : alphabet[Math.floor(Math.random() * alphabet.length)];
+      }).join('');
+    });
+    if (elapsed >= 1320) finish();
+    else frame = requestAnimationFrame(tick);
+  }
+  function start() {
+    // Measure the complete table before replacing any visible text.
+    var widths = rows.map(function (row) {
+      return Array.prototype.map.call(row.cells, function (td) { return td.getBoundingClientRect().width; });
+    });
+    rows.forEach(function (row, r) {
+      [0, 1, 3].forEach(function (column) {
+        var td = row.cells[column], host = td.querySelector('a') || td;
+        var real = document.createElement('span'), fake = document.createElement('span');
+        var text = host.textContent, width = td.style.width;
+        while (host.firstChild) real.appendChild(host.firstChild);
+        fake.className = 'scramble';
+        fake.setAttribute('aria-hidden', 'true');
+        fake.textContent = text;
+        real.className = 'sr';
+        host.appendChild(real);
+        host.appendChild(fake);
+        td.style.width = widths[r][column] + 'px';
+        cells.push({ td: td, real: real, fake: fake, text: text, row: r, width: width });
+      });
+      row.cells[2].style.animationDelay = r * 60 + 'ms';
+      row.cells[2].classList.add('via-settle');
+    });
+    board.style.tableLayout = 'fixed';
+    started = true;
+  }
+  var observer = new IntersectionObserver(function (entries) {
+    var entry = entries[0];
+    visible = entry.isIntersecting;
+    if (!started && visible && !reduce.matches) start();
+    if (reduce.matches && !started) { done = true; observer.disconnect(); return; }
+    if (!started || done) return;
+    if (!visible) {
+      cancelAnimationFrame(frame);
+      rows.forEach(function (row) { row.cells[2].style.animationPlayState = 'paused'; });
+      frame = 0;
+      last = 0;
+    } else if (!frame) {
+      rows.forEach(function (row) { row.cells[2].style.animationPlayState = ''; });
+      frame = requestAnimationFrame(tick);
+    }
+  }, { rootMargin: '0px 0px -30% 0px' });
+  observer.observe(wrap);
+})();
+
+(function () {
+  var image = document.querySelector('.front figure img');
+  var button = document.createElement('button'), timer;
+  var hover = window.matchMedia('(hover: hover) and (pointer: fine)');
+  button.type = 'button';
+  button.className = 'haunt';
+  button.setAttribute('aria-label', 'Look closer: Pontianak');
+  button.setAttribute('aria-pressed', 'false');
+  image.parentNode.insertBefore(button, image);
+  button.appendChild(image);
+  function dark(value) {
+    clearTimeout(timer);
+    button.classList.toggle('dark', value);
+    button.setAttribute('aria-pressed', value ? 'true' : 'false');
+  }
+  function restore() { timer = setTimeout(function () { dark(false); }, 2000); }
+  button.addEventListener('mouseenter', function () { if (hover.matches) dark(true); });
+  button.addEventListener('mouseleave', function () { if (hover.matches) restore(); });
+  button.addEventListener('click', function (event) {
+    if (hover.matches && event.detail) return;
+    dark(!button.classList.contains('dark'));
+    if (button.classList.contains('dark')) restore();
+  });
+  if (window.IntersectionObserver) {
+    var observer = new IntersectionObserver(function (entries) {
+      if (!entries[0].isIntersecting) dark(false);
+    });
+    observer.observe(button);
+  }
+})();
+
+(function () {
+  var section = document.getElementById('makan'), copy = section.querySelector('.makan-copy');
+  var items = [], mode = 'bungkus', inView = false;
+  var hint = document.createElement('p'), service = document.createElement('div');
+  var slip = document.createElement('aside');
+  var phone = window.matchMedia('(max-width: 560px)');
+  hint.className = 'order-hint';
+  hint.textContent = 'Tap a dish to add it to your order.';
+  service.className = 'service';
+  service.setAttribute('role', 'group');
+  service.setAttribute('aria-label', 'Service mode');
+  slip.className = 'order';
+  slip.setAttribute('aria-label', 'Pesanan');
+  slip.hidden = true;
+  slip.innerHTML = '<button type="button" class="order-summary" aria-expanded="false" aria-controls="order-detail"><span></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 13 6-6 6 6"/></svg></button>' +
+    '<div class="order-detail" id="order-detail"><header></header><ul></ul><p class="order-total"></p><button type="button" class="clear-order">Kosongkan</button><footer>For fun only. Nothing is saved.</footer></div>';
+  var summary = slip.querySelector('.order-summary'), list = slip.querySelector('ul');
+  var total = slip.querySelector('.order-total'), live = document.createElement('span');
+  live.className = 'sr';
+  live.setAttribute('aria-live', 'polite');
+  live.setAttribute('aria-atomic', 'true');
+  copy.appendChild(hint);
+  copy.appendChild(service);
+  section.appendChild(slip);
+  section.appendChild(live);
+  function money(sen) { return 'RM ' + (sen / 100).toFixed(2); }
+  function serves(item) { return mode === 'bungkus' ? !item.tisu : item.mamak; }
+  function render(added) {
+    var count = 0, sum = 0;
+    items.forEach(function (item) { count += item.quantity; sum += item.quantity * item.sen; });
+    items.forEach(function (item) {
+      item.button.setAttribute('aria-disabled', serves(item) ? 'false' : 'true');
+      if (!item.quantity) {
+        if (item.line) item.line.remove();
+        item.line = null;
+        return;
+      }
+      if (!item.line) {
+        item.line = document.createElement('li');
+        var name = document.createElement('span'), price = document.createElement('span');
+        var remove = document.createElement('button');
+        remove.type = 'button';
+        remove.className = 'remove';
+        remove.setAttribute('aria-label', 'Remove ' + item.name);
+        remove.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12"/></svg>';
+        remove.addEventListener('click', function () {
+          item.quantity = 0;
+          render();
+          if (slip.hidden) item.button.focus({ preventScroll: true });
+          else if (phone.matches) summary.focus();
+          else slip.querySelector('.clear-order').focus();
+        });
+        item.line.appendChild(name);
+        item.line.appendChild(price);
+        item.line.appendChild(remove);
+        if (added === item) item.line.classList.add('new');
+        list.appendChild(item.line);
+      }
+      item.line.children[0].textContent = item.quantity + ' × ' + item.name;
+      item.line.children[1].textContent = money(item.quantity * item.sen);
+    });
+    slip.querySelector('header').textContent = 'PESANAN · ' + (mode === 'bungkus' ? 'BUNGKUS' : 'MAKAN SINI');
+    summary.querySelector('span').textContent = count + (count === 1 ? ' item · ' : ' items · ') + money(sum);
+    total.textContent = 'JUMLAH ' + money(sum);
+    live.textContent = total.textContent;
+    slip.hidden = !count || !inView;
+    pageScroll.request();
+  }
+  ['Makan sini', 'Bungkus'].forEach(function (label, i) {
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = label;
+    button.setAttribute('aria-pressed', i === 1 ? 'true' : 'false');
+    button.addEventListener('click', function () {
+      mode = i === 1 ? 'bungkus' : 'sini';
+      Array.prototype.forEach.call(service.children, function (control) {
+        control.setAttribute('aria-pressed', control === button ? 'true' : 'false');
+      });
+      items.forEach(function (item) { if (!serves(item)) item.quantity = 0; });
+      render();
+    });
+    service.appendChild(button);
+  });
+  Array.prototype.forEach.call(section.querySelectorAll('li.dish, .also li'), function (dish) {
+    var main = dish.querySelector('b'), price = dish.querySelector('.rm') || dish.lastElementChild;
+    var name = main ? main.textContent : dish.firstElementChild.textContent;
+    if (!main && dish.closest('.alor')) name = 'Roti canai (Jalan Alor)';
+    var parts = price.textContent.replace('RM ', '').trim().split('.');
+    var button = document.createElement('button');
+    var item = { name: name, sen: Number(parts[0]) * 100 + Number(parts[1] || 0),
+      mamak: !!dish.closest('.mamak'), tisu: name.toLowerCase() === 'roti tisu',
+      quantity: 0, button: button, line: null };
+    button.type = 'button';
+    button.className = 'dish-pick';
+    button.setAttribute('aria-label', 'Add ' + name + ', ' + price.textContent);
+    while (dish.firstChild) button.appendChild(dish.firstChild);
+    dish.appendChild(button);
+    items.push(item);
+    button.addEventListener('animationend', function () { button.classList.remove('lit'); });
+    button.addEventListener('click', function () {
+      if (!serves(item)) return;
+      var rect = button.getBoundingClientRect();
+      item.quantity++;
+      button.classList.add('lit');
+      if (phone.matches) {
+        slip.classList.remove('expanded');
+        summary.setAttribute('aria-expanded', 'false');
+      }
+      render(item);
+      // Leave room for the compact slip below the dish just tapped.
+      if (phone.matches && rect.bottom > window.innerHeight - 80) {
+        window.scrollBy(0, rect.bottom - window.innerHeight + 80);
+      }
+    });
+  });
+  summary.addEventListener('click', function () {
+    var expanded = slip.classList.toggle('expanded');
+    summary.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  });
+  slip.querySelector('.clear-order').addEventListener('click', function () {
+    items.forEach(function (item) { item.quantity = 0; });
+    render();
+    service.querySelector('[aria-pressed="true"]').focus({ preventScroll: true });
+  });
+  pageScroll.add(function (height) {
+    var rect = section.getBoundingClientRect();
+    var visible = rect.top < height * 0.7 && rect.bottom > height * 0.3;
+    var bottom = Math.max(12, height - rect.bottom + 12);
+    return function () {
+      inView = visible;
+      slip.hidden = !visible || !items.some(function (item) { return item.quantity > 0; });
+      slip.style.bottom = bottom + 'px';
+    };
+  });
+  render();
 })();
 </script>
 
