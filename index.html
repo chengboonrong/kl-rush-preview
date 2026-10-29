@@ -156,6 +156,7 @@ img, video { display: block; max-width: 100%; height: auto; }
 .stop h3 { font: 800 clamp(1.75rem, 3.4vw, 2.5rem)/0.98 var(--f-display); text-transform: uppercase; }
 .stop p { font-size: 1.0625rem; opacity: 0.92; }
 .stop figure { margin: 0; display: grid; gap: 8px; }
+.stop .figs { display: grid; gap: 20px; }
 .stop figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
 .stop figcaption { font: 400 0.8125rem/1.4 var(--f-mono); opacity: 0.8; }
 .stop.flip .wrap { grid-template-columns: 8.5rem minmax(0, 1fr) minmax(0, 25rem); }
@@ -637,10 +638,13 @@ body.viewing { position: fixed; left: 0; right: 0; overflow: hidden; }
       <time datetime="16:30">16:30<small>A new game starts</small></time>
       <div class="stop-text">
         <h3 id="t1">You land at Pasar Seni</h3>
-        <p>No rain until your first mission is done. In front of you is a 13 × 13 grid of city blocks, with new districts in Titiwangsa, Setapak, Ampang, Mid Valley, Bangsar South, Bangsar and along the Federal Highway. The Sungai Klang runs through it, with left-hand traffic on every road.</p>
+        <p>No rain until your first mission is done. In front of you is a 13 × 13 grid of city blocks, with new districts in Titiwangsa, Setapak, Ampang, Mid Valley, Bangsar South, Bangsar and along the Federal Highway. The Sungai Klang runs through it, with left-hand traffic on every road. Merdeka 118 towers over Pasar Seni, rebuilt in 0.9.12 from real photos and the architect's drawings.</p>
         <p>Jalan P. Ramlee, Jalan Kuching and Jalan Bukit Bintang have flyovers, and AKLEH runs over Jalan Ampang. Malaysian road signs, blue street names, black-and-white kerbs, monsoon drains, footbridges, bus stops and a motorcycle lane make the streets read like KL.</p>
       </div>
+      <div class="figs">
+      <figure><img src="shots/merdeka-118.jpg" alt="Merdeka 118 in the afternoon: a folded steel-blue glass tower with three dark bands and a twisted spire, above the city's towers and the KL Tower" width="1376" height="774" loading="lazy"><figcaption>Merdeka 118, rebuilt in 0.9.12</figcaption></figure>
       <figure><img src="shots/street-corner-akleh.jpg" alt="A corner of Jalan Ampang with a blue street-name sign, black-and-white kerbs and the AKLEH deck beyond" width="1600" height="900" loading="lazy"><figcaption>Jalan Ampang and AKLEH, new in 0.6</figcaption></figure>
+      </div>
     </div>
   </article>
 
