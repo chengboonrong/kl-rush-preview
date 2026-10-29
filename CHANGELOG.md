@@ -2,6 +2,16 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9.14 Beta (29 October 2026)
+
+Central Market, Masjid Jamek, Masjid Negara and KL Sentral are rebuilt from real photos. Your save carries over.
+
+- **Central Market looks like the real Pasar Seni.** Pale blue and white Art Deco walls with tall grid windows, and the stepped central tower with CENTRAL MARKET and SINCE 1888 over its glass-block entrance.
+- **Masjid Jamek has its red brick and white bands.** Cusped white arches, striped brick turrets with little white kiosks on top, and pale onion domes.
+- **Masjid Negara has its teal star roof.** The folded umbrella roof in green-blue with its diamond pattern, white domes along the verandas and dark reflecting pools.
+- **KL Sentral has its roof sails.** Four tilted silver sails on the white wave roof, over pink-brown granite walls with tall arched windows.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
 ## 0.9.13 Beta (29 October 2026)
 
 Menara KL, the Petronas Towers and the Sultan Abdul Samad Building are rebuilt from real photos. Your save carries over.
