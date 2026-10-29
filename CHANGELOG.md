@@ -2,6 +2,14 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9.12 Beta (29 October 2026)
+
+Merdeka 118, the tallest tower in KL, is rebuilt from real photos and the architect's drawings. Your save carries over.
+
+- **Merdeka 118 looks like the real one.** Its folded glass shaft bulges at three bands and narrows between them, the crown has a flat roof, and the twisted spire rises off its east end. The glass is a light steel blue that reflects the sky, and white folded roofs cover the podium at its foot.
+- **At night** the diamond pattern of lights along its folds, its bands and the spire light up.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
 ## 0.9.11 Beta (27 October 2026)
 
 Zombie Night opens to everyone, from a button on the title screen. Your story save carries over, and Zombie Night never touches it.
