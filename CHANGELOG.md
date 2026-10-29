@@ -2,6 +2,15 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9.13 Beta (29 October 2026)
+
+Menara KL, the Petronas Towers and the Sultan Abdul Samad Building are rebuilt from real photos. Your save carries over.
+
+- **Menara KL looks like the real tower.** Its pod is the stepped, upside-down cone with four dark glass bands and a flat roof, on a salmon flare at the top of the white shaft, under the red-and-white mast.
+- **The Petronas Towers have their real proportions.** Wider towers, the skybridge at its real height, the setbacks at the real floors, and a crown that keeps its star points up to the ring ball and the mast.
+- **The Sultan Abdul Samad Building has its real colours.** Buff brick with white bands, terracotta roofs and copper domes, a clock tower that ends in its onion dome, and round towers with big copper domes on the wings.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
 ## 0.9.12 Beta (29 October 2026)
 
 Merdeka 118, the tallest tower in KL, is rebuilt from real photos and the architect's drawings. Your save carries over.
