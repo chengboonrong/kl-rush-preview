@@ -2,6 +2,15 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9.15 Beta (30 October 2026)
+
+The Petaling Street gate, Sepang's main grandstand and klia2's main terminal are rebuilt from real photos. Your save carries over.
+
+- **The Petaling Street gate looks like the real one.** Gold roofs on red posts, the blue JALAN PETALING board with 街廠茨 in gold, a welcome banner in three languages, and red lanterns under the eaves.
+- **Sepang's grandstand has its hibiscus.** The tower carries the real cream umbrella roof with sixteen ribbed lobes, and the grandstand's leaf roofs and green seats match the circuit's.
+- **klia2 has its rounded white roof.** The main terminal's white roof curves round its corners over dark green glass in a white grid.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
 ## 0.9.14 Beta (29 October 2026)
 
 Central Market, Masjid Jamek, Masjid Negara and KL Sentral are rebuilt from real photos. Your save carries over.
