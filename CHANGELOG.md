@@ -2,6 +2,16 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9.16 Beta (30 October 2026)
+
+Four more KL landmarks are built from real photos: The Exchange 106, the old Kuala Lumpur Railway Station, the Royal Selangor Club and Dayabumi. Your save carries over.
+
+- **The Exchange 106 stands at TRX.** A blue-green glass tower with a lighter diamond-latticed crown that ends in a zigzag of points, seen from anywhere in the city like the Petronas Towers and Merdeka 118.
+- **The old Kuala Lumpur Railway Station faces Masjid Negara.** Cream Moorish arcades, minarets, and end towers under big chhatris.
+- **The Royal Selangor Club lines the padang.** Black-and-white mock-Tudor timbering under a red-brown roof with four gables, along the west side of Dataran Merdeka.
+- **Dayabumi rises near Central Market.** A white star-shaped tower with tall pointed lattice arches up every face.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
 ## 0.9.15 Beta (30 October 2026)
 
 The Petaling Street gate, Sepang's main grandstand and klia2's main terminal are rebuilt from real photos. Your save carries over.
