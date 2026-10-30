@@ -10,7 +10,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.9.18 Beta** adds Stadium Merdeka and Stadium Negara from real photos, facing each other across the road south of Merdeka 118: Merdeka's earthed bowl with its blue track, dark shell roof, striped entrance and floodlight towers, and Negara's ribbed silver dome over the cream canopy and its red letters.
+**Version 0.9.19 Beta** gives phones and tablets lighter graphics on Medium, High and Ultra, so the picture is a little softer there. Low and computers don't change.
 
 🎬 [Watch the 50-second Genting Highlands trailer](media/kl-rush-trailer-720p.mp4)
 

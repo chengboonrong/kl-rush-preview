@@ -2,6 +2,14 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9.19 Beta (31 October 2026)
+
+Phones and tablets do less work on Medium, High and Ultra. Your save carries over.
+
+- **Lighter graphics on touch screens.** On Medium, High and Ultra, phones and tablets now draw far fewer pixels, with simpler bloom and shadows and no colour fringing. The picture is a little softer, on large tablets too. Low and computers don't change.
+- **A real phone test is still to come.** This was tested on a Mac at iPhone size, so High and Medium may still run warm on a phone. Low is still the coolest setting.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
 ## 0.9.18 Beta (30 October 2026)
 
 Stadium Merdeka and Stadium Negara join the city from real photos, facing each other across the road south of Merdeka 118. Your save carries over.
