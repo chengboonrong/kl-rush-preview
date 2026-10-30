@@ -2,6 +2,15 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9.17 Beta (30 October 2026)
+
+Muzium Negara joins the city, and Mid Valley Megamall, The Gardens and Sepang's pit building are rebuilt from real photos. Your save carries over.
+
+- **Muzium Negara stands beside its MRT station.** A steep maroon Malay palace roof over the pale centre gable, two long wings with brown-and-gold mural bands, and the gold-lettered name stone.
+- **Mid Valley Megamall and The Gardens face each other across their road.** Mid Valley's yellow arch front with its big blue lettering and glass bays with white spires; The Gardens' brick podium, beige hotel towers and oval glass towers.
+- **Sepang's pit building looks like the real one.** A teal band over the garages, green glass leaning out over the balcony, a saw-tooth row of dark roof blades, and race control under its oval disc roof.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
 ## 0.9.16 Beta (30 October 2026)
 
 Four more KL landmarks are built from real photos: The Exchange 106, the old Kuala Lumpur Railway Station, the Royal Selangor Club and Dayabumi. Your save carries over.
