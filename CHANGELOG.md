@@ -2,6 +2,14 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
 
+## 0.9.18 Beta (30 October 2026)
+
+Stadium Merdeka and Stadium Negara join the city from real photos, facing each other across the road south of Merdeka 118. Your save carries over.
+
+- **Stadium Merdeka stands south of Merdeka 118.** An earthed oval bowl with white terraces, a blue track round a green pitch, a dark shell roof over the grandstand, the striped entrance with the name in standing red letters, and four floodlight towers that light the pitch at night.
+- **Stadium Negara stands across the road.** A wide ribbed silver dome over a gold band, a cream canopy all the way round with its red letters on white panels, and raked struts down to the ground.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
 ## 0.9.17 Beta (30 October 2026)
 
 Muzium Negara joins the city, and Mid Valley Megamall, The Gardens and Sepang's pit building are rebuilt from real photos. Your save carries over.
