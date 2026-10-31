@@ -10,7 +10,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.9.19 Beta** gives phones and tablets lighter graphics on Medium, High and Ultra, so the picture is a little softer there. Low and computers don't change.
+**Version 1.0.0 RC 1** is the first release candidate for 1.0. Formula racing, melee and the handgun are open to everyone, and three of the commonest cars in traffic are rebuilt from real photos.
 
 🎬 [Watch the 50-second Genting Highlands trailer](media/kl-rush-trailer-720p.mp4)
 

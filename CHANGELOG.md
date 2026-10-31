@@ -1,6 +1,25 @@
 # What's new
 
-Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change) or a **beta** (saves always carry over, and new content still arrives before 1.0). See the [roadmap](ROADMAP.md).
+Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change), a **beta** (saves always carry over, and new content still arrives before 1.0) or a **release candidate** (the last step before 1.0; saves always carry over). See the [roadmap](ROADMAP.md).
+
+## 1.0.0 RC 1 (31 October 2026)
+
+The first release candidate for 1.0. Formula racing, the race weekend, melee, the handgun and the monorail platform walks are open to everyone, the semi-realistic look is on for everyone, and three of the commonest cars in traffic are rebuilt from real photos. Your save carries over.
+
+- **Formula racing at Sepang.** Sign with a team or run a single session.
+- **The Sepang Race Weekend.** Visit the stands or work a weekend shift.
+- **Melee and the handgun, for everyone.** Melee now works outside Zombie Night too, with a practice yard in the city. Draw, aim, fire and reload the handgun, with a practice range by Pasar Seni. Both are in everyone's city, new games included.
+- **Walk up to the monorail platforms.** Use the station stairs and walk back down.
+- **The semi-realistic look is on for everyone.**
+- **Pelita, Comel and Jelita are rebuilt from real photos.** Real proportions, with lamps, grilles and wheels drawn for the game and no badges. Each has its own body, wheels and rear lamps that wrap round the corner, and a cabin that fits the player. Comel has a roof spoiler and a rear wiper.
+- **Headlights.** Cars, buses and lorries throw their beams from both lamps, not from the middle of the bumper.
+- **New names at Genting Highlands.** The resort is Resort Puncak Kabus, the theme park is Taman Ria Kabus, the mall is Laman Kabus and the cable car is Kereta Kabel Kabus. The fire job's Bomba Sukarela is now Pemadam Sukarela.
+- **Masjid Jamek and Masjid Negara.** Their grounds are off limits to fights, carjacking, vehicles and chases.
+- **Easier to tap on a phone.** Menu rows, Settings segments, sliders and app controls are 44 px on touch screens, and the Expand app no longer hides under the dock in landscape.
+- **Easier to read.** The objective line has a dark backing, and hints and toasts no longer blur the game behind them.
+- **The title screen** now includes a content note.
+- **A real phone test is still to come.** All of this was tested on a Mac, at phone size too. On a phone, the windows on distant cars are see-through enough that Pelita and Jelita can look open-topped.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
 
 ## 0.9.19 Beta (31 October 2026)
 
