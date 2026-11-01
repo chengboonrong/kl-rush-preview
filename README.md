@@ -12,7 +12,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 1.0.0 RC 1** is the first release candidate for 1.0. Formula racing, melee and the handgun are open to everyone, and three of the commonest cars in traffic are rebuilt from real photos.
+**Version 0.10.0 Beta** puts road-aware GPS on for everyone, adds a new hall at Pasar Seni and gives computers an optional natural walk and run. Zombie Night now has [its own site](https://kl-rush-zombie-night.vercel.app/). KL Rush still has a long way to go before 1.0, so the numbers went back to beta.
 
 🎬 [Watch the 50-second Genting Highlands trailer](media/kl-rush-trailer-720p.mp4)
 

@@ -2,6 +2,24 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change), a **beta** (saves always carry over, and new content still arrives before 1.0) or a **release candidate** (the last step before 1.0; saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.10.0 Beta (1 November 2026)
+
+GPS follows the roads, traffic keeps to the one-way, a new hall stands at Pasar Seni and computers get an optional natural walk and run.
+
+**The version number goes down on purpose.** KL Rush still has a long way to go before 1.0, so development continues as a beta from 0.10. Your saves carry over.
+
+- **Road-aware GPS, on for everyone.** It keeps your route steady, prompts your turns and reroutes after wrong turns or roadworks. Traffic follows Raja Laut's northbound one-way.
+- **Pasar Seni.** A long low hall now stands behind the station entrance, rebuilt from photos: dark perforated walls, a light diagonal panel and a leaning glass wall with blue fins.
+- **Natural movement.** An optional 249 MB download in Settings makes your hero's walk and run on your device, using NVIDIA's MotionBricks model. It's off until you download it. With it on, your hero keeps a steadier pace and the feet no longer slide at starts and stops. It isn't offered on Low, or on phones and tablets yet.
+- **Downloads in Settings.** See what's stored on this device, pause and resume the download, remove it, or clear game files.
+- **Zombie Night has its own site:** [kl-rush-zombie-night.vercel.app](https://kl-rush-zombie-night.vercel.app/). It's no longer in KL Rush or the desktop apps, and old links go to the new site. Best nights and the almanac start fresh there, because a new address can't read the old save.
+- **Automatic graphics.** The game lowers graphics or resolution when play stays slow, and keeps the change only if it helps. Choosing a graphics setting turns this off.
+- **Title menu.** Character is no longer on the title screen, and the Fullscreen option appears on computers only.
+- **Fixes.** The Rimba's driver sits inside the cabin, long skirts gather over the lap in every car, and the title screen fits landscape phones. Food stall menus keep your place as you tap and Pay stays on screen. A graphics loss during play saves your progress and reloads the game. Game files survive updates and stored files load offline. Station entrances are clearer, and night graphics no longer draw street lamp glow out of view.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
+**Known limits.** Malay and Simplified Chinese haven't had a native reader's review, and many Chinese lines are machine translated. This build and road-aware GPS haven't been run on a real phone.
+
 ## Zombie Night moves out (1 November 2026)
 
 Zombie Night is now its own game, **[KL Rush: Zombie Night](https://kl-rush-zombie-night.vercel.app)**, and has left KL Rush's download.
