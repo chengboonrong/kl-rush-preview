@@ -48,7 +48,7 @@ Your progress and settings are saved in your browser's local storage on your dev
 
 ## Google sign-in and cloud save (optional)
 
-This feature isn't open to players yet. Signing in will be optional, and you'll be able to play without it. It won't be offered on Zombie Night, in the desktop apps, in TV mode or in the iPhone home-screen app.
+Signing in is optional, and you can play without it. It isn't offered on Zombie Night, in the desktop apps, in TV mode or in the iPhone home-screen app.
 
 If you sign in with Google, the game keeps a copy of your save in your own Google Drive so you can carry on from another device. KL Rush has no server for this: your browser talks to Google directly, and the developer never sees your save or your Google account details.
 
