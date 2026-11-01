@@ -8,6 +8,8 @@
 
 ### ⬇ Download the app: [Windows](https://github.com/chengboonrong/kl-rush-preview/releases/latest/download/KL-Rush-win.zip) · [macOS](https://github.com/chengboonrong/kl-rush-preview/releases/latest/download/KL-Rush-mac.zip) · [Linux](https://github.com/chengboonrong/kl-rush-preview/releases/latest/download/KL-Rush-linux.tar.gz) ([how to open it](#desktop-app))
 
+### 🧟 Zombie Night is its own game now: [play it at kl-rush-zombie-night.vercel.app](https://kl-rush-zombie-night.vercel.app)
+
 ![KL Rush](media/kl-rush-hero.webp)
 
 **Version 1.0.0 RC 1** is the first release candidate for 1.0. Formula racing, melee and the handgun are open to everyone, and three of the commonest cars in traffic are rebuilt from real photos.

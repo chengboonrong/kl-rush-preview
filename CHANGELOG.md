@@ -2,6 +2,16 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change), a **beta** (saves always carry over, and new content still arrives before 1.0) or a **release candidate** (the last step before 1.0; saves always carry over). See the [roadmap](ROADMAP.md).
 
+## Zombie Night moves out (1 November 2026)
+
+Zombie Night is now its own game, **[KL Rush: Zombie Night](https://kl-rush-zombie-night.vercel.app)**, and has left KL Rush's download.
+
+- **Play it at [kl-rush-zombie-night.vercel.app](https://kl-rush-zombie-night.vercel.app).** The same nights, weapons and zombies, in your browser.
+- **The title-screen button is gone.** Old `?zombies=1` links take you to the new site.
+- **Your best night and the almanac start fresh**, because a new address can't read the old save. Your KL Rush story save isn't touched.
+- **Melee and the handgun stay in KL Rush.**
+- **The desktop app** you have today still includes Zombie Night. The next app version won't, so play it in the browser from then on.
+
 ## 1.0.0 RC 1 (31 October 2026)
 
 The first release candidate for 1.0. Formula racing, the race weekend, melee, the handgun and the monorail platform walks are open to everyone, the semi-realistic look is on for everyone, and three of the commonest cars in traffic are rebuilt from real photos. Your save carries over.
@@ -94,7 +104,7 @@ Merdeka 118, the tallest tower in KL, is rebuilt from real photos and the archit
 
 ## 0.9.11 Beta (27 October 2026)
 
-Zombie Night opens to everyone, from a button on the title screen. Your story save carries over, and Zombie Night never touches it.
+Zombie Night opens to everyone, from a button on the title screen. Your story save carries over, and Zombie Night never touches it. (Zombie Night has since moved to [its own site](https://kl-rush-zombie-night.vercel.app).)
 
 - **Zombie Night.** Tap **Zombie Night** on the title screen. Every night from 8 pm to 6 am, survive waves of zombies in an empty KL with scarce ammo and ammo drops. Faiz radios for help from near Chow Kit: get him to Bengkel Faiz before dawn, and his workshop fixes your car for free every night after. Dying costs nothing, and your best night is kept. **Story Mode** on its title takes you back.
 - **Weapons for the night.** A handgun, then a shotgun and mercun lures from police-car caches, Faiz's parang, and a magic wand with Fira once you reach wave 6. With a weapon out, Jump becomes a dodge roll.
