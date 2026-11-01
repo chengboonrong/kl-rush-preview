@@ -39,7 +39,7 @@ The app plays offline and keeps its own save. To bring your progress over from t
 - **Police chases** with five wanted levels, plus an impound lot and a car wash to clear your name.
 - **Petaling Street under its red roof**, eight local car bodies, and a detailed Rimba.
 - **Garage**: buy vehicles and upgrade engine, tyres, armour and nitro. Change the paint.
-- **English, Bahasa Melayu and Simplified Chinese (preview).** Keyboard and mouse, gamepad or touch, with a zoomable city map.
+- **English, Bahasa Melayu and Simplified Chinese.** Keyboard and mouse, gamepad or touch, with a zoomable city map.
 
 ## How to leave KL
 

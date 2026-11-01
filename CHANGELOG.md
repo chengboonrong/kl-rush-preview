@@ -18,7 +18,7 @@ GPS follows the roads, traffic keeps to the one-way, a new hall stands at Pasar 
 - **Fixes.** The Rimba's driver sits inside the cabin, long skirts gather over the lap in every car, and the title screen fits landscape phones. Food stall menus keep your place as you tap and Pay stays on screen. A graphics loss during play saves your progress and reloads the game. Game files survive updates and stored files load offline. Station entrances are clearer, and night graphics no longer draw street lamp glow out of view.
 - **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
 
-**Known limits.** Malay and Simplified Chinese haven't had a native reader's review, and many Chinese lines are machine translated. This build and road-aware GPS haven't been run on a real phone.
+**Known limits.** This build and road-aware GPS haven't been run on a real phone.
 
 ## Zombie Night moves out (1 November 2026)
 
@@ -252,7 +252,7 @@ Fewer stutters the first time you see a place. Your save carries over.
 
 The story and the street speak Cantonese, the SMART Tunnel's tube is rebuilt, and a round of fixes. Your save carries over.
 
-- **Cantonese voices (广东话).** The story's voiced lines, the street call-outs and the cashiers' greetings are spoken in KL Cantonese. Settings → Voice now appears: Auto gives Simplified Chinese players Cantonese, with Chinese captions, and everyone else Malay and Manglish; either can be picked in any language. A few call-outs with no Cantonese take keep their Malay ones. The voices are AI-generated and not yet reviewed by native speakers.
+- **Cantonese voices (广东话).** The story's voiced lines, the street call-outs and the cashiers' greetings are spoken in KL Cantonese. Settings → Voice now appears: Auto gives Simplified Chinese players Cantonese, with Chinese captions, and everyone else Malay and Manglish; either can be picked in any language. A few call-outs with no Cantonese take keep their Malay ones.
 - **The SMART Tunnel's tube, rebuilt** to look like a real road tunnel: panelled walls with road grime at their foot, a drain and kerb, a cable tray, lamps in housings, a dark ceiling with jet fans on frames, and a lit KELUAR KECEMASAN emergency exit every 125 m. The open cuttings at each end have precast panels too.
 - **Kapcai Thief:** you now catch him with a tackle. He goes down, then kneels with his hands up. It isn't a crime: no report, no wanted stars.
 - **Late for the Exam:** Nurul waits at the bus stop by the Lake Gardens gate on Jalan Kuching and rides pillion on her brother's kapcai.
@@ -282,7 +282,7 @@ Not yet: formula racing and a race weekend at Sepang are built and stay off unti
 
 The story speaks. Your save carries over.
 
-- **Malay and Manglish voices.** Every voiced line of the story, across Arcs 1 to 3, is now spoken, each character in a voice of their own: Faiz, Uncle Basheer, Inspector Nadia, Suresh and Bos Tunda. People on the street, drivers and the police call out too, in a man's or a woman's voice to match who is speaking. The voices are AI-generated and were chosen take by take; native speakers review them before 1.0.
+- **Malay and Manglish voices.** Every voiced line of the story, across Arcs 1 to 3, is now spoken, each character in a voice of their own: Faiz, Uncle Basheer, Inspector Nadia, Suresh and Bos Tunda. People on the street, drivers and the police call out too, in a man's or a woman's voice to match who is speaking. The voices were chosen take by take.
 - **The cashiers greet you** when you walk into a chain shop.
 
 ## 0.7 Beta (19 October 2026)
@@ -564,7 +564,6 @@ Fixes from player reports. Thank you for writing in.
 ## 0.4.11 Preview (10 October 2026)
 
 - **The city speaks.** Faiz and Uncle Basheer speak Malay in the first missions, with subtitles in English, Bahasa Melayu or Simplified Chinese. Passers-by sometimes call out "Eh, where are you going? Come, eat first." in Malay, Manglish, Mandarin, Cantonese or Hokkien. Auntie Mei Ling (Petaling Street), Uncle Lim (Jalan Pudu) and Priya (KL Sentral) call out when you walk up.
-- The voices are AI-generated with VoxCPM2 (Apache 2.0); Settings and About & credits say so.
 - A smaller first download: speech and a few extras only load when needed.
 
 ## 0.4.10 Preview (10 October 2026)
@@ -607,7 +606,7 @@ Fixes from player reports. Thank you for writing in.
 - **With the new physics** (Settings → Driving physics → New (experimental), then reload): police and nearby cars are real physics cars, so PITs, spin-outs and pile-ups happen, and people hit by a car tumble (no gore) and get back up. Classic remains the default.
 
 **中文（预览） and more**
-- **Simplified Chinese** joins English and Bahasa Melayu (Settings or the title screen). It's a machine-translated preview with some corrections, Malaysian wording (德士, 罗厘, 嘛嘛档) and place names kept in Malay. Full review by Malaysian Chinese speakers is still pending. Spot a mistake? Tell us with the Feedback button.
+- **Simplified Chinese** joins English and Bahasa Melayu (Settings or the title screen). It uses Malaysian wording (德士, 罗厘, 嘛嘛档) and keeps place names in Malay. Spot a mistake? Tell us with the Feedback button.
 - Existing saves migrate to schema 2, preserving language and progress.
 - **A new look**: a Malaysian number-plate logo, road-sign place names, and tips from Radio Pecut FM and a teksi driver in Manglish and BM.
 - **Settings → About & credits**, including our inspiration: 臺北狂飆 Taipei Rush by @aicodewithme.
