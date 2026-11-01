@@ -1,6 +1,6 @@
 # Privacy
 
-KL Rush is a free browser game. It has no accounts, no ads and no cookies. From version 0.4.20 the public site counts visits with cookie-free analytics (see below), and it has no advertising or cross-site tracking.
+KL Rush is a free browser game. You don't need an account to play, and it has no ads and sets no cookies. From version 0.4.20 the public site counts visits with cookie-free analytics (see below), and it has no advertising or cross-site tracking.
 
 KL Rush: Zombie Night, at kl-rush-zombie-night.vercel.app, is built from the same game, so this page covers it too, except that it doesn't count visits. Its saves are separate from KL Rush's.
 
@@ -44,7 +44,23 @@ Screenshots you take with K, the phone's Camera app or photo mode stay on your d
 
 ## Data on your device
 
-Your progress and settings are saved in your browser's local storage on your device, as is your choice of graphics engine (Settings → Graphics engine). Saved progress stays on your device. Diagnostic reports include the settings described above. **Export backup** in Settings creates a file only when you choose to. Clearing your browser's site data deletes your progress.
+Your progress and settings are saved in your browser's local storage on your device, as is your choice of graphics engine (Settings → Graphics engine). Saved progress stays on your device unless you use cloud save, described below. Diagnostic reports include the settings described above. **Export backup** in Settings creates a file only when you choose to. Clearing your browser's site data deletes your progress on that device.
+
+## Google sign-in and cloud save (optional)
+
+This feature isn't open to players yet. Signing in will be optional, and you'll be able to play without it. It won't be offered on Zombie Night, in the desktop apps, in TV mode or in the iPhone home-screen app.
+
+If you sign in with Google, the game keeps a copy of your save in your own Google Drive so you can carry on from another device. KL Rush has no server for this: your browser talks to Google directly, and the developer never sees your save or your Google account details.
+
+The save is one file with the same contents as **Export backup**, kept in a hidden folder in your Drive that only KL Rush can open. The game asks for permission to use that folder and nothing else in your Drive, so it can't read your other files.
+
+Sign-in happens on Google's own page, and the game never sees your password. Google then gives the game your account ID, name, email address and profile picture. The game keeps these in your browser's local storage to show who is signed in and to tell your save from another account's. They aren't sent to the developer and aren't included in error reports. The short-lived pass Google gives the game stays in your browser's session storage until it expires or you close the tab.
+
+Google stores the file and runs the sign-in, under [its privacy policy](https://policies.google.com/privacy). Where sign-in is offered, the game loads Google's script from Google's servers as soon as the sign-in button appears, so Google receives connection details such as your IP address even if you never tap it. Google's sign-in page uses Google's own cookies.
+
+**Delete cloud save** in Settings deletes the file from your Drive and signs you out on that device. The save on your device stays. **Sign out** forgets your account on that device and leaves the file in your Drive. To withdraw the game's permission, remove KL Rush from [your Google Account's connected apps](https://myaccount.google.com/connections).
+
+KL Rush's use and transfer to any other app of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements.
 
 ## Feedback and donations
 
@@ -56,4 +72,4 @@ Your progress and settings are saved in your browser's local storage on your dev
 
 Open an issue on this repository. Please don't include personal details, because issues are public.
 
-_Last updated: 17 October 2026 (screenshots and translation reports in 0.6)._
+_Last updated: 1 November 2026 (optional Google sign-in and cloud save)._
