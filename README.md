@@ -12,7 +12,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.10.1 Beta** opens the street games and the roadworks on Jalan Raja Laut to everyone, runs cooler on phones, adds Hospital Kuala Lumpur and can keep your save in your own Google Drive. Zombie Night now has [its own site](https://kl-rush-zombie-night.vercel.app/). KL Rush still has a long way to go before 1.0, so the numbers went back to beta.
+**Version 0.11 Beta** rebuilds the Perdua Aktif and the seven-seat Perdua Alamak in full detail, puts hawkers at the stalls on Petaling Street and Jalan Alor, and gives Hospital Kuala Lumpur its forecourt and garden. Zombie Night now has [its own site](https://kl-rush-zombie-night.vercel.app/). KL Rush still has a long way to go before 1.0, so the numbers went back to beta.
 
 🎬 [Watch the 50-second Genting Highlands trailer](media/kl-rush-trailer-720p.mp4)
 

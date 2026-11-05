@@ -2,6 +2,18 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change), a **beta** (saves always carry over, and new content still arrives before 1.0) or a **release candidate** (the last step before 1.0; saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.11 Beta (5 November 2026)
+
+The base kits are finished: two more cars are rebuilt in full detail, hawkers stand at the stalls, and Hospital Kuala Lumpur gets its forecourt and garden.
+
+- **Perdua Aktif.** The small crossover is rebuilt in full detail, inside and out.
+- **Perdua Alamak.** The seven-seat MPV is rebuilt in full detail, inside and out, with a third row you can see through the rear windows.
+- **Hawkers at the stalls.** On Petaling Street and Jalan Alor, a stall worker in a cream shirt and charcoal apron stands by some stalls.
+- **Hospital Kuala Lumpur's forecourt.** Planters and bollards edge the forecourt by the car park, and a small garden with rain trees and benches sits beside the building.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
+**Known limits.** This build hasn't been run on a real phone.
+
 ## 0.10.1 Beta (5 November 2026)
 
 Street games and roadworks on Jalan Raja Laut open to everyone, walkers clear the road when a car honks, phones run cooler, Hospital Kuala Lumpur opens, and your save can follow you through your own Google Drive.

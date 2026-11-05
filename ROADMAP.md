@@ -14,8 +14,8 @@ KL Rush grows in small public steps. Each version ships when it is ready, not on
 | 0.8 Beta | Under the city, then Sepang | Done: the SMART Tunnel, which closes for flooding in heavy rain, and five more stranger encounters (eleven in all). 0.8.1: Cantonese voices. 0.8.2–0.8.6: fewer stutters, fixes from your reports, and music of the game's own. Next: formula racing and a race weekend at Sepang |
 | 0.9 Beta | Genting | Done: Genting Highlands is open (0.9.7), with the mountain road, Awana and its cable car, and the hilltop resort. Also story cutscenes, Play on TV, the desktop app and cooler phones |
 | 1.0 RC 1 | Racing and combat | Done: formula racing, the race weekend, melee and the handgun opened to everyone. KL Rush then went back to beta numbers, because 1.0 is still a long way off |
-| **0.10 Beta** (now) | Road-aware GPS | GPS that follows the roads, a new hall at Pasar Seni, an optional natural walk and run on computers. 0.10.1: street games, roadworks on Raja Laut, Hospital Kuala Lumpur and cloud save with Google |
-| 0.11 Beta | Better everything | Buildings, cars, characters and streets brought up to the standard of the best ones, and more rebuilt cars |
+| 0.10 Beta | Road-aware GPS | Done: GPS that follows the roads, a new hall at Pasar Seni, an optional natural walk and run on computers. 0.10.1: street games, roadworks on Raja Laut, Hospital Kuala Lumpur and cloud save with Google |
+| **0.11 Beta** (now) | Better everything | Two more cars rebuilt in full detail, the seven-seater with a third row, hawkers at the stalls and the hospital's forecourt, on shared kits that the next cities will reuse |
 | 0.12 Beta | Utara | Penang, Alor Setar and Langkawi |
 | 0.13 Beta | Selatan | Melaka and Johor Bahru |
 | 0.14 and 0.15 Beta | Borneo | Kuching (Sarawak), then Kota Kinabalu (Sabah) |
