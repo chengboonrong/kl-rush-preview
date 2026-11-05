@@ -2,6 +2,22 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change), a **beta** (saves always carry over, and new content still arrives before 1.0) or a **release candidate** (the last step before 1.0; saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.10.1 Beta (5 November 2026)
+
+Street games and roadworks on Jalan Raja Laut open to everyone, walkers clear the road when a car honks, phones run cooler, Hospital Kuala Lumpur opens, and your save can follow you through your own Google Drive.
+
+- **Street games.** Join chapteh on the grass by Bengkel Faiz or badminton at Titiwangsa, from 7 am to 7 pm when it isn't raining. The loser treats everyone to teh tarik.
+- **Roadworks on Jalan Raja Laut.** When your GPS car route runs north up Raja Laut, works may close the road ahead and GPS takes you round. They never close it during missions, jobs, driving exams, rail runs or races.
+- **Sign in with Google.** Settings → Save can keep your save in a hidden folder of your own Google Drive, so it follows you to another device. If two saves differ, the game shows both and you pick. It needs a tap each session, and it isn't offered in the desktop apps, in TV mode or in the iPhone home-screen app.
+- **Hospital Kuala Lumpur.** A new building with a wing, glass doors and a lit entrance canopy.
+- **Potong Pesona.** The sedan is rebuilt in full detail, inside and out.
+- **Cooler phones.** The minimap's soft shadow was redrawn on every frame, costing the browser more than drawing the whole city. It looks the same and no longer does, on every graphics setting.
+- **Fixes.** Walkers step out of the road when a car honks, instead of freezing in front of it. Chinese is a full language: the language picker and Settings say 中文.
+- **Zombie Night** has its own title and loading screen, with a night sky, a slime wordmark in your language and Faiz's tips.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
+**Known limits.** This build hasn't been run on a real phone.
+
 ## 0.10.0 Beta (1 November 2026)
 
 GPS follows the roads, traffic keeps to the one-way, a new hall stands at Pasar Seni and computers get an optional natural walk and run.
