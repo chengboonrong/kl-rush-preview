@@ -12,7 +12,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.11 Beta** rebuilds the Perdua Aktif and the seven-seat Perdua Alamak in full detail, puts hawkers at the stalls on Petaling Street and Jalan Alor, and gives Hospital Kuala Lumpur its forecourt and garden. Zombie Night now has [its own site](https://kl-rush-zombie-night.vercel.app/). KL Rush still has a long way to go before 1.0, so the numbers went back to beta.
+**Version 0.12 Beta** opens the road north: drive the North–South Expressway and the Penang Bridge to George Town, or take the ETS from KL Sentral to Butterworth. George Town has its landmarks, the Penang Hill Railway, hawker food, murals and trishaws. Zombie Night has [its own site](https://kl-rush-zombie-night.vercel.app/). KL Rush still has a long way to go before 1.0, so the numbers went back to beta.
 
 🎬 [Watch the 50-second Genting Highlands trailer](media/kl-rush-trailer-720p.mp4)
 

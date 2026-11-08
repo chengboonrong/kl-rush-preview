@@ -2,6 +2,27 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change), a **beta** (saves always carry over, and new content still arrives before 1.0) or a **release candidate** (the last step before 1.0; saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.12 Beta (8 November 2026)
+
+The road north opens: drive the North–South Expressway and the Penang Bridge to George Town, or take the ETS from KL Sentral to Butterworth.
+
+- **The North–South Expressway north of KL.** Leave KL by the north-west corner, pay RM35.50 at Plaza Tol Jalan Duta, and drive on past oil palm and Kinta's limestone hills. R&R Tapah on each side has fuel, food and a save point. From either one you can skip ahead, and it costs the drive's time and fuel.
+- **The Penang Bridge.** Leave the expressway at Perai, pay RM5.74 on the way to the island, and cross the strait between the bridge's four towers.
+- **George Town.** Shophouse streets with louvred windows and tiled eaves, from Lebuh Light down to Lebuh Acheh and out to Weld Quay. Butterworth sits across the water, and the full map shows George Town's own photo.
+- **The ferry.** Cross the strait between Raja Tun Uda and Sultan Abdul Halim in either direction: on foot for RM2.00, or with your motorbike for RM2.50.
+- **The landmarks.** Komtar, Fort Cornwallis and the Victoria Clock Tower, City Hall, Khoo Kongsi, both ferry terminals and Penang Sentral, rebuilt from photos of the real places.
+- **The Penang Hill Railway.** From the lower station at Air Itam, the funicular climbs to the upper station and its viewing deck, for RM16.
+- **The ETS to Butterworth.** Buy a ticket at the ETS counter in KL Sentral for RM59 and watch the country go by from the window. Penang Sentral's counter takes you back. If you take the train, your car stays in KL.
+- **Hawker food.** Five stalls at Medan Selera Padang Kota Lama, and assam laksa at Air Itam for RM7.
+- **Murals.** Ten on George Town's shophouse gables: five painted, some with a real bicycle, stool, washtub or fish basket to go with them, and five wire caricatures with their own captions. The map marks them.
+- **Trishaws.** Three stands, two trishaws each. Pedal one at up to 18 km/h, ring the bell, and carry a passenger on the front seat.
+- **The Beca job.** Start a shift at any trishaw stand and carry visitors between eight of George Town's sights. Fares pay by distance, plus a tip if you didn't crash. Three job ranks bring a bigger tip, then a gold trishaw.
+- **Completion** now counts job ranks out of 30, with the Beca job's three.
+- **Fixes.** In Genting, Sepang and on the expressways, the Job key no longer offers the taxi, bus and delivery jobs, which only work in KL.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
+**Known limits.** Alor Setar and Langkawi come in later 0.12 updates. This build hasn't been run on a real phone.
+
 ## 0.11 Beta (5 November 2026)
 
 The base kits are finished: two more cars are rebuilt in full detail, hawkers stand at the stalls, and Hospital Kuala Lumpur gets its forecourt and garden.
