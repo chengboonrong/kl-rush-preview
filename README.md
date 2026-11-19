@@ -12,7 +12,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.12 Beta** opens the road north: drive the North–South Expressway and the Penang Bridge to George Town, or take the ETS from KL Sentral to Butterworth. George Town has its landmarks, the Penang Hill Railway, hawker food, murals and trishaws. Zombie Night has [its own site](https://kl-rush-zombie-night.vercel.app/). KL Rush still has a long way to go before 1.0, so the numbers went back to beta.
+**Version 0.12.1 Beta** brings George Town's first two story missions, cheat codes and a much faster first load after an update. 0.12 opened the road north: drive the North–South Expressway and the Penang Bridge to George Town, or take the ETS from KL Sentral to Butterworth. George Town has its landmarks, the Penang Hill Railway, hawker food, murals and trishaws. Zombie Night has [its own site](https://kl-rush-zombie-night.vercel.app/). KL Rush still has a long way to go before 1.0, so the numbers went back to beta.
 
 🎬 [Watch the 50-second Genting Highlands trailer](media/kl-rush-trailer-720p.mp4)
 

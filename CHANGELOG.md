@@ -2,6 +2,21 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change), a **beta** (saves always carry over, and new content still arrives before 1.0) or a **release candidate** (the last step before 1.0; saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.12.1 Beta (19 November 2026)
+
+George Town gets its first two story missions, the first load after an update is much faster, and cheat codes arrive.
+
+- **Two story missions in George Town.** Auntie Gaik runs the char koay teow stall at Padang Kota, and her mark is on the map. In Cockle Run, ride her kapcai onto the ferry to Butterworth and bring her supplier's ice box of cockles back across the strait. A crash costs cockles, and the clock stops while you're on the ferry. In Last Light, pedal her niece Mei on a trishaw to three murals and hold still at each while she takes her photo. It starts between 17:00 and 17:15, after Cockle Run.
+- **Cheat codes.** On a keyboard, type a code during play. You can also open Pause → Cheat code, and with a gamepad you pick the letters. Cheats change only the game in progress, and they don't work during a mission or in Zombie Night. [The ten codes](https://kl-rush.vercel.app/cheats.html) are listed with what each one does.
+- **A faster first load after an update.** In Chrome on our test Mac, with nothing cached, the title now appears after 10 to 11 seconds instead of 33 to 38, and play runs smoothly after about 13 seconds instead of about a minute. While that first load finishes, people can appear a second or three late.
+- **Signed saves.** If a save has been edited by hand, the game loads the last save it wrote itself and tells you. If there's none, it starts a new game and keeps a copy of the edited one. Backup files from earlier versions still import.
+- **Completion** now counts 24 story missions and 32 golds, with George Town's two, so a save at 100% drops below it until you play them.
+- **Old browsers** see a message asking them to update, instead of a crash while loading. The game needs Chrome 98, Safari 15.4, Firefox 104 or newer.
+- **Fixes.** The phone's Replay no longer starts a finished KL mission inside George Town, and outside KL the phone no longer says every mission is done. Each mission starts only in its own city, and Replay tells you where to go.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
+**Known limits.** Alor Setar and Langkawi come in later 0.12 updates. This build hasn't been run on a real phone.
+
 ## 0.12 Beta (8 November 2026)
 
 The road north opens: drive the North–South Expressway and the Penang Bridge to George Town, or take the ETS from KL Sentral to Butterworth.
