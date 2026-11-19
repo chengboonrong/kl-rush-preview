@@ -2,6 +2,20 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change), a **beta** (saves always carry over, and new content still arrives before 1.0) or a **release candidate** (the last step before 1.0; saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.12.2 Beta (19 November 2026)
+
+Alor Setar opens: drive past the Penang exit into Kedah's rice plain, or take the ETS from KL Sentral, and end the trip with a bowl of laksa Kedah.
+
+- **The road to Kedah.** Just before the Penang Bridge, a slip road leaves the North–South Expressway for Kedah, with paddy fields to the horizon on both sides. Plaza Tol Alor Setar Selatan takes RM10.00 each way, on top of the RM35.50 at Jalan Duta, the real fare from KL. The skip at R&R Tapah northbound now asks which exit you want, Penang or Alor Setar.
+- **Alor Setar.** The road ends in the old royal town, built around Medan Bandar, its open square. Shophouse rows stand in Alor Setar's blues, creams and yellows. Sungai Anak Bukit runs past the riverside square at Tanjung Chali, and rice fields stretch from the town's edge.
+- **Alor Setar's landmarks,** rebuilt from photos of the real places: Masjid Zahir with its black domes, the Balai Besar and the Balai Nobat, the clock tower, Menara Alor Setar and Pekan Rabu. The mosque and the royal halls are sacred ground: police chases turn away at the kerb.
+- **The ETS to Alor Setar.** KL Sentral's ETS counter now asks where you're going: Butterworth for RM59 or Alor Setar for RM68. The counter by Pekan Rabu sells the ride back. No ETS runs between Butterworth and Alor Setar, as in real life: those trains don't stop at Butterworth.
+- **Laksa Kedah,** a fish broth with fresh herbs, from a stall at Tanjung Chali for RM5.50. Nasi lemak is at a stall outside Pekan Rabu, from 07:00 to 14:00, for RM6.
+- **The full map** shows Alor Setar's own photo, where it used to say "coming soon".
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
+**Known limits.** Alor Setar's station is a ticket counter without a station building yet. Langkawi comes in a later 0.12 update. This build hasn't been run on a real phone.
+
 ## 0.12.1 Beta (19 November 2026)
 
 George Town gets its first two story missions, the first load after an update is much faster, and cheat codes arrive.
