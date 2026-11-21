@@ -2,6 +2,23 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change), a **beta** (saves always carry over, and new content still arrives before 1.0) or a **release candidate** (the last step before 1.0; saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.12.6 Beta (21 November 2026)
+
+Alor Setar's railway station, Chinese town names, and fixes from the last two releases.
+
+- **Alor Setar's railway station,** rebuilt from photos of the real station, on the lot by Pekan Rabu where the ETS and bus counters stand. It has the white station hall, a deep entrance porch with a blue sign box and three flags out front, and the platform roof on forked white columns. Beside it is the 1915 station, with its veranda of round columns, tiled roof and clock tower. The counters, gates, bus bay and taxi stand stay in the open forecourt.
+- **Town and region names in Chinese.** Kuala Lumpur, KLIA, Subang, Sepang, George Town, Alor Setar, Langkawi, Melaka, Johor Bahru, Genting Highlands, Kuching and Kota Kinabalu now appear in Chinese, as they already did on the map. In Bahasa Melayu, Genting Highlands is now Tanah Tinggi Genting. Streets and landmarks keep their Malay names.
+- **New ticket counters** for the ETS and KLIA Ekspreso: a ticket booth with a glass window, a sign that lights up at night, and fare gates beside it.
+- **Laksa in a bowl.** Laksa Kedah and asam laksa now come in a bowl, not a banana-leaf parcel, and both show in the Food journal.
+- **Faster loading.** On Low graphics the game reaches the title sooner, and there's less stutter in the first seconds of play.
+- **Fixed:**
+  - The first-play hint about mission icons shows once per session, not every time you go back to play.
+  - The airport canopy undersides no longer look almost black by day: Penang's is dark grey with its panels showing, as in the photos, and Langkawi's is white. Langkawi's canopy lamps no longer show as brown panels by day.
+  - A tip card waits while a panel is open, so it doesn't run out while you're reading.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
+**Known limits.** This build hasn't been run on a real phone.
+
 ## 0.12.5 Beta (21 November 2026)
 
 The first flights: check in at KLIA or Subang and fly to Penang or Langkawi.
