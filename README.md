@@ -12,7 +12,7 @@
 
 ![KL Rush](media/kl-rush-hero.webp)
 
-**Version 0.12.2 Beta** opens Alor Setar: drive past the Penang exit into Kedah's rice plain or take the ETS from KL Sentral, to a royal town with Masjid Zahir, Menara Alor Setar and laksa Kedah. 0.12.1 brought George Town's first two story missions, cheat codes and a much faster first load. 0.12 opened the road north: drive the North–South Expressway and the Penang Bridge to George Town, or take the ETS from KL Sentral to Butterworth. George Town has its landmarks, the Penang Hill Railway, hawker food, murals and trishaws. Zombie Night has [its own site](https://kl-rush-zombie-night.vercel.app/). KL Rush still has a long way to go before 1.0, so the numbers went back to beta.
+**Version 0.12.5 Beta** brings the first flights: check in at KLIA or Subang and fly to Penang or Langkawi, whose airports are rebuilt from photos of the real ones. 0.12.4 added the express bus from TBS to Butterworth, Alor Setar and Genting. 0.12.3 opened Langkawi, by the ferry from Kuala Kedah, with the SkyCab up Gunung Mat Cincang. 0.12.2 opened Alor Setar, with Masjid Zahir, Menara Alor Setar and laksa Kedah, and 0.12.1 brought George Town's first two story missions and cheat codes. 0.12 opened the road north: drive the North–South Expressway and the Penang Bridge to George Town, or take the ETS from KL Sentral to Butterworth. Zombie Night has [its own site](https://kl-rush-zombie-night.vercel.app/). KL Rush still has a long way to go before 1.0, so the numbers went back to beta.
 
 🎬 [Watch the 50-second Genting Highlands trailer](media/kl-rush-trailer-720p.mp4)
 

@@ -2,6 +2,56 @@
 
 Versions follow the pattern `MAJOR.MINOR.PATCH-channel`. Everything before 1.0 is a **preview** (anything may change), a **beta** (saves always carry over, and new content still arrives before 1.0) or a **release candidate** (the last step before 1.0; saves always carry over). See the [roadmap](ROADMAP.md).
 
+## 0.12.5 Beta (21 November 2026)
+
+The first flights: check in at KLIA or Subang and fly to Penang or Langkawi.
+
+- **Flights to Penang and Langkawi** leave from the check-in counters at KLIA Terminal 1, Terminal 2 and Subang's Skypark Terminal. Each of the four airlines flies from its own terminal: AirAsam from Terminal 2, Kelip-Kelip Air from Subang, Songket Air from Terminal 1 and Subang, and Emas Air from Terminal 1. One-way fares start at RM106 to Penang and RM115 to Langkawi.
+- **Langkawi is sold as a return.** The return half takes you home on the same airline, to the terminal you flew from. Penang is one-way, and its flights home cost the same. If you took the ferry to Langkawi, you can buy a one-way flight home.
+- **At the counter.** Subang's counters close from 22:00 to 06:00. If you're at the wrong terminal, the counter tells you where your airline flies from. Check-in turns you away at two wanted stars, with an overdue saman, or without your IC when IC checks are on.
+- **The flight** lasts 60 seconds at a window seat, looking over the wing and the clouds with a glimpse of the coast. The game clock stops during the flight, as it does on the ETS and the bus.
+- **The Travel app** lists flights under Penang and Langkawi, cheapest first, with the airline, aircraft, terminal, flight time and fare. Pick one and the GPS takes you to its counter.
+- **Penang International,** rebuilt from photos of the real airport at Bayan Lepas: the long barrel roof with its name along the top, the green glass wall on the airside, a wave-shaped canopy over the kerb that lights up blue at night, and an AirAsam jet at the stand.
+- **Langkawi International,** rebuilt from photos of the real airport at Padang Matsirat: eight white glass gables, the Perlepasan Departure entrance under the kerb canopy, and an AirAsam jet on the apron.
+- **Car hire at both airports.** Each arrivals hall has a counter for the flight home, a car park and a car hire desk. Penang now hires out a car for RM110 or a kapcai for RM40, as Langkawi does, and you need a P or CDL licence. A Langkawi hire car can be returned at either desk. A Penang hire car can't leave the island: at the bridge, you're turned back.
+- **Driving to the airport.** A car you drive to KLIA or Subang stays in the car park while you're away, and it's still there when you fly back into the same airport. If you come home another way, it's back at Bengkel Faiz the next time you're in KL.
+- **Quitting during a flight,** or after buying a ticket, puts you back at the counter with your ticket.
+- **Fixed:** the underside of the TBS canopy no longer looks dark by day, and the coaches' destination signs can be read from 10 m. The Kuah ferry terminal's sign now spells out TERMINAL FERI in full.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
+**Known limits.** By day, the undersides of both airport canopies look darker than the real ones. This build hasn't been run on a real phone.
+
+## 0.12.4 Beta (20 November 2026)
+
+The express bus runs from TBS: buy a ticket at the counter in Terminal Bersepadu Selatan and ride to Butterworth, Alor Setar or Genting.
+
+- **TBS, the express bus terminal,** rebuilt from photos of the real one, on Jalan Syed Putra Selatan in KL's south: a long white block with a curved end, a glazed hall with the ticket counter, and the departure bays under a white canopy on rows of columns. The canopy is lit orange at night. The Travel app's GPS shows the way to the counter.
+- **The express bus.** The counter at TBS sells three routes: Butterworth, RM37.30 one-way, setting down at Penang Sentral beside the ferry; Alor Setar, RM94.40 return (two halves of RM47.20), setting down by Pekan Rabu; and Genting, RM20 return (two halves of RM10), setting down at Awana by the cable car.
+- **The ride** takes 60 seconds at a window over the expressway, with its crash barrier, lamp posts and passing lorries. The game clock waits, as on the ETS.
+- **The way back.** Bus counters at Penang Sentral, Alor Setar and Awana sell the ride to TBS. With a return half, you board free. A car you drove to TBS is back at Bengkel Faiz the next time you're in KL.
+- **Coaches** of three made-up operators, Merbok, Kancil and Tualang Ekspres, stand in the bays at TBS and at each far end. Each operator runs one route, and its sign shows where it's going.
+- **Genting** gets a row in the Travel app, with the bus to Awana.
+- **Fixed:** a rental can only be handed back, with its fee, in Langkawi, and the Travel app lists only places you can reach with the current settings.
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
+**Known limits.** By day the TBS canopy's underside reads darker than the real one, and the coach's destination sign is hard to read from a distance. This build hasn't been run on a real phone.
+
+## 0.12.3 Beta (20 November 2026)
+
+Langkawi opens: drive west from Alor Setar to the Kuala Kedah jetty, take the ferry to Kuah, and ride the SkyCab up Gunung Mat Cincang.
+
+- **The road to Kuala Kedah.** From Alor Setar's west side, a road runs through paddy and past kampung houses to Kuala Kedah's ferry jetty and its car park. A taxi from Alor Setar costs RM30.
+- **The ferry to Langkawi.** The counter at Kuala Kedah sells a return for RM53, two halves of RM26.50. The crossing to Kuah takes 45 seconds at sea, by day or night. A car you leave in the jetty car park waits there for you. The Travel app shows the route, and on the island it lists only the ferry home. No taxis run on the island.
+- **Langkawi.** Kuah's jetty and promenade, Pantai Cenang's beach and shophouses, and the Oriental Village round its pond, joined by a road through palms and paddy.
+- **Rentals.** The desk by Kuah jetty rents a car for RM110 or a kapcai for RM40, and you need a P or CDL licence. Rentals run without fuel and go back when you take the ferry home. If you get Busted or Wasted, or wreck it, it goes back to the desk and you pay a fee of up to RM50 from your cash.
+- **The landmarks,** rebuilt from photos of the real places: Dataran Lang's eagle over the sea, floodlit at night; the Kuah ferry terminal and Jetty Point; and the Kuala Kedah ferry terminal.
+- **The SkyCab.** Gunung Mat Cincang rises from the forest behind the Oriental Village. A return ticket costs RM43, and each way takes about three and a half minutes, while the game clock moves on about three and a half hours. At the top, the SkyBridge look-out faces out over the island.
+- **Ikan bakar,** grilled fish from a stall on Pantai Cenang's sand, 17:00 to 23:00, for RM25. **Duty-free shops**, Kedai Poket Lega at Cenang and Kedai Buah Tangan opposite the Kuah terminal, sell chocolate for RM15 and perfume for RM120.
+- **The full map** shows Langkawi's own photo, where it used to say "coming soon".
+- **The desktop app** for Windows, macOS and Linux is now this version. [Download it again](https://github.com/chengboonrong/kl-rush-preview/releases/latest) to update.
+
+**Known limits.** A few Langkawi prices are game defaults, not real ones: the jetty taxi, the rental fee and the duty-free shops. This build hasn't been run on a real phone.
+
 ## 0.12.2 Beta (19 November 2026)
 
 Alor Setar opens: drive past the Penang exit into Kedah's rice plain, or take the ETS from KL Sentral, and end the trip with a bowl of laksa Kedah.
